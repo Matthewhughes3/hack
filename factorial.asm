@@ -1,0 +1,614 @@
+//INITIALIZE BASE ADDRESSES
+@256
+D=A
+@SP
+M=D
+@1024
+D=A
+@LCL
+M=D
+@2048
+D=A
+@ARG
+M=D
+@4096
+D=A
+@THIS
+M=D
+@8192
+D=A
+@THAT
+M=D
+// push constant 12
+@12
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 3
+@3
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call addFactorial 1
+@RETURN3
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@addFactorial
+0; JMP
+(RETURN3)
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// label end
+(end)
+// goto end
+@end
+0; JMP
+// function addFactorial 0
+(addFactorial)
+@0
+D=A
+(INIT7)
+@ENDINIT7
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT7
+0; JMP
+(ENDINIT7)
+// push argument 0
+@0
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=D-M
+@EQ10
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ10
+0; JMP
+(EQ10)
+@SP
+A=M-1
+M=1
+(ENDEQ10)
+// if-goto BASECASE
+@SP
+A=M-1
+D=M
+@BASECASE
+D; JGT
+// push argument 0
+@0
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// sub
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M-D
+// call addFactorial 1
+@RETURN15
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@addFactorial
+0; JMP
+(RETURN15)
+// push argument 0
+@0
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call mult 2
+@RETURN17
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@mult
+0; JMP
+(RETURN17)
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// label BASECASE
+(BASECASE)
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// function mult 2
+(mult)
+@2
+D=A
+(INIT22)
+@ENDINIT22
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT22
+0; JMP
+(ENDINIT22)
+// push argument 0
+@0
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// push argument 1
+@1
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop local 1
+@1
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// label loop
+(loop)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push argument 0
+@0
+D=A
+@ARG
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// push local 1
+@1
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// sub
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M-D
+// pop local 1
+@1
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// push local 1
+@1
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=D-M
+@EQ38
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ38
+0; JMP
+(EQ38)
+@SP
+A=M-1
+M=1
+(ENDEQ38)
+// if-goto return
+@SP
+A=M-1
+D=M
+@return
+D; JGT
+// goto loop
+@loop
+0; JMP
+// label return
+(return)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP

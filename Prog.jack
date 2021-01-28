@@ -1,0 +1,8 @@
+//test
+if (x > 2) {
+    let x = x + 1 - 2 * 10;
+} else {
+    let x = 10 * 2 - 1 + x;
+    let y = true;
+    return
+}

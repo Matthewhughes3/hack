@@ -1,0 +1,47 @@
+push constant 12
+push constant 3
+call addFactorial 1
+add
+label end
+goto end
+
+function addFactorial 0
+    push argument 0
+    push constant 1
+    eq
+    if-goto BASECASE
+    push argument 0
+    push constant 1
+    sub
+    call addFactorial 1
+    push argument 0
+    call mult 2
+    return
+
+    label BASECASE
+        push constant 1
+        return
+
+
+function mult 2
+    push argument 0
+    pop local 0
+    push argument 1
+    pop local 1
+    label loop
+        push local 0
+        push argument 0
+        add
+        pop local 0
+        push local 1
+        push constant 1
+        sub
+        pop local 1
+        push local 1
+        push constant 1
+        eq
+        if-goto return
+        goto loop
+    label return
+        push local 0
+        return
