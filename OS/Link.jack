@@ -1,0 +1,35 @@
+class Link {
+    field int next, value;
+
+    constructor Link new(int val) {
+        let value = val;
+        return this;
+    }
+
+    method void link(int n) {
+        let next = n;
+        return;
+    }
+
+    method int getValue() {
+        return value;
+    }
+
+    method int getNext() {
+        return next;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    function Link getTail(Link head) {
+        var Link tracker;
+        let tracker = head;
+        while(!((tracker.getNext()) = null)) {
+            let tracker = tracker.getNext();
+        }
+        return tracker;
+    }
+}

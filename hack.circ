@@ -250,23 +250,15 @@
     <wire from="(970,160)" to="(970,220)"/>
     <wire from="(340,250)" to="(350,250)"/>
     <wire from="(1120,510)" to="(1120,550)"/>
-    <comp lib="0" loc="(920,160)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="type" val="input"/>
-    </comp>
-    <comp lib="0" loc="(1080,380)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
-    </comp>
-    <comp lib="1" loc="(410,150)" name="NOT Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(180,210)" name="Pin">
+    <comp lib="1" loc="(1030,230)" name="XOR Gate">
       <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(490,340)" name="AND Gate">
+      <a name="width" val="16"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(1130,230)" name="Pin">
       <a name="facing" val="west"/>
@@ -276,76 +268,26 @@
       <a name="label" val="OUT"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(1160,610)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ZR"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="2" loc="(860,240)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="1" loc="(490,340)" name="AND Gate">
+    <comp lib="1" loc="(730,200)" name="AND Gate">
       <a name="width" val="16"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(630,190)" name="XOR Gate">
-      <a name="width" val="16"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1030,230)" name="XOR Gate">
-      <a name="width" val="16"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(310,300)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="type" val="input"/>
+    <comp lib="1" loc="(410,150)" name="NOT Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(490,220)" name="AND Gate">
       <a name="width" val="16"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(380,370)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="type" val="input"/>
-    </comp>
-    <comp lib="0" loc="(180,330)" name="Pin">
-      <a name="width" val="16"/>
+    <comp lib="0" loc="(1160,610)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="1" loc="(1160,590)" name="NOR Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="16"/>
-    </comp>
-    <comp lib="0" loc="(320,180)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="type" val="input"/>
-    </comp>
-    <comp lib="0" loc="(490,90)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="width" val="6"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ZA/NA/ZB/NB/F/NO"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(630,310)" name="XOR Gate">
-      <a name="width" val="16"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(490,100)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="fanout" val="6"/>
-      <a name="incoming" val="6"/>
+      <a name="label" val="ZR"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(1020,610)" name="Pin">
       <a name="facing" val="north"/>
@@ -354,6 +296,33 @@
       <a name="label" val="NG"/>
       <a name="labelloc" val="south"/>
     </comp>
+    <comp lib="1" loc="(630,310)" name="XOR Gate">
+      <a name="width" val="16"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(320,180)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="type" val="input"/>
+    </comp>
+    <comp lib="0" loc="(920,160)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="type" val="input"/>
+    </comp>
+    <comp lib="2" loc="(860,240)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="1" loc="(430,160)" name="NOT Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(1160,590)" name="NOR Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="16"/>
+    </comp>
     <comp lib="0" loc="(390,250)" name="Bit Extender">
       <a name="in_width" val="1"/>
       <a name="type" val="input"/>
@@ -361,14 +330,45 @@
     <comp lib="3" loc="(740,300)" name="Adder">
       <a name="width" val="16"/>
     </comp>
-    <comp lib="1" loc="(730,200)" name="AND Gate">
+    <comp lib="0" loc="(1080,380)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </comp>
+    <comp lib="0" loc="(310,300)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="type" val="input"/>
+    </comp>
+    <comp lib="0" loc="(180,210)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(180,330)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(490,100)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="1" loc="(630,190)" name="XOR Gate">
       <a name="width" val="16"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(430,160)" name="NOT Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="20"/>
+    <comp lib="0" loc="(490,90)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="width" val="6"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ZA/NA/ZB/NB/F/NO"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(380,370)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="type" val="input"/>
     </comp>
   </circuit>
   <circuit name="CPU">
@@ -474,38 +474,81 @@
     <wire from="(630,280)" to="(900,280)"/>
     <wire from="(910,300)" to="(910,610)"/>
     <wire from="(740,410)" to="(750,410)"/>
+    <comp lib="1" loc="(390,350)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp loc="(940,280)" name="ALU"/>
+    <comp loc="(310,170)" name="STORE DECODER"/>
+    <comp lib="0" loc="(1090,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DOUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(710,380)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="4" loc="(480,320)" name="Register">
+      <a name="width" val="16"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="1" loc="(430,340)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp loc="(970,620)" name="JUMP DECODER"/>
     <comp lib="0" loc="(210,390)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DIN"/>
     </comp>
-    <comp lib="4" loc="(630,280)" name="Register">
-      <a name="width" val="16"/>
-      <a name="label" val="D"/>
+    <comp lib="0" loc="(1090,470)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="PC"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp loc="(310,170)" name="STORE DECODER"/>
+    <comp lib="0" loc="(1090,400)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDR"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(180,500)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(750,410)" name="Splitter">
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="16"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="none"/>
+    <comp lib="2" loc="(350,320)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="4" loc="(1060,470)" name="Counter">
+      <a name="width" val="15"/>
+      <a name="max" val="0x7fff"/>
+    </comp>
+    <comp lib="0" loc="(470,640)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RST"/>
+    </comp>
+    <comp lib="1" loc="(1020,480)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(1090,350)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(50,180)" name="Splitter">
       <a name="fanout" val="5"/>
@@ -526,76 +569,33 @@
       <a name="bit14" val="none"/>
       <a name="bit15" val="0"/>
     </comp>
-    <comp loc="(970,620)" name="JUMP DECODER"/>
-    <comp lib="1" loc="(430,340)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(750,410)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="16"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="none"/>
     </comp>
-    <comp lib="0" loc="(1090,470)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="PC"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="4" loc="(630,280)" name="Register">
+      <a name="width" val="16"/>
+      <a name="label" val="D"/>
     </comp>
     <comp lib="0" loc="(210,310)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="INS"/>
-    </comp>
-    <comp lib="4" loc="(480,320)" name="Register">
-      <a name="width" val="16"/>
-      <a name="label" val="A"/>
-    </comp>
-    <comp loc="(940,280)" name="ALU"/>
-    <comp lib="4" loc="(1060,470)" name="Counter">
-      <a name="width" val="15"/>
-      <a name="max" val="0x7fff"/>
-    </comp>
-    <comp lib="2" loc="(710,380)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="1" loc="(390,350)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(1090,280)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DOUT"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1090,400)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(1020,480)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(470,640)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RST"/>
-    </comp>
-    <comp lib="0" loc="(1090,350)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="2" loc="(350,320)" name="Multiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
     </comp>
   </circuit>
   <circuit name="JUMP DECODER">
@@ -682,7 +682,7 @@
     <wire from="(770,480)" to="(850,480)"/>
     <wire from="(840,390)" to="(840,440)"/>
     <wire from="(380,420)" to="(450,420)"/>
-    <comp lib="1" loc="(770,480)" name="AND Gate">
+    <comp lib="1" loc="(770,400)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
@@ -690,18 +690,19 @@
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(530,120)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="1" loc="(1010,380)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1050,380)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="NG"/>
-      <a name="labelloc" val="north"/>
+      <a name="label" val="JMP"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="1" loc="(610,470)" name="NOT Gate">
       <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(770,360)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(940,140)" name="Pin">
       <a name="facing" val="south"/>
@@ -709,12 +710,23 @@
       <a name="label" val="C"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="1" loc="(770,320)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="2" loc="(360,380)" name="Decoder">
       <a name="selloc" val="tr"/>
       <a name="select" val="3"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="1" loc="(770,320)" name="AND Gate">
+    <comp lib="1" loc="(640,390)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(670,300)" name="NOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(770,360)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
@@ -728,18 +740,6 @@
       <a name="size" val="30"/>
       <a name="inputs" val="7"/>
     </comp>
-    <comp lib="1" loc="(770,400)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1010,380)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(670,300)" name="NOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="1" loc="(770,520)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
@@ -748,20 +748,20 @@
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(640,390)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(1050,380)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="JMP"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(180,310)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DIN"/>
+    </comp>
+    <comp lib="0" loc="(530,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="NG"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(770,480)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="COMPUTER">
@@ -891,18 +891,26 @@
     <wire from="(260,710)" to="(340,710)"/>
     <wire from="(1140,650)" to="(1140,690)"/>
     <wire from="(380,340)" to="(380,590)"/>
-    <comp loc="(250,710)" name="KEYBOARD ADDRESS DECODER"/>
-    <comp lib="4" loc="(310,390)" name="RAM">
-      <a name="addrWidth" val="15"/>
-      <a name="dataWidth" val="16"/>
-      <a name="bus" val="separate"/>
-    </comp>
-    <comp loc="(830,340)" name="GPU ADDRESS DECODE"/>
     <comp lib="1" loc="(190,540)" name="AND Gate">
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="4" loc="(310,390)" name="RAM">
+      <a name="addrWidth" val="15"/>
+      <a name="dataWidth" val="16"/>
+      <a name="bus" val="separate"/>
+    </comp>
+    <comp lib="2" loc="(140,500)" name="Multiplexer">
+      <a name="facing" val="north"/>
+      <a name="selloc" val="tr"/>
+      <a name="width" val="16"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp loc="(990,600)" name="32x32 GPU"/>
+    <comp loc="(250,710)" name="KEYBOARD ADDRESS DECODER"/>
+    <comp lib="5" loc="(330,690)" name="Keyboard"/>
+    <comp lib="0" loc="(60,320)" name="Constant"/>
     <comp lib="0" loc="(50,590)" name="Clock"/>
     <comp lib="0" loc="(560,720)" name="Bit Extender">
       <a name="in_width" val="7"/>
@@ -911,101 +919,1213 @@
       <a name="facing" val="north"/>
       <a name="label" val="RESET"/>
     </comp>
+    <comp loc="(830,340)" name="GPU ADDRESS DECODE"/>
     <comp lib="4" loc="(310,230)" name="ROM">
       <a name="addrWidth" val="15"/>
       <a name="dataWidth" val="16"/>
       <a name="contents">addr/data: 15 16
 100 ec10 0 e308 400 ec10 1 e308
 800 ec10 2 e308 1000 ec10 3 e308
-2000 ec10 4 e308 c ec10 0 fde8
-eca0 e308 3 ec10 0 fde8 eca0 e308
-4c ec10 0 fde8 eca0 e308 1 fc10
-0 fde8 eca0 e308 2 fc10 0 fde8
-eca0 e308 3 fc10 0 fde8 eca0 e308
-4 fc10 0 fde8 eca0 e308 5 ec10
-1 e090 0 f1d0 2 e308 0 fc10
-1 e308 53 ea87 0 fca8 fc10 eca0
-f088 51 ea87 0 ec10 5e e302 0
-fde8 eca0 ea88 e390 55 ea87 0 ec10
-2 f0a0 fc10 0 fde8 eca0 e308 1
-ec10 0 fde8 eca0 e308 0 fca8 fc10
-eca0 f4d0 79 e302 0 fca0 ea88 7c
-ea87 0 fca0 efc8 0 fca0 fc10 123
-e301 0 ec10 2 f0a0 fc10 0 fde8
-eca0 e308 1 ec10 0 fde8 eca0 e308
-0 fca8 fc10 eca0 f1c8 c1 ec10 0
+2000 ec10 4 e308 40 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 0 e090 0 f1d0
+2 e308 0 fc10 1 e308 2435 ea87
+252c ea87 100 ec10 0 e308 400 ec10
+1 e308 800 ec10 2 e308 1000 ec10
+3 e308 2000 ec10 4 e308 0 ec10
+61 e302 0 fde8 eca0 ea88 e390 58
+ea87 7fc0 ec10 0 fde8 eca0 e308 0
+fca8 fc10 80 e308 40 ec10 0 fde8
+eca0 e308 0 fca8 fc10 81 e308 0
+ec10 0 fde8 eca0 e308 5 ec10 1
+f1e0 fc10 d e308 0 fca0 fc10 2
+fc20 e308 edd0 0 e308 1 fca0 fc10
+4 e308 2 ec10 1 f1e0 fc10 3
+e308 3 ec10 1 f1e0 fc10 2 e308
+4 ec10 1 f1e0 fc10 1 e308 d
+fc20 ea87 3 ec10 b5 e302 0 fde8
+eca0 ea88 e390 ac ea87 0 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 80
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f088 0 fca8 fc10 eca0 f088 1
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 f ec10 0 fde8 eca0
+e308 1 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4d0 fe
+e301 0 fca0 ea88 101 ea87 0 fca0
+efc8 0 fca0 fc10 109 e302 ea90 10a
+ea87 efd0 0 fca0 e308 0 fca0 fc10
+154 e301 10 ec10 0 fde8 eca0 e308
+1 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4c8 1 ec10
+2 f090 d e308 0 fca8 fc10 d
+fc20 e308 1 ec10 0 fde8 eca0 e308
+1 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f088 1 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 154 ea87 1 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 189 ec10 0
 fde8 eca0 e308 1 fc10 0 fde8 eca0
 e308 2 fc10 0 fde8 eca0 e308 3
 fc10 0 fde8 eca0 e308 4 fc10 0
 fde8 eca0 e308 5 ec10 1 e090 0
-f1d0 2 e308 0 fc10 1 e308 53
-ea87 0 ec10 2 f0a0 fc10 0 fde8
-eca0 e308 f6 ec10 0 fde8 eca0 e308
+f1d0 2 e308 0 fc10 1 e308 1e9d
+ea87 0 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 1 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 f ec10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4c8 1d5 ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 1 e090 0 f1d0 2 e308 0
+fc10 1 e308 fad ea87 2 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 1 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 2 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f548 22d ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 2 e090 0 f1d0 2 e308 0
+fc10 1 e308 1ef7 ea87 0 fca8 fc10
+82 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+a ec10 273 e302 0 fde8 eca0 ea88
+e390 26a ea87 3 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 1 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f4d0 291 e302 0 fca0 ea88 294
+ea87 0 fca0 efc8 0 fca0 fc10 29c
+e302 ea90 29d ea87 efd0 0 fca0 e308
+0 fca0 fc10 371 e301 2 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 2c3 e304 0 fca0
+ea88 2c6 ea87 0 fca0 efc8 0 fca0
+fc10 2ce e302 ea90 2cf ea87 efd0 0
+fca0 e308 0 fca0 fc10 33c e301 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+2 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 315 ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 2 e090 0 f1d0 2 e308 0
+fc10 1 e308 aa ea87 0 fca8 fc10
+82 e308 1 ec10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f088 0 ec10
+2 f090 d e308 0 fca8 fc10 d
+fc20 e308 2a5 ea87 0 ec10 0 fde8
+eca0 e308 5 ec10 1 f1e0 fc10 d
+e308 0 fca0 fc10 2 fc20 e308 edd0
+0 e308 1 fca0 fc10 4 e308 2
+ec10 1 f1e0 fc10 3 e308 3 ec10
+1 f1e0 fc10 2 e308 4 ec10 1
+f1e0 fc10 1 e308 d fc20 ea87 5ff
+ea87 2 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4c8
+3b4 ec10 0 fde8 eca0 e308 1 fc10
+0 fde8 eca0 e308 2 fc10 0 fde8
+eca0 e308 3 fc10 0 fde8 eca0 e308
+4 fc10 0 fde8 eca0 e308 5 ec10
+1 e090 0 f1d0 2 e308 0 fc10
+1 e308 14d2 ea87 0 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+3 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 1 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4c8 403
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 1
+e090 0 f1d0 2 e308 0 fc10 1
+e308 14d2 ea87 1 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 0
+ec10 0 fde8 eca0 e308 2 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 0 ec10 0 fde8 eca0 e308 3
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 0 ec10 0 fde8 eca0
+e308 4 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 1 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 3 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 463 e302 0 fca0
+ea88 466 ea87 0 fca0 efc8 1 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 3
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f4d0 484 e304 0
+fca0 ea88 487 ea87 0 fca0 efc8 0
+fca8 fc10 eca0 f548 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 2 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4d0 4aa e302 0 fca0 ea88
+4ad ea87 0 fca0 efc8 0 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 2 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 4cb e304 0 fca0
+ea88 4ce ea87 0 fca0 efc8 0 fca8
+fc10 eca0 f548 0 fca8 fc10 eca0 f008
+0 fca0 fc10 4e0 e302 ea90 4e1 ea87
+efd0 0 fca0 e308 0 fca0 fc10 33c
+e301 2 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f088
+3 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 1 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4c8 543
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 2
+e090 0 f1d0 2 e308 0 fc10 1
+e308 aa ea87 0 fca8 fc10 82 e308
+0 ec10 0 fde8 eca0 e308 4 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 563 e304 0 fca0
+ea88 566 ea87 0 fca0 efc8 0 fca0
+fc10 56e e302 ea90 56f ea87 efd0 0
+fca0 e308 0 fca0 fc10 371 e301 1
+ec10 0 fde8 eca0 e308 2 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f088 2 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 1
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+4 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f088 4 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 5ff ea87 1 ec10 0 fde8
+eca0 e308 3 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f088
+3 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 4 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4c8 4 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 2a5
+ea87 0 ec10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 14 ec10 63f e302
+0 fde8 eca0 ea88 e390 636 ea87 2
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 fca0 fcc8 0 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 2
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+2 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 695 ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 2 e090 0 f1d0 2 e308 0
+fc10 1 e308 dd0 ea87 2 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 2 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4d0
+6bf e304 0 fca0 ea88 6c2 ea87 0
+fca0 efc8 0 fca0 fc10 6ca e302 ea90
+6cb ea87 efd0 0 fca0 e308 0 fca0
+fc10 87d e301 0 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 711 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 2 e090 0
+f1d0 2 e308 0 fc10 1 e308 dd0
+ea87 1 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 1 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 2 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4c8 760 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 1 e090 0 f1d0
+2 e308 0 fc10 1 e308 16d2 ea87
+3 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 3 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 0 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4c8 5 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 3
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f088 6 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 1 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f088 4 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 5 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 4 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 813
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 2
+e090 0 f1d0 2 e308 0 fc10 1
+e308 aa ea87 0 fca8 fc10 82 e308
+6 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 4 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 856 ec10 0 fde8 eca0 e308
 1 fc10 0 fde8 eca0 e308 2 fc10
 0 fde8 eca0 e308 3 fc10 0 fde8
 eca0 e308 4 fc10 0 fde8 eca0 e308
 5 ec10 2 e090 0 f1d0 2 e308
-0 fc10 1 e308 156 ea87 5 ec10
+0 fc10 1 e308 aa ea87 0 fca8
+fc10 82 e308 1 ec10 0 fde8 eca0
+e308 0 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f088 0
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 6a1 ea87 0 ec10 0
+fde8 eca0 e308 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+22 ec10 8bb e302 0 fde8 eca0 ea88
+e390 8b2 ea87 0 ec10 0 fde8 eca0
+e308 0 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 81 fc10 0
+fde8 eca0 e308 0 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 8e8 e304 0 fca0 ea88 8eb ea87
+0 fca0 efc8 0 fca0 fc10 8f3 e302
+ea90 8f4 ea87 efd0 0 fca0 e308 0
+fca0 fc10 969 e301 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 80 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f088
+0 ec10 0 fde8 eca0 e308 942 ec10
+0 fde8 eca0 e308 1 fc10 0 fde8
+eca0 e308 2 fc10 0 fde8 eca0 e308
+3 fc10 0 fde8 eca0 e308 4 fc10
+0 fde8 eca0 e308 5 ec10 2 e090
+0 f1d0 2 e308 0 fc10 1 e308
+1ef7 ea87 0 fca8 fc10 82 e308 1
+ec10 0 fde8 eca0 e308 0 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f088 0 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 8cd
+ea87 0 ec10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 100 ec10 0 e308
+400 ec10 1 e308 800 ec10 2 e308
+1000 ec10 3 e308 2000 ec10 4 e308
+0 ec10 9bb e302 0 fde8 eca0 ea88
+e390 9b2 ea87 4 ec10 0 fde8 eca0
+e308 9ed ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 1 e090 0 f1d0 2 e308 0
+fc10 1 e308 1f6e ea87 0 fca8 fc10
+3 e308 0 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 ec10 3 f090 d
+e308 0 fca8 fc10 d fc20 e308 1
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+1 ec10 3 f090 d e308 0 fca8
+fc10 d fc20 e308 1 ec10 0 fde8
+eca0 e308 83 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f088 0 fca8 fc10
+83 e308 3 fc10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 0 ec10 a70
+e302 0 fde8 eca0 ea88 e390 a67 ea87
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 3 e308 0 ec10
+3 f0a0 fc10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 0 ec10 abf e302
+0 fde8 eca0 ea88 e390 ab6 ea87 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 3 e308 1 ec10 3
+f0a0 fc10 0 fde8 eca0 e308 5 ec10
 1 f1e0 fc10 d e308 0 fca0 fc10
 2 fc20 e308 edd0 0 e308 1 fca0
 fc10 4 e308 2 ec10 1 f1e0 fc10
 3 e308 3 ec10 1 f1e0 fc10 2
 e308 4 ec10 1 f1e0 fc10 1 e308
-d fc20 ea87 1 ec10 0 fde8 eca0
-e308 5 ec10 1 f1e0 fc10 d e308
-0 fca0 fc10 2 fc20 e308 edd0 0
-e308 1 fca0 fc10 4 e308 2 ec10
-1 f1e0 fc10 3 e308 3 ec10 1
-f1e0 fc10 2 e308 4 ec10 1 f1e0
-fc10 1 e308 d fc20 ea87 2 ec10
-161 e302 0 fde8 eca0 ea88 e390 158
-ea87 0 ec10 2 f0a0 fc10 0 fde8
-eca0 e308 0 ec10 1 f090 d e308
-0 fca8 fc10 d fc20 e308 1 ec10
-2 f0a0 fc10 0 fde8 eca0 e308 1
-ec10 1 f090 d e308 0 fca8 fc10
-d fc20 e308 0 ec10 1 f0a0 fc10
-0 fde8 eca0 e308 0 ec10 2 f0a0
-fc10 0 fde8 eca0 e308 0 fca8 fc10
-eca0 f088 0 ec10 1 f090 d e308
-0 fca8 fc10 d fc20 e308 1 ec10
-1 f0a0 fc10 0 fde8 eca0 e308 1
-ec10 0 fde8 eca0 e308 0 fca8 fc10
-eca0 f1c8 1 ec10 1 f090 d e308
-0 fca8 fc10 d fc20 e308 1 ec10
-1 f0a0 fc10 0 fde8 eca0 e308 1
-ec10 0 fde8 eca0 e308 0 fca8 fc10
-eca0 f4d0 1e9 e302 0 fca0 ea88 1ec
-ea87 0 fca0 efc8 0 fca0 fc10 1f3
-e301 18b ea87 0 ec10 1 f0a0 fc10
+d fc20 ea87 0 ec10 b0e e302 0
+fde8 eca0 ea88 e390 b05 ea87 83 fc10
 0 fde8 eca0 e308 5 ec10 1 f1e0
 fc10 d e308 0 fca0 fc10 2 fc20
 e308 edd0 0 e308 1 fca0 fc10 4
 e308 2 ec10 1 f1e0 fc10 3 e308
 3 ec10 1 f1e0 fc10 2 e308 4
 ec10 1 f1e0 fc10 1 e308 d fc20
-ea87
+ea87 0 ec10 b4c e302 0 fde8 eca0
+ea88 e390 b43 ea87 0 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+3 e308 1 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 b8f ec10 0 fde8 eca0
+e308 1 fc10 0 fde8 eca0 e308 2
+fc10 0 fde8 eca0 e308 3 fc10 0
+fde8 eca0 e308 4 fc10 0 fde8 eca0
+e308 5 ec10 1 e090 0 f1d0 2
+e308 0 fc10 1 e308 a65 ea87 0
+ec10 3 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f088 0 ec10 3
+f090 d e308 0 fca8 fc10 d fc20
+e308 1 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 bde ec10 0 fde8 eca0 e308
+1 fc10 0 fde8 eca0 e308 2 fc10
+0 fde8 eca0 e308 3 fc10 0 fde8
+eca0 e308 4 fc10 0 fde8 eca0 e308
+5 ec10 1 e090 0 f1d0 2 e308
+0 fc10 1 e308 ab4 ea87 1 ec10
+3 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f088 1 ec10 3 f090
+d e308 0 fca8 fc10 d fc20 e308
+3 fc10 0 fde8 eca0 e308 5 ec10
+1 f1e0 fc10 d e308 0 fca0 fc10
+2 fc20 e308 edd0 0 e308 1 fca0
+fc10 4 e308 2 ec10 1 f1e0 fc10
+3 e308 3 ec10 1 f1e0 fc10 2
+e308 4 ec10 1 f1e0 fc10 1 e308
+d fc20 ea87 2 ec10 c36 e302 0
+fde8 eca0 ea88 e390 c2d ea87 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 3 e308 1 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 c79 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 1 e090 0
+f1d0 2 e308 0 fc10 1 e308 a65
+ea87 0 ec10 3 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4c8 0
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 1 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 cc8 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 1 e090 0 f1d0
+2 e308 0 fc10 1 e308 ab4 ea87
+1 ec10 3 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4c8 1 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 1 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 1 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 d20 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 2 e090 0 f1d0
+2 e308 0 fc10 1 e308 dd0 ea87
+0 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 d5e ec10 0 fde8 eca0 e308
+1 fc10 0 fde8 eca0 e308 2 fc10
+0 fde8 eca0 e308 3 fc10 0 fde8
+eca0 e308 4 fc10 0 fde8 eca0 e308
+5 ec10 2 e090 0 f1d0 2 e308
+0 fc10 1 e308 dd0 ea87 0 fca8
+fc10 eca0 f088 d8f ec10 0 fde8 eca0
+e308 1 fc10 0 fde8 eca0 e308 2
+fc10 0 fde8 eca0 e308 3 fc10 0
+fde8 eca0 e308 4 fc10 0 fde8 eca0
+e308 5 ec10 1 e090 0 f1d0 2
+e308 0 fc10 1 e308 16d2 ea87 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 100 ec10 0 e308
+400 ec10 1 e308 800 ec10 2 e308
+1000 ec10 3 e308 2000 ec10 4 e308
+4 ec10 ddb e302 0 fde8 eca0 ea88
+e390 dd2 ea87 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 2 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+0 ec10 0 fde8 eca0 e308 1 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 0 ec10 0 fde8 eca0 e308
+3 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 1 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 3 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4d0 e32 e302 0 fca0 ea88
+e35 ea87 0 fca0 efc8 1 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 3 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 e53 e304 0 fca0
+ea88 e56 ea87 0 fca0 efc8 0 fca8
+fc10 eca0 f548 f ec10 0 fde8 eca0
+e308 1 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4d0 e76
+e304 0 fca0 ea88 e79 ea87 0 fca0
+efc8 0 fca8 fc10 eca0 f008 0 fca0
+fc10 e86 e302 ea90 e87 ea87 efd0 0
+fca0 e308 0 fca0 fc10 f77 e301 1
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+ec4 ec10 0 fde8 eca0 e308 1 fc10
+0 fde8 eca0 e308 2 fc10 0 fde8
+eca0 e308 3 fc10 0 fde8 eca0 e308
+4 fc10 0 fde8 eca0 e308 5 ec10
+1 e090 0 f1d0 2 e308 0 fc10
+1 e308 fad ea87 3 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+0 ec10 0 fde8 eca0 e308 3 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 1
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f008 0 fca8 fc10
+eca0 f4d0 ef9 e301 0 fca0 ea88 efc
+ea87 0 fca0 efc8 0 fca0 fc10 f04
+e302 ea90 f05 ea87 efd0 0 fca0 e308
+0 fca0 fc10 f32 e301 2 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f088 0 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+f32 ea87 2 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 2 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f088 2 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 1 ec10 0
+fde8 eca0 e308 1 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f088 1 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 e14 ea87 0
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 5 ec10 fb8
+e302 0 fde8 eca0 ea88 e390 faf ea87
+1 ec10 0 fde8 eca0 e308 0 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 0 ec10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4d0 fe5 e301
+0 fca0 ea88 fe8 ea87 0 fca0 efc8
+0 fca0 fc10 ff0 e302 ea90 ff1 ea87
+efd0 0 fca0 e308 0 fca0 fc10 103e
+e301 0 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f088
+0 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 1 ec10 0 fde8
+eca0 e308 0 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4c8
+0 ec10 2 f090 d e308 0 fca8
+fc10 d fc20 e308 fca ea87 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 e ec10 107f e302
+0 fde8 eca0 ea88 e390 1076 ea87 0
+ec10 0 fde8 eca0 e308 1 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4d0 109a e302 0 fca0 ea88
+109d ea87 0 fca0 efc8 0 ec10 0
+fde8 eca0 e308 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 10b8 e302 0 fca0 ea88 10bb ea87
+0 fca0 efc8 0 fca8 fc10 eca0 f548
+0 fca0 fc10 10c8 e302 ea90 10c9 ea87
+efd0 0 fca0 e308 0 fca0 fc10 1106
+e301 0 ec10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 1106 ea87 0 ec10
+0 fde8 eca0 e308 0 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f4d0 1121 e304 0 fca0 ea88 1124
+ea87 0 fca0 efc8 0 ec10 0 fde8
+eca0 e308 1 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4d0
+113f e304 0 fca0 ea88 1142 ea87 0
+fca0 efc8 0 fca8 fc10 eca0 f008 0
+ec10 0 fde8 eca0 e308 0 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4d0 1162 e302 0 fca0 ea88
+1165 ea87 0 fca0 efc8 0 ec10 0
+fde8 eca0 e308 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 1180 e301 0 fca0 ea88 1183 ea87
+0 fca0 efc8 0 fca8 fc10 eca0 f548
+0 ec10 0 fde8 eca0 e308 1 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 11a3 e302 0 fca0
+ea88 11a6 ea87 0 fca0 efc8 0 ec10
+0 fde8 eca0 e308 1 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f4d0 11c1 e301 0 fca0 ea88 11c4
+ea87 0 fca0 efc8 0 fca8 fc10 eca0
+f548 0 fca8 fc10 eca0 f008 0 fca8
+fc10 eca0 f548 0 fca0 fc10 11db e302
+ea90 11dc ea87 efd0 0 fca0 e308 0
+fca0 fc10 11f8 e301 0 ec10 0 fde8
+eca0 e308 4 ec10 1 f090 d e308
+0 fca8 fc10 d fc20 e308 120a ea87
+1 ec10 0 fde8 eca0 e308 4 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 1 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 123f ec10 0 fde8 eca0
+e308 1 fc10 0 fde8 eca0 e308 2
+fc10 0 fde8 eca0 e308 3 fc10 0
+fde8 eca0 e308 4 fc10 0 fde8 eca0
+e308 5 ec10 1 e090 0 f1d0 2
+e308 0 fc10 1 e308 14d2 ea87 1
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 1280 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 1 e090 0 f1d0
+2 e308 0 fc10 1 e308 14d2 ea87
+2 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 0 fde8
+eca0 e308 2 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4d0
+12a7 e304 0 fca0 ea88 12aa ea87 0
+fca0 efc8 1 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 2 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 12c8 e301 0 fca0 ea88 12cb ea87
+0 fca0 efc8 0 fca8 fc10 eca0 f548
+0 fca0 fc10 12d8 e302 ea90 12d9 ea87
+efd0 0 fca0 e308 0 fca0 fc10 1316
+e301 0 ec10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 1316 ea87 2 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 2
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f088 1 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 1362 ec10
+0 fde8 eca0 e308 1 fc10 0 fde8
+eca0 e308 2 fc10 0 fde8 eca0 e308
+3 fc10 0 fde8 eca0 e308 4 fc10
+0 fde8 eca0 e308 5 ec10 2 e090
+0 f1d0 2 e308 0 fc10 1 e308
+1074 ea87 0 ec10 1 f090 d e308
+0 fca8 fc10 d fc20 e308 2 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 2
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 2 ec10 0 fde8 eca0 e308 13bb
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 2
+e090 0 f1d0 2 e308 0 fc10 1
+e308 dd0 ea87 13e7 ec10 0 fde8 eca0
+e308 1 fc10 0 fde8 eca0 e308 2
+fc10 0 fde8 eca0 e308 3 fc10 0
+fde8 eca0 e308 4 fc10 0 fde8 eca0
+e308 5 ec10 2 e090 0 f1d0 2
+e308 0 fc10 1 e308 dd0 ea87 1
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f4c8 0 fca8 fc10
+eca0 f4d0 1401 e304 0 fca0 ea88 1404
+ea87 0 fca0 efc8 0 fca0 fc10 140c
+e302 ea90 140d ea87 efd0 0 fca0 e308
+0 fca0 fc10 143a e301 0 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f088 3 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+1468 ea87 1 ec10 0 fde8 eca0 e308
+0 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f088 0
+fca8 fc10 eca0 f088 3 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+4 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca0 fc10 1479 e302 ea90 147a
+ea87 efd0 0 fca0 e308 0 fca0 fc10
+149c e301 3 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca0 fcc8 3 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 149c ea87 3 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 5 ec10 1
+f1e0 fc10 d e308 0 fca0 fc10 2
+fc20 e308 edd0 0 e308 1 fca0 fc10
+4 e308 2 ec10 1 f1e0 fc10 3
+e308 3 ec10 1 f1e0 fc10 2 e308
+4 ec10 1 f1e0 fc10 1 e308 d
+fc20 ea87 17 ec10 14dd e302 0 fde8
+eca0 ea88 e390 14d4 ea87 0 ec10 0
+fde8 eca0 e308 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 14f8 e304 0 fca0 ea88 14fb ea87
+0 fca0 efc8 0 fca0 fc10 1503 e302
+ea90 1504 ea87 efd0 0 fca0 e308 0
+fca0 fc10 1547 e301 0 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca0 fcc8
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 157d ea87 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 2f ec10 1588
+e302 0 fde8 eca0 ea88 e390 157f ea87
+0 ec10 0 fde8 eca0 e308 1 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4d0 15a3 e302 0 fca0
+ea88 15a6 ea87 0 fca0 efc8 0 fca0
+fc10 15ae e302 ea90 15af ea87 efd0 0
+fca0 e308 0 fca0 fc10 15ec e301 1
+ec10 0 fde8 eca0 e308 5 ec10 1
+f1e0 fc10 d e308 0 fca0 fc10 2
+fc20 e308 edd0 0 e308 1 fca0 fc10
+4 e308 2 ec10 1 f1e0 fc10 3
+e308 3 ec10 1 f1e0 fc10 2 e308
+4 ec10 1 f1e0 fc10 1 e308 d
+fc20 ea87 15ec ea87 0 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 1 ec10 0 fde8 eca0 e308 1
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f4d0 161c e301 0
+fca0 ea88 161f ea87 0 fca0 efc8 0
+fca0 fc10 1627 e302 ea90 1628 ea87 efd0
+0 fca0 e308 0 fca0 fc10 169c e301
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 166e ec10 0 fde8 eca0 e308
+1 fc10 0 fde8 eca0 e308 2 fc10
+0 fde8 eca0 e308 3 fc10 0 fde8
+eca0 e308 4 fc10 0 fde8 eca0 e308
+5 ec10 2 e090 0 f1d0 2 e308
+0 fc10 1 e308 dd0 ea87 0 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 1 ec10 0 fde8 eca0 e308
+1 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4c8 1 ec10
+2 f090 d e308 0 fca8 fc10 d
+fc20 e308 1601 ea87 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 5 ec10 1
+f1e0 fc10 d e308 0 fca0 fc10 2
+fc20 e308 edd0 0 e308 1 fca0 fc10
+4 e308 2 ec10 1 f1e0 fc10 3
+e308 3 ec10 1 f1e0 fc10 2 e308
+4 ec10 1 f1e0 fc10 1 e308 d
+fc20 ea87 5f ec10 16dd e302 0 fde8
+eca0 ea88 e390 16d4 ea87 1 ec10 0
+fde8 eca0 e308 0 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 1
+ec10 0 fde8 eca0 e308 1 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 0 ec10 0 fde8 eca0 e308 1
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f4d0 171c e301 0
+fca0 ea88 171f ea87 0 fca0 efc8 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+1 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4d0 173d e302
+0 fca0 ea88 1740 ea87 0 fca0 efc8
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 1 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f4d0 175e
+e304 0 fca0 ea88 1761 ea87 0 fca0
+efc8 0 fca8 fc10 eca0 f548 0 fca8
+fc10 eca0 f008 0 fca0 fc10 1773 e302
+ea90 1774 ea87 efd0 0 fca0 e308 0
+fca0 fc10 17e8 e301 1 ec10 0 fde8
+eca0 e308 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f088
+0 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 0 ec10 1
+f0a0 fc10 0 fde8 eca0 e308 17da ec10
+0 fde8 eca0 e308 1 fc10 0 fde8
+eca0 e308 2 fc10 0 fde8 eca0 e308
+3 fc10 0 fde8 eca0 e308 4 fc10
+0 fde8 eca0 e308 5 ec10 2 e090
+0 f1d0 2 e308 0 fc10 1 e308
+dd0 ea87 1 ec10 1 f090 d e308
+0 fca8 fc10 d fc20 e308 1701 ea87
+1 ec10 0 fde8 eca0 e308 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4c8 5 ec10 1 f1e0
+fc10 d e308 0 fca0 fc10 2 fc20
+e308 edd0 0 e308 1 fca0 fc10 4
+e308 2 ec10 1 f1e0 fc10 3 e308
+3 ec10 1 f1e0 fc10 2 e308 4
+ec10 1 f1e0 fc10 1 e308 d fc20
+ea87 bc ec10 1834 e302 0 fde8 eca0
+ea88 e390 182b ea87 1 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f4d0 1852 e304 0 fca0 ea88
+1855 ea87 0 fca0 efc8 0 fca0 fc10
+185d e302 ea90 185e ea87 efd0 0 fca0
+e308 0 fca0 fc10 189e e301 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 18d4 ea87 1 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 178 ec10 18df e302
+0 fde8 eca0 ea88 e390 18d6 ea87 1
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4d0 18fd e301
+0 fca0 ea88 1900 ea87 0 fca0 efc8
+0 fca0 fc10 1908 e302 ea90 1909 ea87
+efd0 0 fca0 e308 0 fca0 fc10 1949
+e301 0 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 5 ec10 1 f1e0 fc10 d
+e308 0 fca0 fc10 2 fc20 e308 edd0
+0 e308 1 fca0 fc10 4 e308 2
+ec10 1 f1e0 fc10 3 e308 3 ec10
+1 f1e0 fc10 2 e308 4 ec10 1
+f1e0 fc10 1 e308 d fc20 ea87 197f
+ea87 1 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 5 ec10 1 f1e0 fc10 d
+e308 0 fca0 fc10 2 fc20 e308 edd0
+0 e308 1 fca0 fc10 4 e308 2
+ec10 1 f1e0 fc10 3 e308 3 ec10
+1 f1e0 fc10 2 e308 4 ec10 1
+f1e0 fc10 1 e308 d fc20 ea87 2f0
+ec10 198a e302 0 fde8 eca0 ea88 e390
+1981 ea87 1 ec10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4d0 19a5 e302
+0 fca0 ea88 19a8 ea87 0 fca0 efc8
+0 fca0 fc10 19b0 e302 ea90 19b1 ea87
+efd0 0 fca0 e308 0 fca0 fc10 19ee
+e301 1 ec10 0 fde8 eca0 e308 5
+ec10 1 f1e0 fc10 d e308 0 fca0
+fc10 2 fc20 e308 edd0 0 e308 1
+fca0 fc10 4 e308 2 ec10 1 f1e0
+fc10 3 e308 3 ec10 1 f1e0 fc10
+2 e308 4 ec10 1 f1e0 fc10 1
+e308 d fc20 ea87 19ee ea87 1 ec10
+0 fde8 eca0 e308 0 ec10 2 f0a0
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f4c8 1a2e ec10 0 fde8 eca0 e308
+1 fc10 0 fde8 eca0 e308 2 fc10
+0 fde8 eca0 e308 3 fc10 0 fde8
+eca0 e308 4 fc10 0 fde8 eca0 e308
+5 ec10 1 e090 0 f1d0 2 e308
+0 fc10 1 e308 197f ea87 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 1a63
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 2
+e090 0 f1d0 2 e308 0 fc10 1
+e308 dd0 ea87 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+100 ec10 0 e308 400 ec10 1 e308
+800 ec10 2 e308 1000 ec10 3 e308
+2000 ec10 4 e308 0 ec10 1aaf e302
+0 fde8 eca0 ea88 e390 1aa6 ea87 2
+ec10 0 fde8 eca0 e308 1ae1 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 1 e090 0
+f1d0 2 e308 0 fc10 1 e308 1f6e
+ea87 0 fca8 fc10 3 e308 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 1
+ec10 3 f090 d e308 0 fca8 fc10
+d fc20 e308 3 fc10 0 fde8 eca0
+e308 5 ec10 1 f1e0 fc10 d e308
+0 fca0 fc10 2 fc20 e308 edd0 0
+e308 1 fca0 fc10 4 e308 2 ec10
+1 f1e0 fc10 3 e308 3 ec10 1
+f1e0 fc10 2 e308 4 ec10 1 f1e0
+fc10 1 e308 d fc20 ea87 0 ec10
+1b39 e302 0 fde8 eca0 ea88 e390 1b30
+ea87 0 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 3 e308 1
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 ec10 3 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 0 fde8
+eca0 e308 5 ec10 1 f1e0 fc10 d
+e308 0 fca0 fc10 2 fc20 e308 edd0
+0 e308 1 fca0 fc10 4 e308 2
+ec10 1 f1e0 fc10 3 e308 3 ec10
+1 f1e0 fc10 2 e308 4 ec10 1
+f1e0 fc10 1 e308 d fc20 ea87 0
+ec10 1b9a e302 0 fde8 eca0 ea88 e390
+1b91 ea87 0 ec10 2 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 3 e308
+1 ec10 3 f0a0 fc10 0 fde8 eca0
+e308 5 ec10 1 f1e0 fc10 d e308
+0 fca0 fc10 2 fc20 e308 edd0 0
+e308 1 fca0 fc10 4 e308 2 ec10
+1 f1e0 fc10 3 e308 3 ec10 1
+f1e0 fc10 2 e308 4 ec10 1 f1e0
+fc10 1 e308 d fc20 ea87 0 ec10
+1be9 e302 0 fde8 eca0 ea88 e390 1be0
+ea87 0 ec10 2 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 3 e308 0
+ec10 3 f0a0 fc10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 0 ec10 1c38
+e302 0 fde8 eca0 ea88 e390 1c2f ea87
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 3 e308 3 fc10
+0 fde8 eca0 e308 1c78 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 1 e090 0 f1d0
+2 e308 0 fc10 1 e308 235d ea87
+0 fca8 fc10 82 e308 0 ec10 0
+fde8 eca0 e308 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+1 ec10 1cbb e302 0 fde8 eca0 ea88
+e390 1cb2 ea87 0 ec10 2 f0a0 fc10
+0 fde8 eca0 e308 0 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+0 ec10 0 fde8 eca0 e308 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 1d0b
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 1
+e090 0 f1d0 2 e308 0 fc10 1
+e308 1bde ea87 0 fca8 fc10 eca0 f4d0
+1d17 e302 0 fca0 ea88 1d1a ea87 0
+fca0 efc8 0 fca0 fc10 1d22 e302 ea90
+1d23 ea87 efd0 0 fca0 e308 0 fca0
+fc10 1d2e e302 ea90 1d2f ea87 efd0 0
+fca0 e308 0 fca0 fc10 1d7a e301 0
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+1d6c ec10 0 fde8 eca0 e308 1 fc10
+0 fde8 eca0 e308 2 fc10 0 fde8
+eca0 e308 3 fc10 0 fde8 eca0 e308
+4 fc10 0 fde8 eca0 e308 5 ec10
+1 e090 0 f1d0 2 e308 0 fc10
+1 e308 1bde ea87 0 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+1cd0 ea87 0 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+100 ec10 0 e308 400 ec10 1 e308
+800 ec10 2 e308 1000 ec10 3 e308
+2000 ec10 4 e308 0 ec10 1dcf e302
+0 fde8 eca0 ea88 e390 1dc6 ea87 0
+ec10 0 fde8 eca0 e308 0 fca8 fc10
+84 e308 800 ec10 0 fde8 eca0 e308
+0 fca8 fc10 85 e308 85 fc10 0
+fde8 eca0 e308 0 ec10 0 fde8 eca0
+e308 1e1d ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 2 e090 0 f1d0 2 e308 0
+fc10 1 e308 1ef7 ea87 0 fca8 fc10
+82 e308 1 ec10 0 fde8 eca0 e308
+85 fc10 0 fde8 eca0 e308 0 fca8
+fc10 eca0 f088 3860 ec10 0 fde8 eca0
+e308 1e65 ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 2 e090 0 f1d0 2 e308 0
+fc10 1 e308 1ef7 ea87 0 fca8 fc10
+82 e308 0 ec10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 0 ec10 1ea8
+e302 0 fde8 eca0 ea88 e390 1e9f ea87
+84 fc10 0 fde8 eca0 e308 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f088 0 fca8 fc10 4
+e308 0 ec10 4 f0a0 fc10 0 fde8
+eca0 e308 5 ec10 1 f1e0 fc10 d
+e308 0 fca0 fc10 2 fc20 e308 edd0
+0 e308 1 fca0 fc10 4 e308 2
+ec10 1 f1e0 fc10 3 e308 3 ec10
+1 f1e0 fc10 2 e308 4 ec10 1
+f1e0 fc10 1 e308 d fc20 ea87 0
+ec10 1f02 e302 0 fde8 eca0 ea88 e390
+1ef9 ea87 84 fc10 0 fde8 eca0 e308
+0 ec10 2 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f088 1 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 82 e308 0 fca8 fc10 4
+e308 82 fc10 0 fde8 eca0 e308 0
+ec10 4 f090 d e308 0 fca8 fc10
+d fc20 e308 0 ec10 0 fde8 eca0
+e308 5 ec10 1 f1e0 fc10 d e308
+0 fca0 fc10 2 fc20 e308 edd0 0
+e308 1 fca0 fc10 4 e308 2 ec10
+1 f1e0 fc10 3 e308 3 ec10 1
+f1e0 fc10 2 e308 4 ec10 1 f1e0
+fc10 1 e308 d fc20 ea87 4 ec10
+1f79 e302 0 fde8 eca0 ea88 e390 1f70
+ea87 85 fc10 0 fde8 eca0 e308 3
+ec10 1 f090 d e308 0 fca8 fc10
+d fc20 e308 1 ec10 0 fde8 eca0
+e308 3 ec10 1 f0a0 fc10 0 fde8
+eca0 e308 0 fca8 fc10 eca0 f088 1fcb
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 1
+e090 0 f1d0 2 e308 0 fc10 1
+e308 1e9d ea87 1 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 2
+ec10 0 fde8 eca0 e308 0 ec10 2
+f0a0 fc10 0 fde8 eca0 e308 1 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4c8 0 fca8 fc10 eca0
+f4c8 2 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 0 ec10 0
+fde8 eca0 e308 2 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f4d0 2020 e304 0 fca0 ea88 2023 ea87
+0 fca0 efc8 0 fca0 fc10 202b e302
+ea90 202c ea87 efd0 0 fca0 e308 0
+fca0 fc10 20f1 e301 3 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 2069 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 1 e090 0
+f1d0 2 e308 0 fc10 1 e308 1e9d
+ea87 3 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 1 ec10 0
+fde8 eca0 e308 3 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f088 20b5 ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 1 e090 0 f1d0 2 e308 0
+fc10 1 e308 1e9d ea87 1 ec10 1
+f090 d e308 0 fca8 fc10 d fc20
+e308 2 ec10 0 fde8 eca0 e308 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+1 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4c8 0 fca8
+fc10 eca0 f4c8 2 ec10 1 f090 d
+e308 0 fca8 fc10 d fc20 e308 2005
+ea87 1 ec10 0 fde8 eca0 e308 85
+fc10 0 fde8 eca0 e308 0 fca8 fc10
+eca0 f088 2 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 2137 ec10 0 fde8 eca0
+e308 1 fc10 0 fde8 eca0 e308 2
+fc10 0 fde8 eca0 e308 3 fc10 0
+fde8 eca0 e308 4 fc10 0 fde8 eca0
+e308 5 ec10 2 e090 0 f1d0 2
+e308 0 fc10 1 e308 1ef7 ea87 0
+fca8 fc10 82 e308 2 ec10 0 fde8
+eca0 e308 2 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 3 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 0 fca8 fc10 eca0
+f088 0 fca8 fc10 eca0 f088 0 ec10
+1 f090 d e308 0 fca8 fc10 d
+fc20 e308 1 ec10 0 fde8 eca0 e308
+0 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 0 fca8 fc10 eca0 f4c8 0 ec10
+2 f0a0 fc10 0 fde8 eca0 e308 21b3
+ec10 0 fde8 eca0 e308 1 fc10 0
+fde8 eca0 e308 2 fc10 0 fde8 eca0
+e308 3 fc10 0 fde8 eca0 e308 4
+fc10 0 fde8 eca0 e308 5 ec10 2
+e090 0 f1d0 2 e308 0 fc10 1
+e308 1ef7 ea87 0 fca8 fc10 82 e308
+2 ec10 0 fde8 eca0 e308 0 ec10
+1 f0a0 fc10 0 fde8 eca0 e308 0
+fca8 fc10 eca0 f4c8 0 ec10 0 fde8
+eca0 e308 21fe ec10 0 fde8 eca0 e308
+1 fc10 0 fde8 eca0 e308 2 fc10
+0 fde8 eca0 e308 3 fc10 0 fde8
+eca0 e308 4 fc10 0 fde8 eca0 e308
+5 ec10 2 e090 0 f1d0 2 e308
+0 fc10 1 e308 1ef7 ea87 0 fca8
+fc10 82 e308 0 ec10 1 f0a0 fc10
+0 fde8 eca0 e308 5 ec10 1 f1e0
+fc10 d e308 0 fca0 fc10 2 fc20
+e308 edd0 0 e308 1 fca0 fc10 4
+e308 2 ec10 1 f1e0 fc10 3 e308
+3 ec10 1 f1e0 fc10 2 e308 4
+ec10 1 f1e0 fc10 1 e308 d fc20
+ea87 6 ec10 2244 e302 0 fde8 eca0
+ea88 e390 223b ea87 85 fc10 0 fde8
+eca0 e308 0 ec10 1 f090 d e308
+0 fca8 fc10 d fc20 e308 85 fc10
+0 fde8 eca0 e308 2288 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 1 e090 0 f1d0
+2 e308 0 fc10 1 e308 1e9d ea87
+1 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 0 fde8
+eca0 e308 1 ec10 1 f0a0 fc10 0
+fde8 eca0 e308 0 fca8 fc10 eca0 f4d0
+22af e302 0 fca0 ea88 22b2 ea87 0
+fca0 efc8 0 fca0 fc10 22ba e302 ea90
+22bb ea87 efd0 0 fca0 e308 0 fca0
+fc10 22c6 e302 ea90 22c7 ea87 efd0 0
+fca0 e308 0 fca0 fc10 2327 e301 1
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+0 ec10 1 f090 d e308 0 fca8
+fc10 d fc20 e308 0 ec10 1 f0a0
+fc10 0 fde8 eca0 e308 2319 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 1 e090 0
+f1d0 2 e308 0 fc10 1 e308 1e9d
+ea87 1 ec10 1 f090 d e308 0
+fca8 fc10 d fc20 e308 2294 ea87 0
+ec10 1 f0a0 fc10 0 fde8 eca0 e308
+5 ec10 1 f1e0 fc10 d e308 0
+fca0 fc10 2 fc20 e308 edd0 0 e308
+1 fca0 fc10 4 e308 2 ec10 1
+f1e0 fc10 3 e308 3 ec10 1 f1e0
+fc10 2 e308 4 ec10 1 f1e0 fc10
+1 e308 d fc20 ea87 b ec10 2368
+e302 0 fde8 eca0 ea88 e390 235f ea87
+2394 ec10 0 fde8 eca0 e308 1 fc10
+0 fde8 eca0 e308 2 fc10 0 fde8
+eca0 e308 3 fc10 0 fde8 eca0 e308
+4 fc10 0 fde8 eca0 e308 5 ec10
+0 e090 0 f1d0 2 e308 0 fc10
+1 e308 2239 ea87 0 ec10 1 f090
+d e308 0 fca8 fc10 d fc20 e308
+0 ec10 1 f0a0 fc10 0 fde8 eca0
+e308 2 ec10 0 fde8 eca0 e308 0
+ec10 2 f0a0 fc10 0 fde8 eca0 e308
+0 fca8 fc10 eca0 f4c8 23e9 ec10 0
+fde8 eca0 e308 1 fc10 0 fde8 eca0
+e308 2 fc10 0 fde8 eca0 e308 3
+fc10 0 fde8 eca0 e308 4 fc10 0
+fde8 eca0 e308 5 ec10 2 e090 0
+f1d0 2 e308 0 fc10 1 e308 1ef7
+ea87 0 fca8 fc10 82 e308 0 ec10
+0 fde8 eca0 e308 5 ec10 1 f1e0
+fc10 d e308 0 fca0 fc10 2 fc20
+e308 edd0 0 e308 1 fca0 fc10 4
+e308 2 ec10 1 f1e0 fc10 3 e308
+3 ec10 1 f1e0 fc10 2 e308 4
+ec10 1 f1e0 fc10 1 e308 d fc20
+ea87 100 ec10 0 e308 400 ec10 1
+e308 800 ec10 2 e308 1000 ec10 3
+e308 2000 ec10 4 e308 0 ec10 2440
+e302 0 fde8 eca0 ea88 e390 2437 ea87
+246c ec10 0 fde8 eca0 e308 1 fc10
+0 fde8 eca0 e308 2 fc10 0 fde8
+eca0 e308 3 fc10 0 fde8 eca0 e308
+4 fc10 0 fde8 eca0 e308 5 ec10
+0 e090 0 f1d0 2 e308 0 fc10
+1 e308 1dc4 ea87 0 fca8 fc10 82
+e308 249d ec10 0 fde8 eca0 e308 1
+fc10 0 fde8 eca0 e308 2 fc10 0
+fde8 eca0 e308 3 fc10 0 fde8 eca0
+e308 4 fc10 0 fde8 eca0 e308 5
+ec10 0 e090 0 f1d0 2 e308 0
+fc10 1 e308 56 ea87 0 fca8 fc10
+82 e308 f ec10 0 fde8 eca0 e308
+f ec10 0 fde8 eca0 e308 5 ec10
+0 fde8 eca0 e308 24e0 ec10 0 fde8
+eca0 e308 1 fc10 0 fde8 eca0 e308
+2 fc10 0 fde8 eca0 e308 3 fc10
+0 fde8 eca0 e308 4 fc10 0 fde8
+eca0 e308 5 ec10 3 e090 0 f1d0
+2 e308 0 fc10 1 e308 634 ea87
+0 fca8 fc10 82 e308 0 ec10 0
+fde8 eca0 e308 5 ec10 1 f1e0 fc10
+d e308 0 fca0 fc10 2 fc20 e308
+edd0 0 e308 1 fca0 fc10 4 e308
+2 ec10 1 f1e0 fc10 3 e308 3
+ec10 1 f1e0 fc10 2 e308 4 ec10
+1 f1e0 fc10 1 e308 d fc20 ea87
+100 ec10 0 e308 400 ec10 1 e308
+800 ec10 2 e308 1000 ec10 3 e308
+2000 ec10 4 e308 252c ea87
 </a>
     </comp>
-    <comp loc="(990,600)" name="32x32 GPU"/>
-    <comp lib="5" loc="(330,690)" name="Keyboard"/>
-    <comp lib="0" loc="(60,320)" name="Constant"/>
+    <comp lib="5" loc="(990,530)" name="DotMatrix">
+      <a name="matrixcols" val="32"/>
+      <a name="matrixrows" val="32"/>
+    </comp>
     <comp lib="1" loc="(200,460)" name="OR Gate">
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="2" loc="(140,500)" name="Multiplexer">
-      <a name="facing" val="north"/>
-      <a name="selloc" val="tr"/>
-      <a name="width" val="16"/>
-      <a name="enable" val="false"/>
-    </comp>
     <comp loc="(500,320)" name="CPU"/>
-    <comp lib="5" loc="(990,530)" name="DotMatrix">
-      <a name="matrixcols" val="32"/>
-      <a name="matrixrows" val="32"/>
-    </comp>
   </circuit>
   <circuit name="STORE DECODER">
     <a name="circuit" val="STORE DECODER"/>
@@ -1040,22 +2160,20 @@ ea87
     <wire from="(510,290)" to="(510,320)"/>
     <wire from="(480,300)" to="(480,360)"/>
     <wire from="(250,300)" to="(480,300)"/>
-    <comp lib="1" loc="(660,270)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(950,350)" name="Pin">
+    <comp lib="0" loc="(950,310)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="M"/>
+      <a name="label" val="D"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(660,350)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+    <comp lib="0" loc="(230,310)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="bit0" val="2"/>
+      <a name="bit2" val="0"/>
     </comp>
-    <comp lib="1" loc="(660,310)" name="AND Gate">
+    <comp lib="1" loc="(660,350)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
@@ -1066,18 +2184,17 @@ ea87
       <a name="label" val="A"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(230,310)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-      <a name="bit0" val="2"/>
-      <a name="bit2" val="0"/>
-    </comp>
-    <comp lib="0" loc="(950,310)" name="Pin">
+    <comp lib="0" loc="(950,350)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
+      <a name="label" val="M"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(210,310)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DIN"/>
     </comp>
     <comp lib="0" loc="(540,180)" name="Pin">
       <a name="facing" val="south"/>
@@ -1085,10 +2202,13 @@ ea87
       <a name="label" val="C"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(210,310)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DIN"/>
+    <comp lib="1" loc="(660,270)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(660,310)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="GPU ADDRESS DECODE">
@@ -1131,6 +2251,10 @@ ea87
     <wire from="(560,360)" to="(690,360)"/>
     <wire from="(610,280)" to="(690,280)"/>
     <wire from="(560,280)" to="(570,280)"/>
+    <comp lib="0" loc="(150,380)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
     <comp lib="0" loc="(1100,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -1139,23 +2263,16 @@ ea87
       <a name="label" val="ADDR"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(1100,370)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="1" loc="(720,370)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(610,280)" name="Bit Extender">
-      <a name="in_width" val="1"/>
-      <a name="out_width" val="6"/>
-      <a name="type" val="input"/>
-    </comp>
-    <comp lib="0" loc="(150,340)" name="Pin">
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
-    </comp>
-    <comp lib="1" loc="(500,280)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="9"/>
     </comp>
     <comp lib="0" loc="(340,330)" name="Splitter">
       <a name="fanout" val="10"/>
@@ -1175,21 +2292,24 @@ ea87
       <a name="bit13" val="8"/>
       <a name="bit14" val="9"/>
     </comp>
-    <comp lib="0" loc="(1100,370)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(610,280)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="6"/>
+      <a name="type" val="input"/>
     </comp>
     <comp lib="1" loc="(720,270)" name="AND Gate">
       <a name="width" val="6"/>
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(150,380)" name="Pin">
+    <comp lib="0" loc="(150,340)" name="Pin">
+      <a name="width" val="15"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
+      <a name="label" val="ADDR"/>
+    </comp>
+    <comp lib="1" loc="(500,280)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="9"/>
     </comp>
   </circuit>
   <circuit name="2-ROW GPU">
@@ -1247,20 +2367,9 @@ ea87
       <a name="label" val="CLR"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="4" loc="(580,450)" name="Register">
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="0" loc="(680,200)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 1"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(210,400)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
+    <comp lib="2" loc="(410,650)" name="Demultiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(210,480)" name="Pin">
       <a name="tristate" val="false"/>
@@ -1274,21 +2383,32 @@ ea87
       <a name="label" val="ROW 0"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(270,310)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DIN"/>
-    </comp>
-    <comp lib="4" loc="(660,450)" name="Register">
-      <a name="width" val="16"/>
-    </comp>
     <comp lib="0" loc="(210,360)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="ADDR"/>
     </comp>
-    <comp lib="2" loc="(410,650)" name="Demultiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
+    <comp lib="0" loc="(210,400)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
+    <comp lib="4" loc="(660,450)" name="Register">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(680,200)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(580,450)" name="Register">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(270,310)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DIN"/>
     </comp>
   </circuit>
   <circuit name="4-ROW GPU">
@@ -1358,7 +2478,22 @@ ea87
     <wire from="(480,150)" to="(560,150)"/>
     <wire from="(540,330)" to="(540,380)"/>
     <wire from="(210,420)" to="(410,420)"/>
-    <comp loc="(470,360)" name="2-ROW GPU"/>
+    <comp lib="0" loc="(230,300)" name="Splitter">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp loc="(610,360)" name="2-ROW GPU"/>
+    <comp lib="0" loc="(740,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
     <comp lib="0" loc="(470,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -1366,6 +2501,23 @@ ea87
       <a name="tristate" val="false"/>
       <a name="label" val="ROW 0"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(650,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(270,240)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DIN"/>
+    </comp>
+    <comp lib="0" loc="(210,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
     </comp>
     <comp lib="2" loc="(270,490)" name="Demultiplexer">
       <a name="selloc" val="tr"/>
@@ -1385,44 +2537,12 @@ ea87
       <a name="label" val="CLR"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(740,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(270,240)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DIN"/>
-    </comp>
-    <comp loc="(610,360)" name="2-ROW GPU"/>
-    <comp lib="0" loc="(210,420)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(210,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
-    </comp>
-    <comp lib="0" loc="(650,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(210,300)" name="Pin">
       <a name="width" val="2"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ADDR"/>
     </comp>
-    <comp lib="0" loc="(230,300)" name="Splitter">
-      <a name="facing" val="south"/>
-    </comp>
+    <comp loc="(470,360)" name="2-ROW GPU"/>
   </circuit>
   <circuit name="8-ROW GPU">
     <a name="circuit" val="8-ROW GPU"/>
@@ -1507,37 +2627,12 @@ ea87
     <wire from="(210,420)" to="(410,420)"/>
     <wire from="(610,180)" to="(610,360)"/>
     <wire from="(640,210)" to="(1100,210)"/>
-    <comp lib="0" loc="(210,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
-    </comp>
-    <comp lib="0" loc="(650,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(920,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ROW 5"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(270,240)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DIN"/>
-    </comp>
-    <comp lib="0" loc="(560,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 1"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(740,120)" name="Pin">
@@ -1548,9 +2643,60 @@ ea87
       <a name="label" val="ROW 3"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="0" loc="(210,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
+    <comp lib="0" loc="(210,300)" name="Pin">
+      <a name="width" val="3"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDR"/>
+    </comp>
+    <comp lib="0" loc="(480,490)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLR"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1010,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 6"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(270,240)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DIN"/>
+    </comp>
+    <comp lib="0" loc="(650,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(210,420)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(230,300)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="3"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="1"/>
+    </comp>
+    <comp loc="(470,360)" name="4-ROW GPU"/>
+    <comp lib="0" loc="(830,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 4"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1100,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -1565,25 +2711,13 @@ ea87
       <a name="enable" val="false"/>
     </comp>
     <comp loc="(610,360)" name="4-ROW GPU"/>
-    <comp loc="(470,360)" name="4-ROW GPU"/>
-    <comp lib="0" loc="(1010,120)" name="Pin">
+    <comp lib="0" loc="(560,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 6"/>
+      <a name="label" val="ROW 1"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(480,490)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLR"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(210,300)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
     </comp>
     <comp lib="0" loc="(470,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -1592,20 +2726,6 @@ ea87
       <a name="tristate" val="false"/>
       <a name="label" val="ROW 0"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(830,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 4"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(230,300)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="3"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="1"/>
     </comp>
   </circuit>
   <circuit name="16-ROW GPU">
@@ -1723,121 +2843,6 @@ ea87
     <wire from="(1730,120)" to="(1730,280)"/>
     <wire from="(210,420)" to="(410,420)"/>
     <wire from="(1280,120)" to="(1280,230)"/>
-    <comp lib="0" loc="(210,300)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
-    </comp>
-    <comp lib="0" loc="(650,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(740,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(920,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 5"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(560,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 1"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1550,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 12"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1370,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 10"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(210,420)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1100,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 7"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp loc="(470,360)" name="8-ROW GPU"/>
-    <comp lib="0" loc="(210,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
-    </comp>
-    <comp lib="0" loc="(1640,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 13"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1190,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 8"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1280,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 9"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(500,490)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLR"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(230,300)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="4"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1010,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 6"/>
-      <a name="labelloc" val="north"/>
-    </comp>
     <comp lib="0" loc="(1460,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -1854,10 +2859,105 @@ ea87
       <a name="label" val="ROW 15"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="0" loc="(740,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(270,240)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DIN"/>
+    </comp>
+    <comp lib="0" loc="(210,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
+    <comp lib="0" loc="(210,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(470,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1190,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 8"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(830,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 4"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1280,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 9"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(920,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 5"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1550,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 12"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1100,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 7"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1640,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 13"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1370,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 10"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(230,300)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="4"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="1"/>
     </comp>
     <comp lib="0" loc="(1730,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -1867,25 +2967,45 @@ ea87
       <a name="label" val="ROW 14"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="0" loc="(500,490)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLR"/>
+      <a name="labelloc" val="south"/>
+    </comp>
     <comp loc="(610,360)" name="8-ROW GPU"/>
-    <comp lib="0" loc="(830,120)" name="Pin">
+    <comp loc="(470,360)" name="8-ROW GPU"/>
+    <comp lib="0" loc="(650,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 4"/>
+      <a name="label" val="ROW 2"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,300)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDR"/>
     </comp>
     <comp lib="2" loc="(270,490)" name="Demultiplexer">
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(470,120)" name="Pin">
+    <comp lib="0" loc="(560,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 0"/>
+      <a name="label" val="ROW 1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1010,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 6"/>
       <a name="labelloc" val="north"/>
     </comp>
   </circuit>
@@ -2069,208 +3189,24 @@ ea87
     <wire from="(1970,390)" to="(1970,490)"/>
     <wire from="(1910,150)" to="(2000,150)"/>
     <wire from="(2540,120)" to="(2540,210)"/>
-    <comp loc="(470,360)" name="16-ROW GPU"/>
-    <comp lib="0" loc="(470,120)" name="Pin">
+    <comp lib="0" loc="(920,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 0"/>
+      <a name="label" val="ROW 5"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(560,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 1"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(540,500)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLR"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="0" loc="(2360,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 21"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2810,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 26"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2180,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 19"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1460,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 11"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(210,390)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
     </comp>
     <comp lib="2" loc="(270,490)" name="Demultiplexer">
       <a name="selloc" val="tr"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(210,300)" name="Pin">
-      <a name="width" val="5"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
-    </comp>
-    <comp lib="0" loc="(1280,120)" name="Pin">
+    <comp lib="0" loc="(3080,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 9"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1190,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 8"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2990,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 28"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1010,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 6"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2900,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 27"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1100,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 7"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(740,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(830,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 4"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1370,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 10"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2090,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 18"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(3170,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 30"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1730,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 14"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2540,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 23"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2720,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 25"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2450,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 22"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1640,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 13"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(3260,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 31"/>
+      <a name="label" val="ROW 29"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1550,120)" name="Pin">
@@ -2281,38 +3217,69 @@ ea87
       <a name="label" val="ROW 12"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(920,120)" name="Pin">
+    <comp lib="0" loc="(2990,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 5"/>
+      <a name="label" val="ROW 28"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(230,300)" name="Splitter">
+    <comp lib="0" loc="(1280,120)" name="Pin">
       <a name="facing" val="south"/>
-      <a name="incoming" val="5"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="1"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 9"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(270,240)" name="Pin">
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="DIN"/>
     </comp>
-    <comp lib="0" loc="(210,420)" name="Pin">
+    <comp lib="0" loc="(2000,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
+      <a name="label" val="ROW 17"/>
+      <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(1900,340)" name="16-ROW GPU"/>
+    <comp lib="0" loc="(210,390)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
+    <comp lib="0" loc="(560,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(1910,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ROW 16"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(830,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 4"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2720,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 25"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(2630,120)" name="Pin">
@@ -2323,36 +3290,28 @@ ea87
       <a name="label" val="ROW 24"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2270,120)" name="Pin">
+    <comp lib="0" loc="(2810,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 20"/>
+      <a name="label" val="ROW 26"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2000,120)" name="Pin">
+    <comp lib="0" loc="(1730,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 17"/>
+      <a name="label" val="ROW 14"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(650,120)" name="Pin">
+    <comp lib="0" loc="(2090,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="16"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(3080,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 29"/>
+      <a name="label" val="ROW 18"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1820,120)" name="Pin">
@@ -2363,6 +3322,167 @@ ea87
       <a name="label" val="ROW 15"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="0" loc="(230,300)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="5"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1010,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 6"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(3170,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 30"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1100,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 7"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(470,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 0"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,420)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(540,500)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLR"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(1460,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 11"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(210,300)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDR"/>
+    </comp>
+    <comp lib="0" loc="(1190,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 8"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1370,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 10"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2180,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 19"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2270,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 20"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2900,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 27"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1640,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 13"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(650,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(3260,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 31"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2540,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 23"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(740,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2360,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 21"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2450,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 22"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(1900,340)" name="16-ROW GPU"/>
+    <comp loc="(470,360)" name="16-ROW GPU"/>
   </circuit>
   <circuit name="32x32 GPU">
     <a name="circuit" val="32x32 GPU"/>
@@ -2613,111 +3733,6 @@ ea87
     <wire from="(130,490)" to="(650,490)"/>
     <wire from="(2270,420)" to="(2560,420)"/>
     <wire from="(2450,120)" to="(2450,400)"/>
-    <comp lib="0" loc="(2740,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1150,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(2600,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
     <comp lib="0" loc="(2990,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -2726,7 +3741,58 @@ ea87
       <a name="label" val="ROW 28"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1330,450)" name="Splitter">
+    <comp lib="0" loc="(1290,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(2180,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 19"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1460,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 11"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1190,450)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -2769,155 +3835,30 @@ ea87
       <a name="label" val="ROW 21"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2540,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1350,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(2700,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(2500,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1460,120)" name="Pin">
+    <comp loc="(2490,520)" name="32-ROW GPU"/>
+    <comp lib="0" loc="(1640,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 11"/>
+      <a name="label" val="ROW 13"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2660,460)" name="Splitter">
+    <comp lib="0" loc="(1210,750)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="CLR"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(2900,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 27"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2620,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -2952,12 +3893,17 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(2720,120)" name="Pin">
+    <comp lib="0" loc="(100,410)" name="Pin">
+      <a name="width" val="6"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ADDR"/>
+    </comp>
+    <comp lib="0" loc="(1910,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 25"/>
+      <a name="label" val="ROW 16"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1050,450)" name="Splitter">
@@ -2995,15 +3941,7 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(2270,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 20"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1130,450)" name="Splitter">
+    <comp lib="0" loc="(2540,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3038,23 +3976,31 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(2630,120)" name="Pin">
+    <comp lib="0" loc="(1010,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 24"/>
+      <a name="label" val="ROW 6"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2180,120)" name="Pin">
+    <comp lib="0" loc="(920,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 19"/>
+      <a name="label" val="ROW 5"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1070,450)" name="Splitter">
+    <comp lib="0" loc="(1190,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 8"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1150,450)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3089,7 +4035,7 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(1210,450)" name="Splitter">
+    <comp lib="0" loc="(1330,450)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3123,8 +4069,94 @@ ea87
       <a name="bit29" val="1"/>
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(470,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 0"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(2520,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1280,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 9"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2600,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1070,450)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3194,23 +4226,15 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(1190,120)" name="Pin">
+    <comp lib="0" loc="(2270,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 8"/>
+      <a name="label" val="ROW 20"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(1730,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 14"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1270,450)" name="Splitter">
+    <comp lib="0" loc="(2720,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3245,15 +4269,58 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(560,120)" name="Pin">
+    <comp lib="0" loc="(2720,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 1"/>
+      <a name="label" val="ROW 25"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2620,460)" name="Splitter">
+    <comp lib="0" loc="(2540,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 23"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1310,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(2680,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3296,12 +4363,68 @@ ea87
       <a name="label" val="ROW 12"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2900,120)" name="Pin">
+    <comp lib="0" loc="(2560,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1730,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 27"/>
+      <a name="label" val="ROW 14"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(100,500)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="WRT"/>
+    </comp>
+    <comp lib="0" loc="(3170,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 30"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(1060,530)" name="32-ROW GPU"/>
+    <comp lib="0" loc="(3260,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 31"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(1170,450)" name="Splitter">
@@ -3339,19 +4462,7 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(100,530)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(1640,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 13"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1290,450)" name="Splitter">
+    <comp lib="0" loc="(2480,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3386,8 +4497,15 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp loc="(2490,520)" name="32-ROW GPU"/>
-    <comp lib="0" loc="(2760,460)" name="Splitter">
+    <comp lib="0" loc="(650,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 2"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1130,450)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3457,7 +4575,23 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(2720,460)" name="Splitter">
+    <comp lib="0" loc="(3080,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 29"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1100,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 7"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2700,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3492,9 +4626,369 @@ ea87
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
     </comp>
-    <comp lib="0" loc="(100,500)" name="Pin">
+    <comp lib="0" loc="(100,530)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="WRT"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(2630,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 24"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1270,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(2810,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 26"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(560,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(1250,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(160,350)" name="Pin">
+      <a name="width" val="16"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DIN"/>
+    </comp>
+    <comp lib="0" loc="(2660,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1210,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(2760,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1820,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 15"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2740,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(2780,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1370,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="ROW 10"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(2640,460)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1090,450)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
     </comp>
     <comp lib="0" loc="(2580,460)" name="Splitter">
       <a name="facing" val="south"/>
@@ -3540,295 +5034,13 @@ ea87
       <a name="bit4" val="0"/>
       <a name="bit5" val="1"/>
     </comp>
-    <comp lib="0" loc="(2640,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1100,120)" name="Pin">
+    <comp lib="0" loc="(2000,120)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="ROW 7"/>
+      <a name="label" val="ROW 17"/>
       <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1910,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 16"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1370,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 10"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(100,410)" name="Pin">
-      <a name="width" val="6"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ADDR"/>
-    </comp>
-    <comp lib="0" loc="(2480,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1250,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(2560,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(3260,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 31"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2780,460)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1820,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 15"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1090,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(1190,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
     </comp>
     <comp lib="0" loc="(2090,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -3838,22 +5050,40 @@ ea87
       <a name="label" val="ROW 18"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(1060,530)" name="32-ROW GPU"/>
-    <comp lib="0" loc="(1010,120)" name="Pin">
+    <comp lib="0" loc="(1350,450)" name="Splitter">
       <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 6"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2540,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 23"/>
-      <a name="labelloc" val="north"/>
+      <a name="incoming" val="32"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="0"/>
+      <a name="bit5" val="0"/>
+      <a name="bit6" val="0"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="0"/>
+      <a name="bit9" val="0"/>
+      <a name="bit10" val="0"/>
+      <a name="bit11" val="0"/>
+      <a name="bit12" val="0"/>
+      <a name="bit13" val="0"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit16" val="1"/>
+      <a name="bit17" val="1"/>
+      <a name="bit18" val="1"/>
+      <a name="bit19" val="1"/>
+      <a name="bit20" val="1"/>
+      <a name="bit21" val="1"/>
+      <a name="bit22" val="1"/>
+      <a name="bit23" val="1"/>
+      <a name="bit24" val="1"/>
+      <a name="bit25" val="1"/>
+      <a name="bit26" val="1"/>
+      <a name="bit27" val="1"/>
+      <a name="bit28" val="1"/>
+      <a name="bit29" val="1"/>
+      <a name="bit30" val="1"/>
+      <a name="bit31" val="1"/>
     </comp>
     <comp lib="0" loc="(2450,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -3871,7 +5101,7 @@ ea87
       <a name="label" val="ROW 4"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(2680,460)" name="Splitter">
+    <comp lib="0" loc="(2500,460)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="incoming" val="32"/>
       <a name="bit1" val="0"/>
@@ -3905,6 +5135,10 @@ ea87
       <a name="bit29" val="1"/>
       <a name="bit30" val="1"/>
       <a name="bit31" val="1"/>
+    </comp>
+    <comp lib="2" loc="(630,670)" name="Demultiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(740,120)" name="Pin">
       <a name="facing" val="south"/>
@@ -3912,120 +5146,6 @@ ea87
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ROW 3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(650,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 2"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(160,350)" name="Pin">
-      <a name="width" val="16"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="DIN"/>
-    </comp>
-    <comp lib="0" loc="(1310,450)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="incoming" val="32"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(3080,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 29"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1210,750)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="CLR"/>
-      <a name="labelloc" val="south"/>
-    </comp>
-    <comp lib="2" loc="(630,670)" name="Demultiplexer">
-      <a name="selloc" val="tr"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(2000,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 17"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1280,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 9"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(920,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 5"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(3170,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 30"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(470,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 0"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(2810,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="ROW 26"/>
       <a name="labelloc" val="north"/>
     </comp>
   </circuit>
@@ -4066,14 +5186,9 @@ ea87
     <wire from="(360,260)" to="(400,260)"/>
     <wire from="(360,270)" to="(400,270)"/>
     <wire from="(360,280)" to="(400,280)"/>
-    <comp lib="1" loc="(360,250)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(360,240)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(360,270)" name="NOT Gate">
-      <a name="size" val="20"/>
+    <comp lib="0" loc="(280,380)" name="Splitter">
+      <a name="fanout" val="15"/>
+      <a name="incoming" val="15"/>
     </comp>
     <comp lib="0" loc="(530,300)" name="Pin">
       <a name="facing" val="west"/>
@@ -4082,29 +5197,34 @@ ea87
       <a name="label" val="OUT"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(360,290)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="0" loc="(280,380)" name="Splitter">
-      <a name="fanout" val="15"/>
-      <a name="incoming" val="15"/>
-    </comp>
-    <comp lib="1" loc="(360,280)" name="NOT Gate">
+    <comp lib="1" loc="(360,250)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(430,300)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="15"/>
     </comp>
+    <comp lib="1" loc="(360,240)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(360,230)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
     <comp lib="0" loc="(240,380)" name="Pin">
       <a name="width" val="15"/>
       <a name="tristate" val="false"/>
       <a name="label" val="ADDR"/>
     </comp>
+    <comp lib="1" loc="(360,270)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(360,290)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
     <comp lib="1" loc="(360,260)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="1" loc="(360,230)" name="NOT Gate">
+    <comp lib="1" loc="(360,280)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
   </circuit>

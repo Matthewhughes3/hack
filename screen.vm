@@ -1,0 +1,10 @@
+push constant 32767
+pop pointer 0
+push constant 32767
+push constant 32767
+push constant 1
+add
+add
+pop this 0
+label end
+goto end

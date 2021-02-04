@@ -1,0 +1,70 @@
+//INITIALIZE BASE ADDRESSES
+@256
+D=A
+@SP
+M=D
+@1024
+D=A
+@LCL
+M=D
+@2048
+D=A
+@ARG
+M=D
+@4096
+D=A
+@THIS
+M=D
+@8192
+D=A
+@THAT
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// not
+@SP
+A=M-1
+D=M
+@FALSE2
+D; JEQ
+D=0
+@ENDNOT2
+0; JMP
+(FALSE2)
+D=1
+(ENDNOT2)
+@SP
+A=M-1
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// not
+@SP
+A=M-1
+D=M
+@FALSE4
+D; JEQ
+D=0
+@ENDNOT4
+0; JMP
+(FALSE4)
+D=1
+(ENDNOT4)
+@SP
+A=M-1
+M=D
+// label END
+(END)
+// goto END
+@END
+0; JMP

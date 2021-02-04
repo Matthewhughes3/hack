@@ -1,0 +1,21 @@
+class Main {
+    function void main() {
+        do Memory.init();
+        do Screen.init();
+
+        var Link l1, l2, l3;
+
+        let l1 = Link.new(2);
+        let l2 = Link.new(3);
+        let l3 = Link.new(4);
+
+        do l1.link(l2);
+        do l2.link(l3);
+
+        let l1 = l1.getTail();
+
+        do Screen.drawCircle(15, 15, 12);
+        do Screen.drawLine(0, 0, 31, 31);
+        return l1.getValue();
+    }
+}

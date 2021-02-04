@@ -1,0 +1,141 @@
+class Screen {
+    static int screenBase;
+    static int screenWordWidth;
+    static bool color;
+
+    function void init() {
+        let screenBase = 32704;
+        let screenWordWidth = 64;
+        let color = true;
+        return;
+    }
+
+    function void setColor(bool c) {
+        let color = c;
+        return;
+    }
+
+    function void drawPixel(int x, int y) {
+        var int oldValue, sb, value;
+        let sb = screenBase + x + x;
+        if(y > 15) {
+            let sb = sb - 1;
+            let y = y - 16;
+        }
+        let oldValue = Memory.peek(sb);
+        let value = Math.bit(y);
+        if(color) {
+            let value = value | oldValue;
+        } else {
+            let value = ((-value) - 1) & oldValue;
+        }
+        do Memory.poke(sb, value);
+        return oldValue;
+    }
+
+    function void drawLine(int x1, int y1, int x2, int y2) {
+        var int dx, dy, a, b, diff, diff1, diff2;
+        let dx = Math.abs(x2 - x1);
+        let dy = Math.abs(y2 - y1);
+        let a = 0;
+        let b = 0;
+
+        // Horizontal line
+        if(y1 = y2) {
+            while((a < dx) | (a = dx)) {
+                if(x1 < x2) {
+                    do drawPixel(x1 + a, y1);
+                } else {
+                    do drawPixel(x1 - a, y1);
+                }
+                let a = a + 1;
+            }
+            return;
+        }
+
+        // Vertical line
+        if(x1 = x2) {
+            while ((b < dy) | (b = dy)) {
+                if(y1 < y2) {
+                    do drawPixel(x1, y1 + b);
+                } else {
+                    do drawPixel(x1, y1 - b);
+                }
+                let b = b + 1;
+            }
+            return;
+        }
+
+        let diff = 0;
+        while(((a < dx) | (a = dx)) & ((b < dy) | (b = dy))) {
+            if((y1 < y2) & (x1 < x2)) {
+                do drawPixel(x1 + a, y1 + b);
+            }
+            if((y1 < y2) & (x1 > x2)) {
+                do drawPixel(x1 - a, y1 + b);
+            }
+            if((y1 > y2) & (x1 < x2)) {
+                do drawPixel(x1 + a, y1 - b);
+            }
+            if((y1 > y2) & (x1 > x2)) {
+                do drawPixel(x1 - a, y1 - b);
+            }
+            if(diff < 0) {
+                let a = a + 1;
+                let diff = diff + dy;
+            } else {
+                let b = b + 1;
+                let diff = diff - dx;
+            }
+        }
+        return ((y1 < y2) & (x1 < x2));
+    }
+
+    function void drawCircle(int x, int y, int r, bool fill) {
+        var int dy, dySquared, rSquared, pythag, currentY, leftPoint, rightPoint;
+        let dy = -r;
+        let rSquared = r * r;
+        while((dy < r) | (dy = r)) {
+            let dySquared = dy * dy;
+            let pythag = Math.sqrt(rSquared - dySquared);
+            let leftPoint = x - pythag;
+            let rightPoint = x + pythag;
+            let currentY = y + dy;
+            if(fill) {
+                do drawLine(leftPoint, currentY, rightPoint, currentY);
+            } else {
+                do drawPixel(leftPoint, currentY);
+                do drawPixel(rightPoint, currentY);
+            }
+            let dy = dy + 1;
+        }
+        return;
+    }
+
+    function void drawRectangle(int x1, int y1, int x2, int y2) {
+        var int dy, b, currentY;
+        let dy = Math.abs(y1 - y2);
+        let b = 0;
+
+        while((b < dy) | (b = dy)) {
+            if(y1 < y2) {
+                let currentY = y1 + b;
+            } else {
+                let currentY = y1 - b;
+            }
+            do drawLine(x1, currentY, x2, currentY);
+            let b = b + 1;
+        }
+        return;
+    }
+
+    function void clearScreen() {
+        var int i;
+        let i = 0;
+        while(i < screenWordWidth) {
+            do Memory.poke(screenBase + i, 0);
+            let i = i + 1;
+        }
+        return;
+    }
+}

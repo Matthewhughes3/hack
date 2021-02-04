@@ -1,0 +1,338 @@
+function Math.multiply 5
+push constant 0
+push argument 1
+lt
+push constant 0
+push argument 0
+lt
+and
+push constant 0
+push argument 1
+eq
+push constant 0
+push argument 1
+gt
+or
+push constant 0
+push argument 0
+eq
+push constant 0
+push argument 0
+gt
+or
+and
+or
+not
+if-goto ELSE.Math.multiply.1
+push constant 0
+pop local 4
+goto ENDIF.Math.multiply.1
+label ELSE.Math.multiply.1
+push constant 1
+pop local 4
+label ENDIF.Math.multiply.1
+push constant 0
+pop local 0
+push argument 0
+call Math.abs 1
+pop local 2
+push argument 1
+call Math.abs 1
+pop argument 1
+push constant 0
+pop local 1
+label WHILE.Math.multiply.3
+push constant 15
+push local 1
+lt
+not
+if-goto ENDWHILE.Math.multiply.3
+push local 1
+call Math.bit 1
+pop local 3
+push local 3
+push local 3
+push argument 1
+and
+eq
+not
+if-goto ELSE.Math.multiply.3
+push local 2
+push local 0
+add
+pop local 0
+goto ENDIF.Math.multiply.3
+label ELSE.Math.multiply.3
+label ENDIF.Math.multiply.3
+push local 2
+push local 2
+add
+pop local 2
+push constant 1
+push local 1
+add
+pop local 1
+goto WHILE.Math.multiply.3
+label ENDWHILE.Math.multiply.3
+push local 4
+not
+if-goto ELSE.Math.multiply.4
+push local 0
+neg
+pop local 0
+goto ENDIF.Math.multiply.4
+label ELSE.Math.multiply.4
+label ENDIF.Math.multiply.4
+push local 0
+return
+function Math.bit 11
+push constant 1
+pop local 0
+label WHILE.Math.bit.5
+push constant 0
+push argument 0
+gt
+not
+if-goto ENDWHILE.Math.bit.5
+push local 0
+push local 0
+add
+pop local 0
+push constant 1
+push argument 0
+sub
+pop argument 0
+goto WHILE.Math.bit.5
+label ENDWHILE.Math.bit.5
+push local 0
+return
+function Math.divide 27
+push constant 0
+push argument 1
+eq
+push constant 0
+push argument 0
+eq
+or
+not
+if-goto ELSE.Math.divide.6
+push constant 0
+return
+goto ENDIF.Math.divide.6
+label ELSE.Math.divide.6
+label ENDIF.Math.divide.6
+push constant 0
+push argument 0
+lt
+push constant 0
+push argument 1
+lt
+and
+push constant 0
+push argument 0
+eq
+push constant 0
+push argument 0
+gt
+or
+push constant 0
+push argument 1
+eq
+push constant 0
+push argument 1
+gt
+or
+and
+or
+not
+if-goto ELSE.Math.divide.7
+push constant 0
+pop local 4
+goto ENDIF.Math.divide.7
+label ELSE.Math.divide.7
+push constant 1
+pop local 4
+label ENDIF.Math.divide.7
+push argument 1
+call Math.abs 1
+pop local 1
+push argument 0
+call Math.abs 1
+pop local 2
+push constant 0
+push local 2
+lt
+push local 1
+push local 2
+gt
+or
+not
+if-goto ELSE.Math.divide.8
+push constant 0
+return
+goto ENDIF.Math.divide.8
+label ELSE.Math.divide.8
+label ENDIF.Math.divide.8
+push local 2
+push local 2
+add
+push local 1
+call Math.divide 2
+pop local 0
+push local 2
+push local 2
+push local 0
+push constant 2
+call Math.multiply 2
+call Math.multiply 2
+push local 1
+sub
+lt
+not
+if-goto ELSE.Math.divide.9
+push local 0
+push local 0
+add
+pop local 3
+goto ENDIF.Math.divide.9
+label ELSE.Math.divide.9
+push constant 1
+push local 0
+push local 0
+add
+add
+pop local 3
+label ENDIF.Math.divide.9
+push local 4
+not
+if-goto ELSE.Math.divide.10
+push local 3
+neg
+pop local 3
+goto ENDIF.Math.divide.10
+label ELSE.Math.divide.10
+label ENDIF.Math.divide.10
+push local 3
+return
+function Math.abs 54
+push constant 0
+push argument 0
+lt
+not
+if-goto ELSE.Math.abs.11
+push argument 0
+neg
+return
+goto ENDIF.Math.abs.11
+label ELSE.Math.abs.11
+push argument 0
+return
+label ENDIF.Math.abs.11
+function Math.pow 109
+push constant 0
+push argument 1
+eq
+not
+if-goto ELSE.Math.pow.12
+push constant 1
+return
+goto ENDIF.Math.pow.12
+label ELSE.Math.pow.12
+label ENDIF.Math.pow.12
+push argument 0
+pop local 0
+label WHILE.Math.pow.13
+push constant 1
+push argument 1
+gt
+not
+if-goto ENDWHILE.Math.pow.13
+push argument 0
+push local 0
+call Math.multiply 2
+pop local 0
+push constant 1
+push argument 1
+sub
+pop argument 1
+goto WHILE.Math.pow.13
+label ENDWHILE.Math.pow.13
+push local 0
+return
+function Math.sqrt 220
+push constant 1
+pop local 0
+push constant 1
+pop local 1
+label WHILE.Math.sqrt.14
+push constant 0
+push local 1
+gt
+push argument 0
+push local 1
+eq
+push argument 0
+push local 1
+lt
+or
+and
+not
+if-goto ENDWHILE.Math.sqrt.14
+push constant 1
+push local 0
+add
+pop local 0
+push local 0
+push local 0
+call Math.multiply 2
+pop local 1
+goto WHILE.Math.sqrt.14
+label ENDWHILE.Math.sqrt.14
+push constant 1
+push local 0
+sub
+return
+function Math.min 440
+push argument 1
+push argument 0
+lt
+not
+if-goto ELSE.Math.min.15
+push argument 0
+return
+goto ENDIF.Math.min.15
+label ELSE.Math.min.15
+push argument 1
+return
+label ENDIF.Math.min.15
+function Math.max 880
+push argument 1
+push argument 0
+gt
+not
+if-goto ELSE.Math.max.16
+push argument 0
+return
+goto ENDIF.Math.max.16
+label ELSE.Math.max.16
+push argument 1
+return
+label ENDIF.Math.max.16
+function Math.factorial 1760
+push constant 1
+push argument 0
+eq
+not
+if-goto ELSE.Math.factorial.17
+push constant 1
+return
+goto ENDIF.Math.factorial.17
+label ELSE.Math.factorial.17
+label ENDIF.Math.factorial.17
+push constant 1
+push argument 0
+sub
+call Math.factorial 1
+push argument 0
+call Math.multiply 2
+return

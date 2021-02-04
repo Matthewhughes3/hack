@@ -1,0 +1,59 @@
+function Main.main 3
+push constant 10
+pop local 0
+push constant 2
+push constant 1
+push local 0
+add
+sub
+pop local 1
+push local 0
+push local 1
+call Main.subtract 2
+push local 0
+push local 1
+call Main.add 2
+add
+pop local 2
+push constant 8
+pop local 0
+push constant 20
+push local 2
+eq
+not
+if-goto L1.18
+call Main.addToTen 0
+return
+goto L2.18
+label L1.18
+push local 0
+return
+label L2.18
+function Main.addToTen 1
+push constant 0
+pop local 0
+label L1.2
+push constant 10
+push local 0
+eq
+not
+not
+if-goto L2.2
+push constant 1
+push local 0
+add
+pop local 0
+goto L1.2
+label L2.2
+push local 0
+return
+function Main.add 0
+push argument 1
+push argument 0
+add
+return
+function Main.subtract 0
+push argument 1
+push argument 0
+sub
+return

@@ -1,0 +1,3 @@
+function Output.init 0
+push constant 0
+return
