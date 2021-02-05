@@ -1,5 +1,5 @@
 function Link.new 0
-push constant 4
+push constant 2
 call Memory.alloc 1
 pop pointer 0
 push argument 0
@@ -35,9 +35,9 @@ function Link.getTail 1
 push argument 0
 pop local 0
 label WHILE.Link.getTail.1
-push constant 0
 push local 0
 call Link.getNext 1
+push constant 0
 eq
 not
 not

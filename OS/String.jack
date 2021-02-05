@@ -1,0 +1,108 @@
+class String {
+    static Array numMap;
+    field Array str;
+    field int length;
+
+    function void init() {
+        let numMap = Array.new(10);
+        let numMap[0] = '0';
+        let numMap[1] = '1';
+        let numMap[2] = '2';
+        let numMap[3] = '3';
+        let numMap[4] = '4';
+        let numMap[5] = '5';
+        let numMap[6] = '6';
+        let numMap[7] = '7';
+        let numMap[8] = '8';
+        let numMap[9] = '9';
+        return numMap;
+    }
+
+    constructor String new(int maxLength) {
+        let str = Array.new(maxLength);
+        let length = 0;
+        return this;
+    }
+
+    function char getInt(int n) {
+        return numMap[n];
+    }
+
+    method int length() {
+        return length;
+    }
+
+    method char charAt(int i) {
+        return str[i];
+    }
+
+    method void setCharAt(int i, char c) {
+        let str[i] = c;
+        return;
+    }
+
+    method char find(char c) {
+        return str.find(c);
+    }
+
+    method String appendChar(char c) {
+        let str[length] = c;
+        let length = length + 1;
+        return this;
+    }
+
+    method void eraseLastChar() {
+        let length = length - 1;
+        let str[length] = null;
+        return;
+    }
+
+    method int intValue() {
+        var int index, placeValue, value, self, result;
+
+        let index = length - 1;
+        let placeValue = 1;
+        while((index = 0) | (index > 0)) {
+            let value = numMap.find(str[index]);
+            let result = result + (value * placeValue);
+            let index = index - 1;
+            let placeValue = placeValue * 10;
+        }
+        return result;
+    }
+
+    method void setInt(int number) {
+        var int value, result, left, c;
+        var String self;
+
+        let self = this;
+
+        let value = Math.mod(number, 10);
+        let left = number / 10;
+        let c = numMap[value];
+        if(left > 0) {
+            do self.setInt(left);
+            do self.appendChar(c);
+        } else {
+            do self.appendChar(c);
+        }
+        return;
+    }
+
+    function char newLine() {
+        return 128;
+    }
+
+    function char backSpace() {
+        return 129;
+    }
+
+    function char doubleQuote() {
+        return 34;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

@@ -1,19 +1,30 @@
 class Math {
+    static Array bitMasks;
+
+    function void init() {
+        var int bitMask, i;
+
+        let bitMasks = Array.new(16);
+
+        let i = 0;
+        let bitMask = 1;
+
+        while(i < 16) {
+            let bitMasks[i] = bitMask;
+            let bitMask = bitMask + bitMask;
+            let i = i + 1;
+        }
+        return;
+    }
+
     function int multiply(int x, int y) {
         var int sum, i, shiftedX, bitMask, sign;
 
-        if((((x > 0) | (x = 0)) & ((y > 0) | (y = 0))) | ((x < 0) & (y < 0))) {
-            let sign = false;
-        } else {
-            let sign = true;
-        }
-
         let sum = 0;
-        let shiftedX = abs(x);
-        let y = abs(y);
+        let shiftedX = x;
         let i = 0;
 
-        while(i < 15) {
+        while(i < 16) {
             let bitMask = bit(i);
             if((y & bitMask) = bitMask) {
                 let sum = sum + shiftedX;
@@ -21,23 +32,14 @@ class Math {
             let shiftedX = shiftedX + shiftedX;
             let i = i + 1;
         }
-        if(sign) {
-            let sum = (-sum);
-        }
         return sum;
     }
 
     function int bit(int x) {
-        var int bit;
-        let bit = 1;
-        while(x > 0) {
-            let bit = bit + bit;
-            let x = x - 1;
-        }
-        return bit;
+        return bitMasks[x];
     }
 
-    function int divide(int y, int x) {
+    function int divide(int x, int y) {
         var int q, absX, absY, result;
         var bool sign;
 
@@ -58,7 +60,7 @@ class Math {
             return 0;
         }
 
-        let q = divide(absY + absY, absX);
+        let q = divide(absX, absY + absY);
 
         if((absX - (2 * q * absY)) < absY) {
             let result = q + q;
@@ -70,6 +72,12 @@ class Math {
             let result = (-result);
         }
         return result;
+    }
+
+    function int mod(int x, int y) {
+        var int value;
+        let value = x / y;
+        return (x - (value * y));
     }
 
     function int abs(int x) {

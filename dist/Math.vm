@@ -1,64 +1,62 @@
-function Math.multiply 5
+function Math.init 2
+push constant 16
+call Array.new 1
+pop static 0
 push constant 0
-push argument 1
-lt
-push constant 0
-push argument 0
-lt
-and
-push constant 0
-push argument 1
-eq
-push constant 0
-push argument 1
-gt
-or
-push constant 0
-push argument 0
-eq
-push constant 0
-push argument 0
-gt
-or
-and
-or
-not
-if-goto ELSE.Math.multiply.1
-push constant 0
-pop local 4
-goto ENDIF.Math.multiply.1
-label ELSE.Math.multiply.1
+pop local 1
 push constant 1
-pop local 4
-label ENDIF.Math.multiply.1
+pop local 0
+label WHILE.Math.init.1
+push local 1
+push constant 16
+lt
+not
+if-goto ENDWHILE.Math.init.1
+push static 0
+push local 1
+add
+push local 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push local 0
+push local 0
+add
+pop local 0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE.Math.init.1
+label ENDWHILE.Math.init.1
+push constant 0
+return
+function Math.multiply 9
 push constant 0
 pop local 0
 push argument 0
-call Math.abs 1
 pop local 2
-push argument 1
-call Math.abs 1
-pop argument 1
 push constant 0
 pop local 1
 label WHILE.Math.multiply.3
-push constant 15
 push local 1
+push constant 16
 lt
 not
 if-goto ENDWHILE.Math.multiply.3
 push local 1
 call Math.bit 1
 pop local 3
-push local 3
-push local 3
 push argument 1
+push local 3
 and
+push local 3
 eq
 not
 if-goto ELSE.Math.multiply.3
-push local 2
 push local 0
+push local 2
 add
 pop local 0
 goto ENDIF.Math.multiply.3
@@ -68,51 +66,80 @@ push local 2
 push local 2
 add
 pop local 2
-push constant 1
 push local 1
+push constant 1
 add
 pop local 1
 goto WHILE.Math.multiply.3
 label ENDWHILE.Math.multiply.3
-push local 4
-not
-if-goto ELSE.Math.multiply.4
-push local 0
-neg
-pop local 0
-goto ENDIF.Math.multiply.4
-label ELSE.Math.multiply.4
-label ENDIF.Math.multiply.4
 push local 0
 return
-function Math.bit 11
-push constant 1
-pop local 0
-label WHILE.Math.bit.5
-push constant 0
+function Math.bit 18
+push static 0
 push argument 0
-gt
-not
-if-goto ENDWHILE.Math.bit.5
-push local 0
-push local 0
 add
-pop local 0
-push constant 1
-push argument 0
-sub
-pop argument 0
-goto WHILE.Math.bit.5
-label ENDWHILE.Math.bit.5
-push local 0
+pop pointer 1
+push that 0
 return
-function Math.divide 27
-push constant 0
+function Math.divide 41
 push argument 1
-eq
 push constant 0
-push argument 0
 eq
+push argument 0
+push constant 0
+eq
+or
+not
+if-goto ELSE.Math.divide.4
+push constant 0
+return
+goto ENDIF.Math.divide.4
+label ELSE.Math.divide.4
+label ENDIF.Math.divide.4
+push argument 0
+push constant 0
+gt
+push argument 0
+push constant 0
+eq
+or
+push argument 1
+push constant 0
+gt
+push argument 1
+push constant 0
+eq
+or
+and
+push argument 0
+push constant 0
+lt
+push argument 1
+push constant 0
+lt
+and
+or
+not
+if-goto ELSE.Math.divide.5
+push constant 0
+pop local 4
+goto ENDIF.Math.divide.5
+label ELSE.Math.divide.5
+push constant 1
+pop local 4
+label ENDIF.Math.divide.5
+push argument 0
+call Math.abs 1
+pop local 1
+push argument 1
+call Math.abs 1
+pop local 2
+push local 2
+push local 1
+gt
+push local 2
+push constant 0
+lt
 or
 not
 if-goto ELSE.Math.divide.6
@@ -121,218 +148,177 @@ return
 goto ENDIF.Math.divide.6
 label ELSE.Math.divide.6
 label ENDIF.Math.divide.6
-push constant 0
-push argument 0
-lt
-push constant 0
-push argument 1
-lt
-and
-push constant 0
-push argument 0
-eq
-push constant 0
-push argument 0
-gt
-or
-push constant 0
-push argument 1
-eq
-push constant 0
-push argument 1
-gt
-or
-and
-or
-not
-if-goto ELSE.Math.divide.7
-push constant 0
-pop local 4
-goto ENDIF.Math.divide.7
-label ELSE.Math.divide.7
-push constant 1
-pop local 4
-label ENDIF.Math.divide.7
-push argument 1
-call Math.abs 1
-pop local 1
-push argument 0
-call Math.abs 1
-pop local 2
-push constant 0
-push local 2
-lt
 push local 1
 push local 2
-gt
-or
+push local 2
+add
+call Math.divide 2
+pop local 0
+push local 1
+push constant 2
+push local 0
+push local 2
+call Math.multiply 2
+call Math.multiply 2
+sub
+push local 2
+lt
+not
+if-goto ELSE.Math.divide.7
+push local 0
+push local 0
+add
+pop local 3
+goto ENDIF.Math.divide.7
+label ELSE.Math.divide.7
+push local 0
+push local 0
+push constant 1
+add
+add
+pop local 3
+label ENDIF.Math.divide.7
+push local 4
 not
 if-goto ELSE.Math.divide.8
-push constant 0
-return
+push local 3
+neg
+pop local 3
 goto ENDIF.Math.divide.8
 label ELSE.Math.divide.8
 label ENDIF.Math.divide.8
-push local 2
-push local 2
-add
-push local 1
+push local 3
+return
+function Math.mod 83
+push argument 0
+push argument 1
 call Math.divide 2
 pop local 0
-push local 2
-push local 2
-push local 0
-push constant 2
-call Math.multiply 2
-call Math.multiply 2
-push local 1
-sub
-lt
-not
-if-goto ELSE.Math.divide.9
-push local 0
-push local 0
-add
-pop local 3
-goto ENDIF.Math.divide.9
-label ELSE.Math.divide.9
-push constant 1
-push local 0
-push local 0
-add
-add
-pop local 3
-label ENDIF.Math.divide.9
-push local 4
-not
-if-goto ELSE.Math.divide.10
-push local 3
-neg
-pop local 3
-goto ENDIF.Math.divide.10
-label ELSE.Math.divide.10
-label ENDIF.Math.divide.10
-push local 3
-return
-function Math.abs 54
-push constant 0
 push argument 0
-lt
-not
-if-goto ELSE.Math.abs.11
-push argument 0
-neg
-return
-goto ENDIF.Math.abs.11
-label ELSE.Math.abs.11
-push argument 0
-return
-label ENDIF.Math.abs.11
-function Math.pow 109
-push constant 0
+push local 0
 push argument 1
+call Math.multiply 2
+sub
+return
+function Math.abs 166
+push argument 0
+push constant 0
+lt
+not
+if-goto ELSE.Math.abs.9
+push argument 0
+neg
+return
+goto ENDIF.Math.abs.9
+label ELSE.Math.abs.9
+push argument 0
+return
+label ENDIF.Math.abs.9
+function Math.pow 333
+push argument 1
+push constant 0
 eq
 not
-if-goto ELSE.Math.pow.12
+if-goto ELSE.Math.pow.10
 push constant 1
 return
-goto ENDIF.Math.pow.12
-label ELSE.Math.pow.12
-label ENDIF.Math.pow.12
+goto ENDIF.Math.pow.10
+label ELSE.Math.pow.10
+label ENDIF.Math.pow.10
 push argument 0
 pop local 0
-label WHILE.Math.pow.13
-push constant 1
+label WHILE.Math.pow.11
 push argument 1
+push constant 1
 gt
 not
-if-goto ENDWHILE.Math.pow.13
-push argument 0
+if-goto ENDWHILE.Math.pow.11
 push local 0
+push argument 0
 call Math.multiply 2
 pop local 0
-push constant 1
 push argument 1
+push constant 1
 sub
 pop argument 1
-goto WHILE.Math.pow.13
-label ENDWHILE.Math.pow.13
+goto WHILE.Math.pow.11
+label ENDWHILE.Math.pow.11
 push local 0
 return
-function Math.sqrt 220
+function Math.sqrt 668
 push constant 1
 pop local 0
 push constant 1
 pop local 1
-label WHILE.Math.sqrt.14
-push constant 0
+label WHILE.Math.sqrt.12
 push local 1
-gt
 push argument 0
-push local 1
-eq
-push argument 0
-push local 1
 lt
+push local 1
+push argument 0
+eq
 or
+push local 1
+push constant 0
+gt
 and
 not
-if-goto ENDWHILE.Math.sqrt.14
-push constant 1
+if-goto ENDWHILE.Math.sqrt.12
 push local 0
+push constant 1
 add
 pop local 0
 push local 0
 push local 0
 call Math.multiply 2
 pop local 1
-goto WHILE.Math.sqrt.14
-label ENDWHILE.Math.sqrt.14
-push constant 1
+goto WHILE.Math.sqrt.12
+label ENDWHILE.Math.sqrt.12
 push local 0
+push constant 1
 sub
 return
-function Math.min 440
-push argument 1
+function Math.min 1336
 push argument 0
+push argument 1
 lt
 not
-if-goto ELSE.Math.min.15
+if-goto ELSE.Math.min.13
 push argument 0
 return
-goto ENDIF.Math.min.15
-label ELSE.Math.min.15
+goto ENDIF.Math.min.13
+label ELSE.Math.min.13
 push argument 1
 return
-label ENDIF.Math.min.15
-function Math.max 880
-push argument 1
+label ENDIF.Math.min.13
+function Math.max 2672
 push argument 0
+push argument 1
 gt
 not
-if-goto ELSE.Math.max.16
+if-goto ELSE.Math.max.14
 push argument 0
 return
-goto ENDIF.Math.max.16
-label ELSE.Math.max.16
+goto ENDIF.Math.max.14
+label ELSE.Math.max.14
 push argument 1
 return
-label ENDIF.Math.max.16
-function Math.factorial 1760
-push constant 1
+label ENDIF.Math.max.14
+function Math.factorial 5344
 push argument 0
+push constant 1
 eq
 not
-if-goto ELSE.Math.factorial.17
+if-goto ELSE.Math.factorial.15
 push constant 1
 return
-goto ENDIF.Math.factorial.17
-label ELSE.Math.factorial.17
-label ENDIF.Math.factorial.17
-push constant 1
+goto ENDIF.Math.factorial.15
+label ELSE.Math.factorial.15
+label ENDIF.Math.factorial.15
 push argument 0
+push argument 0
+push constant 1
 sub
 call Math.factorial 1
-push argument 0
 call Math.multiply 2
 return

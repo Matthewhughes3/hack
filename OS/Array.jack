@@ -1,0 +1,27 @@
+class Array {
+    function Array new(int size) {
+        return Memory.alloc(size);
+    }
+
+    method int find(int val) {
+        var int size, index, value, self;
+
+        let size = Memory.peek(this - 1);
+        let index = 0;
+        let value = 0;
+        let self = this;
+        while(index < size) {
+            let value = self[index];
+            if(value = val) {
+                return index;
+            }
+            let index = index + 1;
+        }
+        return -1;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

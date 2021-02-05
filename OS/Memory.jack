@@ -24,16 +24,16 @@ class Memory {
 
         let tracker = heap;
         let free = peek(tracker + 1);
-        let newSize = free - size - 2;
+        let newSize = (free - size) - 2;
 
         while(newSize < 0) {
             let tracker = peek(tracker);
             let free = peek(tracker + 1);
-            let newSize = free - size - 2;
+            let newSize = (free - size) - 2;
         }
 
-        do poke((heap + 1), newSize);
-        let baseAddr = tracker + newSize + 2;
+        do poke((tracker + 1), newSize);
+        let baseAddr = (tracker + 2) + newSize + 2;
         do poke(baseAddr - 1, size);
         do poke(baseAddr - 2, null);
 

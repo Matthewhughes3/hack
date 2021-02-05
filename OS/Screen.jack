@@ -91,7 +91,7 @@ class Screen {
         return ((y1 < y2) & (x1 < x2));
     }
 
-    function void drawCircle(int x, int y, int r, bool fill) {
+    function void drawCircle(int x, int y, int r, bool filled) {
         var int dy, dySquared, rSquared, pythag, currentY, leftPoint, rightPoint;
         let dy = -r;
         let rSquared = r * r;
@@ -101,7 +101,7 @@ class Screen {
             let leftPoint = x - pythag;
             let rightPoint = x + pythag;
             let currentY = y + dy;
-            if(fill) {
+            if(filled) {
                 do drawLine(leftPoint, currentY, rightPoint, currentY);
             } else {
                 do drawPixel(leftPoint, currentY);

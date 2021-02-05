@@ -2,20 +2,16 @@ class Main {
     function void main() {
         do Memory.init();
         do Screen.init();
+        do String.init();
+        do Output.init();
+        do Math.init();
 
-        var Link l1, l2, l3;
+        var String s1;
 
-        let l1 = Link.new(2);
-        let l2 = Link.new(3);
-        let l3 = Link.new(4);
+        let s1 = "hello";
 
-        do l1.link(l2);
-        do l2.link(l3);
+        do Output.printString(s1);
 
-        let l1 = l1.getTail();
-
-        do Screen.drawCircle(15, 15, 12);
-        do Screen.drawLine(0, 0, 31, 31);
-        return l1.getValue();
+        return;
     }
 }
