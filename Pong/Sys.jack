@@ -4,8 +4,8 @@ class Sys {
     function void init() {
         do Memory.init();
         do Screen.init();
-        do String.init();
-        do Output.init();
+        // do String.init();
+        // do Output.init();
         do Keyboard.init();
 
         do Main.main();

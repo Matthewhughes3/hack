@@ -8,7 +8,7 @@
     </entry>
     <entry>
       <string>preloadProgramFile</string>
-      <file>/home/matthew/projects/hack/dist/OS.hex</file>
+      <file>/home/matthew/projects/hack/dist/Pong.hex</file>
     </entry>
   </attributes>
   <visualElements>
@@ -161,12 +161,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>flipSelPos</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
           <string>Bits</string>
           <int>16</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="1160" y="320"/>

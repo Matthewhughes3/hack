@@ -5,8 +5,8 @@ D=A
 M=D
 @Sys.init
 0; JMP
-// function String.init 0
-(String.init)
+// function Keyboard.init 0
+(Keyboard.init)
 @0
 D=A
 (INIT0)
@@ -20,3422 +20,6 @@ D=D-1
 @INIT0
 0; JMP
 (ENDINIT0)
-// push constant 10
-@10
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Array.new 1
-@RETURN2
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Array.new
-0; JMP
-(RETURN2)
-// pop static 0
-@SP
-AM=M-1
-D=M
-@String.0
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 48
-@48
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 49
-@49
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 2
-@2
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 50
-@50
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 3
-@3
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 51
-@51
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 4
-@4
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 52
-@52
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 5
-@5
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 53
-@53
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 6
-@6
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 54
-@54
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 7
-@7
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 55
-@55
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 8
-@8
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 56
-@56
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 9
-@9
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 57
-@57
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.new 0
-(String.new)
-@0
-D=A
-(INIT86)
-@ENDINIT86
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT86
-0; JMP
-(ENDINIT86)
-// push constant 4
-@4
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Memory.alloc 1
-@RETURN88
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Memory.alloc
-0; JMP
-(RETURN88)
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Array.new 1
-@RETURN91
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Array.new
-0; JMP
-(RETURN91)
-// pop this 0
-@0
-D=A
-@THIS
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop this 1
-@1
-D=A
-@THIS
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.getInt 0
-(String.getInt)
-@0
-D=A
-(INIT97)
-@ENDINIT97
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT97
-0; JMP
-(ENDINIT97)
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push that 0
-@0
-D=A
-@THAT
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.length 0
-(String.length)
-@0
-D=A
-(INIT104)
-@ENDINIT104
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT104
-0; JMP
-(ENDINIT104)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.charAt 0
-(String.charAt)
-@0
-D=A
-(INIT109)
-@ENDINIT109
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT109
-0; JMP
-(ENDINIT109)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push that 0
-@0
-D=A
-@THAT
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.setCharAt 0
-(String.setCharAt)
-@0
-D=A
-(INIT118)
-@ENDINIT118
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT118
-0; JMP
-(ENDINIT118)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push argument 2
-@2
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.find 0
-(String.find)
-@0
-D=A
-(INIT131)
-@ENDINIT131
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT131
-0; JMP
-(ENDINIT131)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Array.find 2
-@RETURN136
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Array.find
-0; JMP
-(RETURN136)
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.appendChar 0
-(String.appendChar)
-@0
-D=A
-(INIT138)
-@ENDINIT138
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT138
-0; JMP
-(ENDINIT138)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop this 1
-@1
-D=A
-@THIS
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.eraseLastChar 0
-(String.eraseLastChar)
-@0
-D=A
-(INIT155)
-@ENDINIT155
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT155
-0; JMP
-(ENDINIT155)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// sub
-@SP
-AM=M-1
-D=M
-A=A-1
-M=M-D
-// pop this 1
-@1
-D=A
-@THIS
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.intValue 5
-(String.intValue)
-@5
-D=A
-(INIT172)
-@ENDINIT172
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT172
-0; JMP
-(ENDINIT172)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push this 1
-@1
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// sub
-@SP
-AM=M-1
-D=M
-A=A-1
-M=M-D
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// label WHILE.String.intValue.1
-(WHILE.String.intValue.1)
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// eq
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@EQ184
-D;JEQ
-@SP
-A=M-1
-M=0
-@ENDEQ184
-0; JMP
-(EQ184)
-@SP
-A=M-1
-M=1
-(ENDEQ184)
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// gt
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@GT187
-D; JGT
-@SP
-A=M-1
-M=0
-@ENDGT187
-0; JMP
-(GT187)
-@SP
-A=M-1
-M=1
-(ENDGT187)
-// or
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D|M
-// not
-@SP
-A=M-1
-D=M
-@FALSE189
-D; JEQ
-D=0
-@ENDNOT189
-0; JMP
-(FALSE189)
-D=1
-(ENDNOT189)
-@SP
-A=M-1
-M=D
-// if-goto ENDWHILE.String.intValue.1
-@SP
-A=M-1
-D=M
-@ENDWHILE.String.intValue.1
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push this 0
-@0
-D=A
-@THIS
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push that 0
-@0
-D=A
-@THAT
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Array.find 2
-@RETURN198
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Array.find
-0; JMP
-(RETURN198)
-// pop local 2
-@2
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 4
-@4
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 2
-@2
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Math.multiply 2
-@RETURN203
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Math.multiply
-0; JMP
-(RETURN203)
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop local 4
-@4
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// sub
-@SP
-AM=M-1
-D=M
-A=A-1
-M=M-D
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 10
-@10
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Math.multiply 2
-@RETURN212
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Math.multiply
-0; JMP
-(RETURN212)
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// goto WHILE.String.intValue.1
-@WHILE.String.intValue.1
-0; JMP
-// label ENDWHILE.String.intValue.1
-(ENDWHILE.String.intValue.1)
-// push local 4
-@4
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.setInt 15
-(String.setInt)
-@15
-D=A
-(INIT218)
-@ENDINIT218
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT218
-0; JMP
-(ENDINIT218)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 4
-@4
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 10
-@10
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Math.mod 2
-@RETURN225
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Math.mod
-0; JMP
-(RETURN225)
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 10
-@10
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Math.divide 2
-@RETURN229
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Math.divide
-0; JMP
-(RETURN229)
-// pop local 2
-@2
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push static 0
-@String.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push that 0
-@0
-D=A
-@THAT
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 3
-@3
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 2
-@2
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// gt
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@GT239
-D; JGT
-@SP
-A=M-1
-M=0
-@ENDGT239
-0; JMP
-(GT239)
-@SP
-A=M-1
-M=1
-(ENDGT239)
-// not
-@SP
-A=M-1
-D=M
-@FALSE240
-D; JEQ
-D=0
-@ENDNOT240
-0; JMP
-(FALSE240)
-D=1
-(ENDNOT240)
-@SP
-A=M-1
-M=D
-// if-goto ELSE.String.setInt.2
-@SP
-A=M-1
-D=M
-@ELSE.String.setInt.2
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// push local 4
-@4
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 2
-@2
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call String.setInt 2
-@RETURN245
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@String.setInt
-0; JMP
-(RETURN245)
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// push local 4
-@4
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 3
-@3
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call String.appendChar 2
-@RETURN249
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@String.appendChar
-0; JMP
-(RETURN249)
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// goto ENDIF.String.setInt.2
-@ENDIF.String.setInt.2
-0; JMP
-// label ELSE.String.setInt.2
-(ELSE.String.setInt.2)
-// push local 4
-@4
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 3
-@3
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call String.appendChar 2
-@RETURN255
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@2
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@String.appendChar
-0; JMP
-(RETURN255)
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// label ENDIF.String.setInt.2
-(ENDIF.String.setInt.2)
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.newLine 30
-(String.newLine)
-@30
-D=A
-(INIT260)
-@ENDINIT260
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT260
-0; JMP
-(ENDINIT260)
-// push constant 10
-@10
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.backSpace 60
-(String.backSpace)
-@60
-D=A
-(INIT263)
-@ENDINIT263
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT263
-0; JMP
-(ENDINIT263)
-// push constant 8
-@8
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.doubleQuote 120
-(String.doubleQuote)
-@120
-D=A
-(INIT266)
-@ENDINIT266
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT266
-0; JMP
-(ENDINIT266)
-// push constant 34
-@34
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function String.dispose 240
-(String.dispose)
-@240
-D=A
-(INIT269)
-@ENDINIT269
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT269
-0; JMP
-(ENDINIT269)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Memory.deAlloc 1
-@RETURN273
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Memory.deAlloc
-0; JMP
-(RETURN273)
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-
-// function Keyboard.init 0
-(Keyboard.init)
-@0
-D=A
-(INIT277)
-@ENDINIT277
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT277
-0; JMP
-(ENDINIT277)
 // push constant 32703
 @32703
 D=A
@@ -3506,17 +90,17 @@ A=M
 (Keyboard.keyPressed)
 @1
 D=A
-(INIT282)
-@ENDINIT282
+(INIT5)
+@ENDINIT5
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT282
+@INIT5
 0; JMP
-(ENDINIT282)
+(ENDINIT5)
 // push static 0
 @Keyboard.0
 D=M
@@ -3525,7 +109,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.peek 1
-@RETURN284
+@RETURN7
 D=A
 @SP
 AM=M+1
@@ -3569,7 +153,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN284)
+(RETURN7)
 // pop local 0
 @0
 D=A
@@ -3606,30 +190,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ288
+@EQ11
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ288
+@ENDEQ11
 0; JMP
-(EQ288)
+(EQ11)
 @SP
 A=M-1
 M=1
-(ENDEQ288)
+(ENDEQ11)
 // not
 @SP
 A=M-1
 D=M
-@FALSE289
+@FALSE12
 D; JEQ
 D=0
-@ENDNOT289
+@ENDNOT12
 0; JMP
-(FALSE289)
+(FALSE12)
 D=1
-(ENDNOT289)
+(ENDNOT12)
 @SP
 A=M-1
 M=D
@@ -3718,7 +302,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN298
+@RETURN21
 D=A
 @SP
 AM=M+1
@@ -3762,7 +346,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN298)
+(RETURN21)
 // pop temp 0
 @SP
 AM=M-1
@@ -3831,19 +415,19 @@ A=M
 (Keyboard.readChar)
 @3
 D=A
-(INIT303)
-@ENDINIT303
+(INIT26)
+@ENDINIT26
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT303
+@INIT26
 0; JMP
-(ENDINIT303)
-// call Keyboard.keyPressed 0
-@RETURN304
+(ENDINIT26)
+// call Keyboard.silentReadChar 0
+@RETURN27
 D=A
 @SP
 AM=M+1
@@ -3885,9 +469,9 @@ M=D
 D=M
 @LCL
 M=D
-@Keyboard.keyPressed
+@Keyboard.silentReadChar
 0; JMP
-(RETURN304)
+(RETURN27)
 // pop local 0
 @0
 D=A
@@ -3901,134 +485,6 @@ D=M
 @R13
 A=M
 M=D
-// label WHILE.Keyboard.readChar.2
-(WHILE.Keyboard.readChar.2)
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// eq
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@EQ309
-D;JEQ
-@SP
-A=M-1
-M=0
-@ENDEQ309
-0; JMP
-(EQ309)
-@SP
-A=M-1
-M=1
-(ENDEQ309)
-// not
-@SP
-A=M-1
-D=M
-@FALSE310
-D; JEQ
-D=0
-@ENDNOT310
-0; JMP
-(FALSE310)
-D=1
-(ENDNOT310)
-@SP
-A=M-1
-M=D
-// if-goto ENDWHILE.Keyboard.readChar.2
-@SP
-A=M-1
-D=M
-@ENDWHILE.Keyboard.readChar.2
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// call Keyboard.keyPressed 0
-@RETURN313
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@0
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Keyboard.keyPressed
-0; JMP
-(RETURN313)
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// goto WHILE.Keyboard.readChar.2
-@WHILE.Keyboard.readChar.2
-0; JMP
-// label ENDWHILE.Keyboard.readChar.2
-(ENDWHILE.Keyboard.readChar.2)
 // push local 0
 @0
 D=A
@@ -4040,7 +496,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.backSpace 0
-@RETURN318
+@RETURN30
 D=A
 @SP
 AM=M+1
@@ -4084,45 +540,45 @@ D=M
 M=D
 @String.backSpace
 0; JMP
-(RETURN318)
+(RETURN30)
 // eq
 @SP
 AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ319
+@EQ31
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ319
+@ENDEQ31
 0; JMP
-(EQ319)
+(EQ31)
 @SP
 A=M-1
 M=1
-(ENDEQ319)
+(ENDEQ31)
 // not
 @SP
 A=M-1
 D=M
-@FALSE320
+@FALSE32
 D; JEQ
 D=0
-@ENDNOT320
+@ENDNOT32
 0; JMP
-(FALSE320)
+(FALSE32)
 D=1
-(ENDNOT320)
+(ENDNOT32)
 @SP
 A=M-1
 M=D
-// if-goto ELSE.Keyboard.readChar.3
+// if-goto ELSE.Keyboard.readChar.2
 @SP
 A=M-1
 D=M
-@ELSE.Keyboard.readChar.3
+@ELSE.Keyboard.readChar.2
 D; JGT
 // pop temp 2
 @SP
@@ -4131,7 +587,7 @@ D=M
 @TEMP2
 M=D
 // call Output.backSpace 0
-@RETURN323
+@RETURN35
 D=A
 @SP
 AM=M+1
@@ -4175,18 +631,18 @@ D=M
 M=D
 @Output.backSpace
 0; JMP
-(RETURN323)
+(RETURN35)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// goto ENDIF.Keyboard.readChar.3
-@ENDIF.Keyboard.readChar.3
+// goto ENDIF.Keyboard.readChar.2
+@ENDIF.Keyboard.readChar.2
 0; JMP
-// label ELSE.Keyboard.readChar.3
-(ELSE.Keyboard.readChar.3)
+// label ELSE.Keyboard.readChar.2
+(ELSE.Keyboard.readChar.2)
 // push local 0
 @0
 D=A
@@ -4198,7 +654,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.newLine 0
-@RETURN328
+@RETURN40
 D=A
 @SP
 AM=M+1
@@ -4242,45 +698,45 @@ D=M
 M=D
 @String.newLine
 0; JMP
-(RETURN328)
+(RETURN40)
 // eq
 @SP
 AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ329
+@EQ41
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ329
+@ENDEQ41
 0; JMP
-(EQ329)
+(EQ41)
 @SP
 A=M-1
 M=1
-(ENDEQ329)
+(ENDEQ41)
 // not
 @SP
 A=M-1
 D=M
-@FALSE330
+@FALSE42
 D; JEQ
 D=0
-@ENDNOT330
+@ENDNOT42
 0; JMP
-(FALSE330)
+(FALSE42)
 D=1
-(ENDNOT330)
+(ENDNOT42)
 @SP
 A=M-1
 M=D
-// if-goto ELSE.Keyboard.readChar.4
+// if-goto ELSE.Keyboard.readChar.3
 @SP
 A=M-1
 D=M
-@ELSE.Keyboard.readChar.4
+@ELSE.Keyboard.readChar.3
 D; JGT
 // pop temp 2
 @SP
@@ -4289,7 +745,7 @@ D=M
 @TEMP2
 M=D
 // call Output.println 0
-@RETURN333
+@RETURN45
 D=A
 @SP
 AM=M+1
@@ -4333,18 +789,18 @@ D=M
 M=D
 @Output.println
 0; JMP
-(RETURN333)
+(RETURN45)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// goto ENDIF.Keyboard.readChar.4
-@ENDIF.Keyboard.readChar.4
+// goto ENDIF.Keyboard.readChar.3
+@ENDIF.Keyboard.readChar.3
 0; JMP
-// label ELSE.Keyboard.readChar.4
-(ELSE.Keyboard.readChar.4)
+// label ELSE.Keyboard.readChar.3
+(ELSE.Keyboard.readChar.3)
 // push local 0
 @0
 D=A
@@ -4356,7 +812,7 @@ AM=M+1
 A=A-1
 M=D
 // call Output.printChar 1
-@RETURN338
+@RETURN50
 D=A
 @SP
 AM=M+1
@@ -4400,17 +856,17 @@ D=M
 M=D
 @Output.printChar
 0; JMP
-(RETURN338)
+(RETURN50)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// label ENDIF.Keyboard.readChar.4
-(ENDIF.Keyboard.readChar.4)
 // label ENDIF.Keyboard.readChar.3
 (ENDIF.Keyboard.readChar.3)
+// label ENDIF.Keyboard.readChar.2
+(ENDIF.Keyboard.readChar.2)
 // push local 0
 @0
 D=A
@@ -4467,21 +923,279 @@ M=D
 @R13
 A=M
 0; JMP
-// function Keyboard.readLine 8
-(Keyboard.readLine)
-@8
+// function Keyboard.silentReadChar 7
+(Keyboard.silentReadChar)
+@7
 D=A
-(INIT344)
-@ENDINIT344
+(INIT56)
+@ENDINIT56
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT344
+@INIT56
 0; JMP
-(ENDINIT344)
+(ENDINIT56)
+// call Keyboard.keyPressed 0
+@RETURN57
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Keyboard.keyPressed
+0; JMP
+(RETURN57)
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// label WHILE.Keyboard.silentReadChar.4
+(WHILE.Keyboard.silentReadChar.4)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ62
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ62
+0; JMP
+(EQ62)
+@SP
+A=M-1
+M=1
+(ENDEQ62)
+// not
+@SP
+A=M-1
+D=M
+@FALSE63
+D; JEQ
+D=0
+@ENDNOT63
+0; JMP
+(FALSE63)
+D=1
+(ENDNOT63)
+@SP
+A=M-1
+M=D
+// if-goto ENDWHILE.Keyboard.silentReadChar.4
+@SP
+A=M-1
+D=M
+@ENDWHILE.Keyboard.silentReadChar.4
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// call Keyboard.keyPressed 0
+@RETURN66
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Keyboard.keyPressed
+0; JMP
+(RETURN66)
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// goto WHILE.Keyboard.silentReadChar.4
+@WHILE.Keyboard.silentReadChar.4
+0; JMP
+// label ENDWHILE.Keyboard.silentReadChar.4
+(ENDWHILE.Keyboard.silentReadChar.4)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// function Keyboard.readLine 16
+(Keyboard.readLine)
+@16
+D=A
+(INIT72)
+@ENDINIT72
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT72
+0; JMP
+(ENDINIT72)
 // push argument 0
 @0
 D=A
@@ -4493,7 +1207,7 @@ AM=M+1
 A=A-1
 M=D
 // call Output.printString 1
-@RETURN346
+@RETURN74
 D=A
 @SP
 AM=M+1
@@ -4537,7 +1251,7 @@ D=M
 M=D
 @Output.printString
 0; JMP
-(RETURN346)
+(RETURN74)
 // pop temp 0
 @SP
 AM=M-1
@@ -4552,7 +1266,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.new 1
-@RETURN349
+@RETURN77
 D=A
 @SP
 AM=M+1
@@ -4596,7 +1310,7 @@ D=M
 M=D
 @String.new
 0; JMP
-(RETURN349)
+(RETURN77)
 // pop local 1
 @1
 D=A
@@ -4611,7 +1325,7 @@ D=M
 A=M
 M=D
 // call Keyboard.readChar 0
-@RETURN351
+@RETURN79
 D=A
 @SP
 AM=M+1
@@ -4655,7 +1369,7 @@ D=M
 M=D
 @Keyboard.readChar
 0; JMP
-(RETURN351)
+(RETURN79)
 // pop local 0
 @0
 D=A
@@ -4682,7 +1396,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.newLine 0
-@RETURN355
+@RETURN83
 D=A
 @SP
 AM=M+1
@@ -4726,37 +1440,37 @@ D=M
 M=D
 @String.newLine
 0; JMP
-(RETURN355)
+(RETURN83)
 // eq
 @SP
 AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ356
+@EQ84
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ356
+@ENDEQ84
 0; JMP
-(EQ356)
+(EQ84)
 @SP
 A=M-1
 M=1
-(ENDEQ356)
+(ENDEQ84)
 // not
 @SP
 A=M-1
 D=M
-@FALSE357
+@FALSE85
 D; JEQ
 D=0
-@ENDNOT357
+@ENDNOT85
 0; JMP
-(FALSE357)
+(FALSE85)
 D=1
-(ENDNOT357)
+(ENDNOT85)
 @SP
 A=M-1
 M=D
@@ -4764,14 +1478,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE358
+@FALSE86
 D; JEQ
 D=0
-@ENDNOT358
+@ENDNOT86
 0; JMP
-(FALSE358)
+(FALSE86)
 D=1
-(ENDNOT358)
+(ENDNOT86)
 @SP
 A=M-1
 M=D
@@ -4798,7 +1512,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.backSpace 0
-@RETURN362
+@RETURN90
 D=A
 @SP
 AM=M+1
@@ -4842,37 +1556,37 @@ D=M
 M=D
 @String.backSpace
 0; JMP
-(RETURN362)
+(RETURN90)
 // eq
 @SP
 AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ363
+@EQ91
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ363
+@ENDEQ91
 0; JMP
-(EQ363)
+(EQ91)
 @SP
 A=M-1
 M=1
-(ENDEQ363)
+(ENDEQ91)
 // not
 @SP
 A=M-1
 D=M
-@FALSE364
+@FALSE92
 D; JEQ
 D=0
-@ENDNOT364
+@ENDNOT92
 0; JMP
-(FALSE364)
+(FALSE92)
 D=1
-(ENDNOT364)
+(ENDNOT92)
 @SP
 A=M-1
 M=D
@@ -4899,7 +1613,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.eraseLastChar 1
-@RETURN368
+@RETURN96
 D=A
 @SP
 AM=M+1
@@ -4943,7 +1657,7 @@ D=M
 M=D
 @String.eraseLastChar
 0; JMP
-(RETURN368)
+(RETURN96)
 // pop temp 0
 @SP
 AM=M-1
@@ -4976,7 +1690,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.appendChar 2
-@RETURN374
+@RETURN102
 D=A
 @SP
 AM=M+1
@@ -5020,7 +1734,7 @@ D=M
 M=D
 @String.appendChar
 0; JMP
-(RETURN374)
+(RETURN102)
 // pop temp 0
 @SP
 AM=M-1
@@ -5030,7 +1744,7 @@ M=D
 // label ENDIF.Keyboard.readLine.6
 (ENDIF.Keyboard.readLine.6)
 // call Keyboard.readChar 0
-@RETURN377
+@RETURN105
 D=A
 @SP
 AM=M+1
@@ -5074,7 +1788,7 @@ D=M
 M=D
 @Keyboard.readChar
 0; JMP
-(RETURN377)
+(RETURN105)
 // pop local 0
 @0
 D=A
@@ -5094,7 +1808,7 @@ M=D
 // label ENDWHILE.Keyboard.readLine.6
 (ENDWHILE.Keyboard.readLine.6)
 // call Output.println 0
-@RETURN381
+@RETURN109
 D=A
 @SP
 AM=M+1
@@ -5138,7 +1852,7 @@ D=M
 M=D
 @Output.println
 0; JMP
-(RETURN381)
+(RETURN109)
 // pop temp 0
 @SP
 AM=M-1
@@ -5201,21 +1915,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Keyboard.readInt 19
+// function Keyboard.readInt 35
 (Keyboard.readInt)
-@19
+@35
 D=A
-(INIT385)
-@ENDINIT385
+(INIT113)
+@ENDINIT113
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT385
+@INIT113
 0; JMP
-(ENDINIT385)
+(ENDINIT113)
 // push argument 0
 @0
 D=A
@@ -5227,7 +1941,7 @@ AM=M+1
 A=A-1
 M=D
 // call Keyboard.readLine 1
-@RETURN387
+@RETURN115
 D=A
 @SP
 AM=M+1
@@ -5271,7 +1985,7 @@ D=M
 M=D
 @Keyboard.readLine
 0; JMP
-(RETURN387)
+(RETURN115)
 // pop local 2
 @2
 D=A
@@ -5296,7 +2010,7 @@ AM=M+1
 A=A-1
 M=D
 // call String.intValue 1
-@RETURN390
+@RETURN118
 D=A
 @SP
 AM=M+1
@@ -5340,7 +2054,7 @@ D=M
 M=D
 @String.intValue
 0; JMP
-(RETURN390)
+(RETURN118)
 // pop local 1
 @1
 D=A
@@ -5415,17 +2129,17 @@ A=M
 (Screen.init)
 @0
 D=A
-(INIT394)
-@ENDINIT394
+(INIT122)
+@ENDINIT122
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT394
+@INIT122
 0; JMP
-(ENDINIT394)
+(ENDINIT122)
 // push constant 32704
 @32704
 D=A
@@ -5522,17 +2236,17 @@ A=M
 (Screen.setColor)
 @0
 D=A
-(INIT403)
-@ENDINIT403
+(INIT131)
+@ENDINIT131
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT403
+@INIT131
 0; JMP
-(ENDINIT403)
+(ENDINIT131)
 // push argument 0
 @0
 D=A
@@ -5606,17 +2320,17 @@ A=M
 (Screen.drawPixel)
 @3
 D=A
-(INIT408)
-@ENDINIT408
+(INIT136)
+@ENDINIT136
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT408
+@INIT136
 0; JMP
-(ENDINIT408)
+(ENDINIT136)
 // push static 0
 @Screen.0
 D=M
@@ -5692,30 +2406,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT417
+@GT145
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT417
+@ENDGT145
 0; JMP
-(GT417)
+(GT145)
 @SP
 A=M-1
 M=1
-(ENDGT417)
+(ENDGT145)
 // not
 @SP
 A=M-1
 D=M
-@FALSE418
+@FALSE146
 D; JEQ
 D=0
-@ENDNOT418
+@ENDNOT146
 0; JMP
-(FALSE418)
+(FALSE146)
 D=1
-(ENDNOT418)
+(ENDNOT146)
 @SP
 A=M-1
 M=D
@@ -5821,7 +2535,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.peek 1
-@RETURN433
+@RETURN161
 D=A
 @SP
 AM=M+1
@@ -5865,7 +2579,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN433)
+(RETURN161)
 // pop local 0
 @0
 D=A
@@ -5890,7 +2604,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.bit 1
-@RETURN436
+@RETURN164
 D=A
 @SP
 AM=M+1
@@ -5934,7 +2648,7 @@ D=M
 M=D
 @Math.bit
 0; JMP
-(RETURN436)
+(RETURN164)
 // pop local 2
 @2
 D=A
@@ -5959,14 +2673,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE439
+@FALSE167
 D; JEQ
 D=0
-@ENDNOT439
+@ENDNOT167
 0; JMP
-(FALSE439)
+(FALSE167)
 D=1
-(ENDNOT439)
+(ENDNOT167)
 @SP
 A=M-1
 M=D
@@ -6105,7 +2819,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN458
+@RETURN186
 D=A
 @SP
 AM=M+1
@@ -6149,7 +2863,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN458)
+(RETURN186)
 // pop temp 0
 @SP
 AM=M-1
@@ -6216,17 +2930,17 @@ A=M
 (Screen.drawLine)
 @13
 D=A
-(INIT462)
-@ENDINIT462
+(INIT190)
+@ENDINIT190
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT462
+@INIT190
 0; JMP
-(ENDINIT462)
+(ENDINIT190)
 // push argument 2
 @2
 D=A
@@ -6254,7 +2968,7 @@ D=M
 A=A-1
 M=M-D
 // call Math.abs 1
-@RETURN466
+@RETURN194
 D=A
 @SP
 AM=M+1
@@ -6298,7 +3012,7 @@ D=M
 M=D
 @Math.abs
 0; JMP
-(RETURN466)
+(RETURN194)
 // pop local 0
 @0
 D=A
@@ -6339,7 +3053,7 @@ D=M
 A=A-1
 M=M-D
 // call Math.abs 1
-@RETURN471
+@RETURN199
 D=A
 @SP
 AM=M+1
@@ -6383,7 +3097,7 @@ D=M
 M=D
 @Math.abs
 0; JMP
-(RETURN471)
+(RETURN199)
 // pop local 1
 @1
 D=A
@@ -6463,30 +3177,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ479
+@EQ207
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ479
+@ENDEQ207
 0; JMP
-(EQ479)
+(EQ207)
 @SP
 A=M-1
 M=1
-(ENDEQ479)
+(ENDEQ207)
 // not
 @SP
 A=M-1
 D=M
-@FALSE480
+@FALSE208
 D; JEQ
 D=0
-@ENDNOT480
+@ENDNOT208
 0; JMP
-(FALSE480)
+(FALSE208)
 D=1
-(ENDNOT480)
+(ENDNOT208)
 @SP
 A=M-1
 M=D
@@ -6530,18 +3244,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT486
+@LT214
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT486
+@ENDLT214
 0; JMP
-(LT486)
+(LT214)
 @SP
 A=M-1
 M=1
-(ENDLT486)
+(ENDLT214)
 // push local 2
 @2
 D=A
@@ -6568,18 +3282,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ489
+@EQ217
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ489
+@ENDEQ217
 0; JMP
-(EQ489)
+(EQ217)
 @SP
 A=M-1
 M=1
-(ENDEQ489)
+(ENDEQ217)
 // or
 @SP
 AM=M-1
@@ -6590,14 +3304,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE491
+@FALSE219
 D; JEQ
 D=0
-@ENDNOT491
+@ENDNOT219
 0; JMP
-(FALSE491)
+(FALSE219)
 D=1
-(ENDNOT491)
+(ENDNOT219)
 @SP
 A=M-1
 M=D
@@ -6639,30 +3353,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT496
+@LT224
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT496
+@ENDLT224
 0; JMP
-(LT496)
+(LT224)
 @SP
 A=M-1
 M=1
-(ENDLT496)
+(ENDLT224)
 // not
 @SP
 A=M-1
 D=M
-@FALSE497
+@FALSE225
 D; JEQ
 D=0
-@ENDNOT497
+@ENDNOT225
 0; JMP
-(FALSE497)
+(FALSE225)
 D=1
-(ENDNOT497)
+(ENDNOT225)
 @SP
 A=M-1
 M=D
@@ -6715,7 +3429,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawPixel 2
-@RETURN504
+@RETURN232
 D=A
 @SP
 AM=M+1
@@ -6759,7 +3473,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN504)
+(RETURN232)
 // pop temp 0
 @SP
 AM=M-1
@@ -6808,7 +3522,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawPixel 2
-@RETURN512
+@RETURN240
 D=A
 @SP
 AM=M+1
@@ -6852,7 +3566,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN512)
+(RETURN240)
 // pop temp 0
 @SP
 AM=M-1
@@ -6988,30 +3702,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ528
+@EQ256
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ528
+@ENDEQ256
 0; JMP
-(EQ528)
+(EQ256)
 @SP
 A=M-1
 M=1
-(ENDEQ528)
+(ENDEQ256)
 // not
 @SP
 A=M-1
 D=M
-@FALSE529
+@FALSE257
 D; JEQ
 D=0
-@ENDNOT529
+@ENDNOT257
 0; JMP
-(FALSE529)
+(FALSE257)
 D=1
-(ENDNOT529)
+(ENDNOT257)
 @SP
 A=M-1
 M=D
@@ -7055,18 +3769,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT535
+@LT263
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT535
+@ENDLT263
 0; JMP
-(LT535)
+(LT263)
 @SP
 A=M-1
 M=1
-(ENDLT535)
+(ENDLT263)
 // push local 3
 @3
 D=A
@@ -7093,18 +3807,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ538
+@EQ266
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ538
+@ENDEQ266
 0; JMP
-(EQ538)
+(EQ266)
 @SP
 A=M-1
 M=1
-(ENDEQ538)
+(ENDEQ266)
 // or
 @SP
 AM=M-1
@@ -7115,14 +3829,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE540
+@FALSE268
 D; JEQ
 D=0
-@ENDNOT540
+@ENDNOT268
 0; JMP
-(FALSE540)
+(FALSE268)
 D=1
-(ENDNOT540)
+(ENDNOT268)
 @SP
 A=M-1
 M=D
@@ -7164,30 +3878,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT545
+@LT273
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT545
+@ENDLT273
 0; JMP
-(LT545)
+(LT273)
 @SP
 A=M-1
 M=1
-(ENDLT545)
+(ENDLT273)
 // not
 @SP
 A=M-1
 D=M
-@FALSE546
+@FALSE274
 D; JEQ
 D=0
-@ENDNOT546
+@ENDNOT274
 0; JMP
-(FALSE546)
+(FALSE274)
 D=1
-(ENDNOT546)
+(ENDNOT274)
 @SP
 A=M-1
 M=D
@@ -7240,7 +3954,7 @@ D=M
 A=A-1
 M=D+M
 // call Screen.drawPixel 2
-@RETURN553
+@RETURN281
 D=A
 @SP
 AM=M+1
@@ -7284,7 +3998,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN553)
+(RETURN281)
 // pop temp 0
 @SP
 AM=M-1
@@ -7333,7 +4047,7 @@ D=M
 A=A-1
 M=M-D
 // call Screen.drawPixel 2
-@RETURN561
+@RETURN289
 D=A
 @SP
 AM=M+1
@@ -7377,7 +4091,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN561)
+(RETURN289)
 // pop temp 0
 @SP
 AM=M-1
@@ -7535,18 +4249,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT580
+@LT308
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT580
+@ENDLT308
 0; JMP
-(LT580)
+(LT308)
 @SP
 A=M-1
 M=1
-(ENDLT580)
+(ENDLT308)
 // push local 2
 @2
 D=A
@@ -7573,18 +4287,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ583
+@EQ311
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ583
+@ENDEQ311
 0; JMP
-(EQ583)
+(EQ311)
 @SP
 A=M-1
 M=1
-(ENDEQ583)
+(ENDEQ311)
 // or
 @SP
 AM=M-1
@@ -7617,18 +4331,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT587
+@LT315
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT587
+@ENDLT315
 0; JMP
-(LT587)
+(LT315)
 @SP
 A=M-1
 M=1
-(ENDLT587)
+(ENDLT315)
 // push local 3
 @3
 D=A
@@ -7655,18 +4369,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ590
+@EQ318
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ590
+@ENDEQ318
 0; JMP
-(EQ590)
+(EQ318)
 @SP
 A=M-1
 M=1
-(ENDEQ590)
+(ENDEQ318)
 // or
 @SP
 AM=M-1
@@ -7683,14 +4397,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE593
+@FALSE321
 D; JEQ
 D=0
-@ENDNOT593
+@ENDNOT321
 0; JMP
-(FALSE593)
+(FALSE321)
 D=1
-(ENDNOT593)
+(ENDNOT321)
 @SP
 A=M-1
 M=D
@@ -7732,18 +4446,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT598
+@LT326
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT598
+@ENDLT326
 0; JMP
-(LT598)
+(LT326)
 @SP
 A=M-1
 M=1
-(ENDLT598)
+(ENDLT326)
 // push argument 0
 @0
 D=A
@@ -7770,18 +4484,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT601
+@LT329
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT601
+@ENDLT329
 0; JMP
-(LT601)
+(LT329)
 @SP
 A=M-1
 M=1
-(ENDLT601)
+(ENDLT329)
 // and
 @SP
 AM=M-1
@@ -7792,14 +4506,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE603
+@FALSE331
 D; JEQ
 D=0
-@ENDNOT603
+@ENDNOT331
 0; JMP
-(FALSE603)
+(FALSE331)
 D=1
-(ENDNOT603)
+(ENDNOT331)
 @SP
 A=M-1
 M=D
@@ -7868,7 +4582,7 @@ D=M
 A=A-1
 M=D+M
 // call Screen.drawPixel 2
-@RETURN612
+@RETURN340
 D=A
 @SP
 AM=M+1
@@ -7912,7 +4626,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN612)
+(RETURN340)
 // pop temp 0
 @SP
 AM=M-1
@@ -7952,18 +4666,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT619
+@LT347
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT619
+@ENDLT347
 0; JMP
-(LT619)
+(LT347)
 @SP
 A=M-1
 M=1
-(ENDLT619)
+(ENDLT347)
 // push argument 0
 @0
 D=A
@@ -7990,18 +4704,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT622
+@GT350
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT622
+@ENDGT350
 0; JMP
-(GT622)
+(GT350)
 @SP
 A=M-1
 M=1
-(ENDGT622)
+(ENDGT350)
 // and
 @SP
 AM=M-1
@@ -8012,14 +4726,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE624
+@FALSE352
 D; JEQ
 D=0
-@ENDNOT624
+@ENDNOT352
 0; JMP
-(FALSE624)
+(FALSE352)
 D=1
-(ENDNOT624)
+(ENDNOT352)
 @SP
 A=M-1
 M=D
@@ -8088,7 +4802,7 @@ D=M
 A=A-1
 M=D+M
 // call Screen.drawPixel 2
-@RETURN633
+@RETURN361
 D=A
 @SP
 AM=M+1
@@ -8132,7 +4846,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN633)
+(RETURN361)
 // pop temp 0
 @SP
 AM=M-1
@@ -8172,18 +4886,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT640
+@GT368
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT640
+@ENDGT368
 0; JMP
-(GT640)
+(GT368)
 @SP
 A=M-1
 M=1
-(ENDGT640)
+(ENDGT368)
 // push argument 0
 @0
 D=A
@@ -8210,18 +4924,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT643
+@LT371
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT643
+@ENDLT371
 0; JMP
-(LT643)
+(LT371)
 @SP
 A=M-1
 M=1
-(ENDLT643)
+(ENDLT371)
 // and
 @SP
 AM=M-1
@@ -8232,14 +4946,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE645
+@FALSE373
 D; JEQ
 D=0
-@ENDNOT645
+@ENDNOT373
 0; JMP
-(FALSE645)
+(FALSE373)
 D=1
-(ENDNOT645)
+(ENDNOT373)
 @SP
 A=M-1
 M=D
@@ -8308,7 +5022,7 @@ D=M
 A=A-1
 M=M-D
 // call Screen.drawPixel 2
-@RETURN654
+@RETURN382
 D=A
 @SP
 AM=M+1
@@ -8352,7 +5066,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN654)
+(RETURN382)
 // pop temp 0
 @SP
 AM=M-1
@@ -8392,18 +5106,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT661
+@GT389
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT661
+@ENDGT389
 0; JMP
-(GT661)
+(GT389)
 @SP
 A=M-1
 M=1
-(ENDGT661)
+(ENDGT389)
 // push argument 0
 @0
 D=A
@@ -8430,18 +5144,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT664
+@GT392
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT664
+@ENDGT392
 0; JMP
-(GT664)
+(GT392)
 @SP
 A=M-1
 M=1
-(ENDGT664)
+(ENDGT392)
 // and
 @SP
 AM=M-1
@@ -8452,14 +5166,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE666
+@FALSE394
 D; JEQ
 D=0
-@ENDNOT666
+@ENDNOT394
 0; JMP
-(FALSE666)
+(FALSE394)
 D=1
-(ENDNOT666)
+(ENDNOT394)
 @SP
 A=M-1
 M=D
@@ -8528,7 +5242,7 @@ D=M
 A=A-1
 M=M-D
 // call Screen.drawPixel 2
-@RETURN675
+@RETURN403
 D=A
 @SP
 AM=M+1
@@ -8572,7 +5286,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN675)
+(RETURN403)
 // pop temp 0
 @SP
 AM=M-1
@@ -8609,30 +5323,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT682
+@LT410
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT682
+@ENDLT410
 0; JMP
-(LT682)
+(LT410)
 @SP
 A=M-1
 M=1
-(ENDLT682)
+(ENDLT410)
 // not
 @SP
 A=M-1
 D=M
-@FALSE683
+@FALSE411
 D; JEQ
 D=0
-@ENDNOT683
+@ENDNOT411
 0; JMP
-(FALSE683)
+(FALSE411)
 D=1
-(ENDNOT683)
+(ENDNOT411)
 @SP
 A=M-1
 M=D
@@ -8836,18 +5550,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT709
+@LT437
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT709
+@ENDLT437
 0; JMP
-(LT709)
+(LT437)
 @SP
 A=M-1
 M=1
-(ENDLT709)
+(ENDLT437)
 // push argument 0
 @0
 D=A
@@ -8874,18 +5588,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT712
+@LT440
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT712
+@ENDLT440
 0; JMP
-(LT712)
+(LT440)
 @SP
 A=M-1
 M=1
-(ENDLT712)
+(ENDLT440)
 // and
 @SP
 AM=M-1
@@ -8942,17 +5656,17 @@ A=M
 (Screen.drawCircle)
 @33
 D=A
-(INIT715)
-@ENDINIT715
+(INIT443)
+@ENDINIT443
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT715
+@INIT443
 0; JMP
-(ENDINIT715)
+(ENDINIT443)
 // push argument 2
 @2
 D=A
@@ -9001,7 +5715,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN721
+@RETURN449
 D=A
 @SP
 AM=M+1
@@ -9045,7 +5759,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN721)
+(RETURN449)
 // pop local 2
 @2
 D=A
@@ -9087,18 +5801,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT726
+@LT454
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT726
+@ENDLT454
 0; JMP
-(LT726)
+(LT454)
 @SP
 A=M-1
 M=1
-(ENDLT726)
+(ENDLT454)
 // push local 0
 @0
 D=A
@@ -9125,18 +5839,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ729
+@EQ457
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ729
+@ENDEQ457
 0; JMP
-(EQ729)
+(EQ457)
 @SP
 A=M-1
 M=1
-(ENDEQ729)
+(ENDEQ457)
 // or
 @SP
 AM=M-1
@@ -9147,14 +5861,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE731
+@FALSE459
 D; JEQ
 D=0
-@ENDNOT731
+@ENDNOT459
 0; JMP
-(FALSE731)
+(FALSE459)
 D=1
-(ENDNOT731)
+(ENDNOT459)
 @SP
 A=M-1
 M=D
@@ -9191,7 +5905,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN736
+@RETURN464
 D=A
 @SP
 AM=M+1
@@ -9235,7 +5949,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN736)
+(RETURN464)
 // pop local 1
 @1
 D=A
@@ -9276,7 +5990,7 @@ D=M
 A=A-1
 M=M-D
 // call Math.sqrt 1
-@RETURN741
+@RETURN469
 D=A
 @SP
 AM=M+1
@@ -9320,7 +6034,7 @@ D=M
 M=D
 @Math.sqrt
 0; JMP
-(RETURN741)
+(RETURN469)
 // pop local 3
 @3
 D=A
@@ -9465,14 +6179,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE756
+@FALSE484
 D; JEQ
 D=0
-@ENDNOT756
+@ENDNOT484
 0; JMP
-(FALSE756)
+(FALSE484)
 D=1
-(ENDNOT756)
+(ENDNOT484)
 @SP
 A=M-1
 M=D
@@ -9529,7 +6243,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawLine 4
-@RETURN763
+@RETURN491
 D=A
 @SP
 AM=M+1
@@ -9573,7 +6287,7 @@ D=M
 M=D
 @Screen.drawLine
 0; JMP
-(RETURN763)
+(RETURN491)
 // pop temp 0
 @SP
 AM=M-1
@@ -9606,7 +6320,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawPixel 2
-@RETURN769
+@RETURN497
 D=A
 @SP
 AM=M+1
@@ -9650,7 +6364,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN769)
+(RETURN497)
 // pop temp 0
 @SP
 AM=M-1
@@ -9678,7 +6392,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawPixel 2
-@RETURN773
+@RETURN501
 D=A
 @SP
 AM=M+1
@@ -9722,7 +6436,7 @@ D=M
 M=D
 @Screen.drawPixel
 0; JMP
-(RETURN773)
+(RETURN501)
 // pop temp 0
 @SP
 AM=M-1
@@ -9829,17 +6543,17 @@ A=M
 (Screen.drawRectangle)
 @69
 D=A
-(INIT784)
-@ENDINIT784
+(INIT512)
+@ENDINIT512
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT784
+@INIT512
 0; JMP
-(ENDINIT784)
+(ENDINIT512)
 // push argument 1
 @1
 D=A
@@ -9867,7 +6581,7 @@ D=M
 A=A-1
 M=M-D
 // call Math.abs 1
-@RETURN788
+@RETURN516
 D=A
 @SP
 AM=M+1
@@ -9911,7 +6625,7 @@ D=M
 M=D
 @Math.abs
 0; JMP
-(RETURN788)
+(RETURN516)
 // pop local 0
 @0
 D=A
@@ -9973,18 +6687,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT795
+@LT523
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT795
+@ENDLT523
 0; JMP
-(LT795)
+(LT523)
 @SP
 A=M-1
 M=1
-(ENDLT795)
+(ENDLT523)
 // push local 1
 @1
 D=A
@@ -10011,18 +6725,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ798
+@EQ526
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ798
+@ENDEQ526
 0; JMP
-(EQ798)
+(EQ526)
 @SP
 A=M-1
 M=1
-(ENDEQ798)
+(ENDEQ526)
 // or
 @SP
 AM=M-1
@@ -10033,14 +6747,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE800
+@FALSE528
 D; JEQ
 D=0
-@ENDNOT800
+@ENDNOT528
 0; JMP
-(FALSE800)
+(FALSE528)
 D=1
-(ENDNOT800)
+(ENDNOT528)
 @SP
 A=M-1
 M=D
@@ -10082,30 +6796,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT805
+@LT533
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT805
+@ENDLT533
 0; JMP
-(LT805)
+(LT533)
 @SP
 A=M-1
 M=1
-(ENDLT805)
+(ENDLT533)
 // not
 @SP
 A=M-1
 D=M
-@FALSE806
+@FALSE534
 D; JEQ
 D=0
-@ENDNOT806
+@ENDNOT534
 0; JMP
-(FALSE806)
+(FALSE534)
 D=1
-(ENDNOT806)
+(ENDNOT534)
 @SP
 A=M-1
 M=D
@@ -10247,7 +6961,7 @@ AM=M+1
 A=A-1
 M=D
 // call Screen.drawLine 4
-@RETURN824
+@RETURN552
 D=A
 @SP
 AM=M+1
@@ -10291,7 +7005,7 @@ D=M
 M=D
 @Screen.drawLine
 0; JMP
-(RETURN824)
+(RETURN552)
 // pop temp 0
 @SP
 AM=M-1
@@ -10396,17 +7110,17 @@ A=M
 (Screen.clearScreen)
 @139
 D=A
-(INIT834)
-@ENDINIT834
+(INIT562)
+@ENDINIT562
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT834
+@INIT562
 0; JMP
-(ENDINIT834)
+(ENDINIT562)
 // push constant 0
 @0
 D=A
@@ -10452,30 +7166,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT840
+@LT568
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT840
+@ENDLT568
 0; JMP
-(LT840)
+(LT568)
 @SP
 A=M-1
 M=1
-(ENDLT840)
+(ENDLT568)
 // not
 @SP
 A=M-1
 D=M
-@FALSE841
+@FALSE569
 D; JEQ
 D=0
-@ENDNOT841
+@ENDNOT569
 0; JMP
-(FALSE841)
+(FALSE569)
 D=1
-(ENDNOT841)
+(ENDNOT569)
 @SP
 A=M-1
 M=D
@@ -10522,7 +7236,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN848
+@RETURN576
 D=A
 @SP
 AM=M+1
@@ -10566,7 +7280,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN848)
+(RETURN576)
 // pop temp 0
 @SP
 AM=M-1
@@ -10668,397 +7382,21 @@ M=D
 A=M
 0; JMP
 
-// function Math.init 2
-(Math.init)
-@2
-D=A
-(INIT858)
-@ENDINIT858
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT858
-0; JMP
-(ENDINIT858)
-// push constant 16
-@16
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Array.new 1
-@RETURN860
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Array.new
-0; JMP
-(RETURN860)
-// pop static 0
-@SP
-AM=M-1
-D=M
-@Math.0
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// label WHILE.Math.init.1
-(WHILE.Math.init.1)
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 16
-@16
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// lt
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@LT869
-D; JLT
-@SP
-A=M-1
-M=0
-@ENDLT869
-0; JMP
-(LT869)
-@SP
-A=M-1
-M=1
-(ENDLT869)
-// not
-@SP
-A=M-1
-D=M
-@FALSE870
-D; JEQ
-D=0
-@ENDNOT870
-0; JMP
-(FALSE870)
-D=1
-(ENDNOT870)
-@SP
-A=M-1
-M=D
-// if-goto ENDWHILE.Math.init.1
-@SP
-A=M-1
-D=M
-@ENDWHILE.Math.init.1
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// push static 0
-@Math.0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push temp 0
-@TEMP0
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop that 0
-@0
-D=A
-@THAT
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// goto WHILE.Math.init.1
-@WHILE.Math.init.1
-0; JMP
-// label ENDWHILE.Math.init.1
-(ENDWHILE.Math.init.1)
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function Math.multiply 9
+// function Math.multiply 5
 (Math.multiply)
-@9
+@5
 D=A
-(INIT893)
-@ENDINIT893
+(INIT586)
+@ENDINIT586
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT893
+@INIT586
 0; JMP
-(ENDINIT893)
+(ENDINIT586)
 // push constant 0
 @0
 D=A
@@ -11122,8 +7460,8 @@ D=M
 @R13
 A=M
 M=D
-// label WHILE.Math.multiply.3
-(WHILE.Math.multiply.3)
+// label WHILE.Math.multiply.2
+(WHILE.Math.multiply.2)
 // push local 1
 @1
 D=A
@@ -11147,38 +7485,38 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT903
+@LT596
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT903
+@ENDLT596
 0; JMP
-(LT903)
+(LT596)
 @SP
 A=M-1
 M=1
-(ENDLT903)
+(ENDLT596)
 // not
 @SP
 A=M-1
 D=M
-@FALSE904
+@FALSE597
 D; JEQ
 D=0
-@ENDNOT904
+@ENDNOT597
 0; JMP
-(FALSE904)
+(FALSE597)
 D=1
-(ENDNOT904)
+(ENDNOT597)
 @SP
 A=M-1
 M=D
-// if-goto ENDWHILE.Math.multiply.3
+// if-goto ENDWHILE.Math.multiply.2
 @SP
 A=M-1
 D=M
-@ENDWHILE.Math.multiply.3
+@ENDWHILE.Math.multiply.2
 D; JGT
 // pop temp 2
 @SP
@@ -11197,7 +7535,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.bit 1
-@RETURN908
+@RETURN601
 D=A
 @SP
 AM=M+1
@@ -11241,7 +7579,7 @@ D=M
 M=D
 @Math.bit
 0; JMP
-(RETURN908)
+(RETURN601)
 // pop local 3
 @3
 D=A
@@ -11297,38 +7635,38 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ914
+@EQ607
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ914
+@ENDEQ607
 0; JMP
-(EQ914)
+(EQ607)
 @SP
 A=M-1
 M=1
-(ENDEQ914)
+(ENDEQ607)
 // not
 @SP
 A=M-1
 D=M
-@FALSE915
+@FALSE608
 D; JEQ
 D=0
-@ENDNOT915
+@ENDNOT608
 0; JMP
-(FALSE915)
+(FALSE608)
 D=1
-(ENDNOT915)
+(ENDNOT608)
 @SP
 A=M-1
 M=D
-// if-goto ELSE.Math.multiply.3
+// if-goto ELSE.Math.multiply.2
 @SP
 A=M-1
 D=M
-@ELSE.Math.multiply.3
+@ELSE.Math.multiply.2
 D; JGT
 // pop temp 2
 @SP
@@ -11375,13 +7713,13 @@ D=M
 @R13
 A=M
 M=D
-// goto ENDIF.Math.multiply.3
-@ENDIF.Math.multiply.3
+// goto ENDIF.Math.multiply.2
+@ENDIF.Math.multiply.2
 0; JMP
-// label ELSE.Math.multiply.3
-(ELSE.Math.multiply.3)
-// label ENDIF.Math.multiply.3
-(ENDIF.Math.multiply.3)
+// label ELSE.Math.multiply.2
+(ELSE.Math.multiply.2)
+// label ENDIF.Math.multiply.2
+(ENDIF.Math.multiply.2)
 // push local 2
 @2
 D=A
@@ -11457,11 +7795,11 @@ D=M
 @R13
 A=M
 M=D
-// goto WHILE.Math.multiply.3
-@WHILE.Math.multiply.3
+// goto WHILE.Math.multiply.2
+@WHILE.Math.multiply.2
 0; JMP
-// label ENDWHILE.Math.multiply.3
-(ENDWHILE.Math.multiply.3)
+// label ENDWHILE.Math.multiply.2
+(ENDWHILE.Math.multiply.2)
 // push local 0
 @0
 D=A
@@ -11518,23 +7856,68 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.bit 18
+// function Math.bit 12
 (Math.bit)
-@18
+@12
 D=A
-(INIT937)
-@ENDINIT937
+(INIT630)
+@ENDINIT630
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT937
+@INIT630
 0; JMP
-(ENDINIT937)
-// push static 0
-@Math.0
+(ENDINIT630)
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop local 1
+@1
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// label WHILE.Math.bit.3
+(WHILE.Math.bit.3)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
 D=M
 @SP
 AM=M+1
@@ -11550,22 +7933,135 @@ D=M
 AM=M+1
 A=A-1
 M=D
+// lt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@LT638
+D; JLT
+@SP
+A=M-1
+M=0
+@ENDLT638
+0; JMP
+(LT638)
+@SP
+A=M-1
+M=1
+(ENDLT638)
+// not
+@SP
+A=M-1
+D=M
+@FALSE639
+D; JEQ
+D=0
+@ENDNOT639
+0; JMP
+(FALSE639)
+D=1
+(ENDNOT639)
+@SP
+A=M-1
+M=D
+// if-goto ENDWHILE.Math.bit.3
+@SP
+A=M-1
+D=M
+@ENDWHILE.Math.bit.3
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push local 1
+@1
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push local 1
+@1
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
 // add
 @SP
 AM=M-1
 D=M
 A=A-1
 M=D+M
-// pop pointer 1
+// pop local 1
+@1
+D=A
+@LCL
+D=M+D
+@R13
+M=D
 @SP
 AM=M-1
 D=M
-@THAT
+@R13
+A=M
 M=D
-// push that 0
+// push local 0
 @0
 D=A
-@THAT
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// goto WHILE.Math.bit.3
+@WHILE.Math.bit.3
+0; JMP
+// label ENDWHILE.Math.bit.3
+(ENDWHILE.Math.bit.3)
+// push local 1
+@1
+D=A
+@LCL
 A=M+D
 D=M
 @SP
@@ -11618,21 +8114,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.divide 41
+// function Math.divide 29
 (Math.divide)
-@41
+@29
 D=A
-(INIT944)
-@ENDINIT944
+(INIT654)
+@ENDINIT654
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT944
+@INIT654
 0; JMP
-(ENDINIT944)
+(ENDINIT654)
 // push argument 1
 @1
 D=A
@@ -11656,18 +8152,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ947
+@EQ657
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ947
+@ENDEQ657
 0; JMP
-(EQ947)
+(EQ657)
 @SP
 A=M-1
 M=1
-(ENDEQ947)
+(ENDEQ657)
 // push argument 0
 @0
 D=A
@@ -11691,18 +8187,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ950
+@EQ660
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ950
+@ENDEQ660
 0; JMP
-(EQ950)
+(EQ660)
 @SP
 A=M-1
 M=1
-(ENDEQ950)
+(ENDEQ660)
 // or
 @SP
 AM=M-1
@@ -11713,14 +8209,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE952
+@FALSE662
 D; JEQ
 D=0
-@ENDNOT952
+@ENDNOT662
 0; JMP
-(FALSE952)
+(FALSE662)
 D=1
-(ENDNOT952)
+(ENDNOT662)
 @SP
 A=M-1
 M=D
@@ -11819,18 +8315,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT962
+@GT672
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT962
+@ENDGT672
 0; JMP
-(GT962)
+(GT672)
 @SP
 A=M-1
 M=1
-(ENDGT962)
+(ENDGT672)
 // push argument 0
 @0
 D=A
@@ -11854,18 +8350,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ965
+@EQ675
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ965
+@ENDEQ675
 0; JMP
-(EQ965)
+(EQ675)
 @SP
 A=M-1
 M=1
-(ENDEQ965)
+(ENDEQ675)
 // or
 @SP
 AM=M-1
@@ -11895,18 +8391,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT969
+@GT679
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT969
+@ENDGT679
 0; JMP
-(GT969)
+(GT679)
 @SP
 A=M-1
 M=1
-(ENDGT969)
+(ENDGT679)
 // push argument 1
 @1
 D=A
@@ -11930,18 +8426,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ972
+@EQ682
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ972
+@ENDEQ682
 0; JMP
-(EQ972)
+(EQ682)
 @SP
 A=M-1
 M=1
-(ENDEQ972)
+(ENDEQ682)
 // or
 @SP
 AM=M-1
@@ -11977,18 +8473,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT977
+@LT687
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT977
+@ENDLT687
 0; JMP
-(LT977)
+(LT687)
 @SP
 A=M-1
 M=1
-(ENDLT977)
+(ENDLT687)
 // push argument 1
 @1
 D=A
@@ -12012,18 +8508,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT980
+@LT690
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT980
+@ENDLT690
 0; JMP
-(LT980)
+(LT690)
 @SP
 A=M-1
 M=1
-(ENDLT980)
+(ENDLT690)
 // and
 @SP
 AM=M-1
@@ -12040,14 +8536,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE983
+@FALSE693
 D; JEQ
 D=0
-@ENDNOT983
+@ENDNOT693
 0; JMP
-(FALSE983)
+(FALSE693)
 D=1
-(ENDNOT983)
+(ENDNOT693)
 @SP
 A=M-1
 M=D
@@ -12121,7 +8617,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.abs 1
-@RETURN994
+@RETURN704
 D=A
 @SP
 AM=M+1
@@ -12165,7 +8661,7 @@ D=M
 M=D
 @Math.abs
 0; JMP
-(RETURN994)
+(RETURN704)
 // pop local 1
 @1
 D=A
@@ -12190,7 +8686,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.abs 1
-@RETURN997
+@RETURN707
 D=A
 @SP
 AM=M+1
@@ -12234,7 +8730,7 @@ D=M
 M=D
 @Math.abs
 0; JMP
-(RETURN997)
+(RETURN707)
 // pop local 2
 @2
 D=A
@@ -12274,18 +8770,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT1001
+@GT711
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT1001
+@ENDGT711
 0; JMP
-(GT1001)
+(GT711)
 @SP
 A=M-1
 M=1
-(ENDGT1001)
+(ENDGT711)
 // push local 2
 @2
 D=A
@@ -12309,18 +8805,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1004
+@LT714
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1004
+@ENDLT714
 0; JMP
-(LT1004)
+(LT714)
 @SP
 A=M-1
 M=1
-(ENDLT1004)
+(ENDLT714)
 // or
 @SP
 AM=M-1
@@ -12331,14 +8827,14 @@ M=D|M
 @SP
 A=M-1
 D=M
-@FALSE1006
+@FALSE716
 D; JEQ
 D=0
-@ENDNOT1006
+@ENDNOT716
 0; JMP
-(FALSE1006)
+(FALSE716)
 D=1
-(ENDNOT1006)
+(ENDNOT716)
 @SP
 A=M-1
 M=D
@@ -12451,7 +8947,7 @@ D=M
 A=A-1
 M=D+M
 // call Math.divide 2
-@RETURN1018
+@RETURN728
 D=A
 @SP
 AM=M+1
@@ -12495,7 +8991,7 @@ D=M
 M=D
 @Math.divide
 0; JMP
-(RETURN1018)
+(RETURN728)
 // pop local 0
 @0
 D=A
@@ -12547,7 +9043,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN1024
+@RETURN734
 D=A
 @SP
 AM=M+1
@@ -12591,9 +9087,9 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1024)
+(RETURN734)
 // call Math.multiply 2
-@RETURN1025
+@RETURN735
 D=A
 @SP
 AM=M+1
@@ -12637,7 +9133,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1025)
+(RETURN735)
 // sub
 @SP
 AM=M-1
@@ -12660,30 +9156,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1028
+@LT738
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1028
+@ENDLT738
 0; JMP
-(LT1028)
+(LT738)
 @SP
 A=M-1
 M=1
-(ENDLT1028)
+(ENDLT738)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1029
+@FALSE739
 D; JEQ
 D=0
-@ENDNOT1029
+@ENDNOT739
 0; JMP
-(FALSE1029)
+(FALSE739)
 D=1
-(ENDNOT1029)
+(ENDNOT739)
 @SP
 A=M-1
 M=D
@@ -12811,14 +9307,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE1046
+@FALSE756
 D; JEQ
 D=0
-@ENDNOT1046
+@ENDNOT756
 0; JMP
-(FALSE1046)
+(FALSE756)
 D=1
-(ENDNOT1046)
+(ENDNOT756)
 @SP
 A=M-1
 M=D
@@ -12924,21 +9420,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.mod 83
+// function Math.mod 59
 (Math.mod)
-@83
+@59
 D=A
-(INIT1057)
-@ENDINIT1057
+(INIT767)
+@ENDINIT767
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1057
+@INIT767
 0; JMP
-(ENDINIT1057)
+(ENDINIT767)
 // push argument 0
 @0
 D=A
@@ -12960,7 +9456,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.divide 2
-@RETURN1060
+@RETURN770
 D=A
 @SP
 AM=M+1
@@ -13004,7 +9500,7 @@ D=M
 M=D
 @Math.divide
 0; JMP
-(RETURN1060)
+(RETURN770)
 // pop local 0
 @0
 D=A
@@ -13049,7 +9545,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN1065
+@RETURN775
 D=A
 @SP
 AM=M+1
@@ -13093,7 +9589,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1065)
+(RETURN775)
 // sub
 @SP
 AM=M-1
@@ -13146,21 +9642,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.abs 166
+// function Math.abs 118
 (Math.abs)
-@166
+@118
 D=A
-(INIT1068)
-@ENDINIT1068
+(INIT778)
+@ENDINIT778
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1068
+@INIT778
 0; JMP
-(ENDINIT1068)
+(ENDINIT778)
 // push argument 0
 @0
 D=A
@@ -13184,30 +9680,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1071
+@LT781
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1071
+@ENDLT781
 0; JMP
-(LT1071)
+(LT781)
 @SP
 A=M-1
 M=1
-(ENDLT1071)
+(ENDLT781)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1072
+@FALSE782
 D; JEQ
 D=0
-@ENDNOT1072
+@ENDNOT782
 0; JMP
-(FALSE1072)
+(FALSE782)
 D=1
-(ENDNOT1072)
+(ENDNOT782)
 @SP
 A=M-1
 M=D
@@ -13346,21 +9842,21 @@ A=M
 0; JMP
 // label ENDIF.Math.abs.9
 (ENDIF.Math.abs.9)
-// function Math.pow 333
+// function Math.pow 237
 (Math.pow)
-@333
+@237
 D=A
-(INIT1083)
-@ENDINIT1083
+(INIT793)
+@ENDINIT793
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1083
+@INIT793
 0; JMP
-(ENDINIT1083)
+(ENDINIT793)
 // push argument 1
 @1
 D=A
@@ -13384,30 +9880,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ1086
+@EQ796
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ1086
+@ENDEQ796
 0; JMP
-(EQ1086)
+(EQ796)
 @SP
 A=M-1
 M=1
-(ENDEQ1086)
+(ENDEQ796)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1087
+@FALSE797
 D; JEQ
 D=0
-@ENDNOT1087
+@ENDNOT797
 0; JMP
-(FALSE1087)
+(FALSE797)
 D=1
-(ENDNOT1087)
+(ENDNOT797)
 @SP
 A=M-1
 M=D
@@ -13531,30 +10027,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT1100
+@GT810
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT1100
+@ENDGT810
 0; JMP
-(GT1100)
+(GT810)
 @SP
 A=M-1
 M=1
-(ENDGT1100)
+(ENDGT810)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1101
+@FALSE811
 D; JEQ
 D=0
-@ENDNOT1101
+@ENDNOT811
 0; JMP
-(FALSE1101)
+(FALSE811)
 D=1
-(ENDNOT1101)
+(ENDNOT811)
 @SP
 A=M-1
 M=D
@@ -13591,7 +10087,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN1106
+@RETURN816
 D=A
 @SP
 AM=M+1
@@ -13635,7 +10131,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1106)
+(RETURN816)
 // pop local 0
 @0
 D=A
@@ -13746,21 +10242,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.sqrt 668
+// function Math.sqrt 476
 (Math.sqrt)
-@668
+@476
 D=A
-(INIT1116)
-@ENDINIT1116
+(INIT826)
+@ENDINIT826
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1116
+@INIT826
 0; JMP
-(ENDINIT1116)
+(ENDINIT826)
 // push constant 1
 @1
 D=A
@@ -13829,18 +10325,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1124
+@LT834
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1124
+@ENDLT834
 0; JMP
-(LT1124)
+(LT834)
 @SP
 A=M-1
 M=1
-(ENDLT1124)
+(ENDLT834)
 // push local 1
 @1
 D=A
@@ -13867,18 +10363,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ1127
+@EQ837
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ1127
+@ENDEQ837
 0; JMP
-(EQ1127)
+(EQ837)
 @SP
 A=M-1
 M=1
-(ENDEQ1127)
+(ENDEQ837)
 // or
 @SP
 AM=M-1
@@ -13908,18 +10404,18 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT1131
+@GT841
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT1131
+@ENDGT841
 0; JMP
-(GT1131)
+(GT841)
 @SP
 A=M-1
 M=1
-(ENDGT1131)
+(ENDGT841)
 // and
 @SP
 AM=M-1
@@ -13930,14 +10426,14 @@ M=D&M
 @SP
 A=M-1
 D=M
-@FALSE1133
+@FALSE843
 D; JEQ
 D=0
-@ENDNOT1133
+@ENDNOT843
 0; JMP
-(FALSE1133)
+(FALSE843)
 D=1
-(ENDNOT1133)
+(ENDNOT843)
 @SP
 A=M-1
 M=D
@@ -14010,7 +10506,7 @@ AM=M+1
 A=A-1
 M=D
 // call Math.multiply 2
-@RETURN1142
+@RETURN852
 D=A
 @SP
 AM=M+1
@@ -14054,7 +10550,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1142)
+(RETURN852)
 // pop local 1
 @1
 D=A
@@ -14142,21 +10638,21 @@ M=D
 @R13
 A=M
 0; JMP
-// function Math.min 1336
+// function Math.min 952
 (Math.min)
-@1336
+@952
 D=A
-(INIT1150)
-@ENDINIT1150
+(INIT860)
+@ENDINIT860
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1150
+@INIT860
 0; JMP
-(ENDINIT1150)
+(ENDINIT860)
 // push argument 0
 @0
 D=A
@@ -14183,30 +10679,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1153
+@LT863
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1153
+@ENDLT863
 0; JMP
-(LT1153)
+(LT863)
 @SP
 A=M-1
 M=1
-(ENDLT1153)
+(ENDLT863)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1154
+@FALSE864
 D; JEQ
 D=0
-@ENDNOT1154
+@ENDNOT864
 0; JMP
-(FALSE1154)
+(FALSE864)
 D=1
-(ENDNOT1154)
+(ENDNOT864)
 @SP
 A=M-1
 M=D
@@ -14341,21 +10837,21 @@ A=M
 0; JMP
 // label ENDIF.Math.min.13
 (ENDIF.Math.min.13)
-// function Math.max 2672
+// function Math.max 1904
 (Math.max)
-@2672
+@1904
 D=A
-(INIT1164)
-@ENDINIT1164
+(INIT874)
+@ENDINIT874
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1164
+@INIT874
 0; JMP
-(ENDINIT1164)
+(ENDINIT874)
 // push argument 0
 @0
 D=A
@@ -14382,30 +10878,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@GT1167
+@GT877
 D; JGT
 @SP
 A=M-1
 M=0
-@ENDGT1167
+@ENDGT877
 0; JMP
-(GT1167)
+(GT877)
 @SP
 A=M-1
 M=1
-(ENDGT1167)
+(ENDGT877)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1168
+@FALSE878
 D; JEQ
 D=0
-@ENDNOT1168
+@ENDNOT878
 0; JMP
-(FALSE1168)
+(FALSE878)
 D=1
-(ENDNOT1168)
+(ENDNOT878)
 @SP
 A=M-1
 M=D
@@ -14540,21 +11036,21 @@ A=M
 0; JMP
 // label ENDIF.Math.max.14
 (ENDIF.Math.max.14)
-// function Math.factorial 5344
+// function Math.factorial 3808
 (Math.factorial)
-@5344
+@3808
 D=A
-(INIT1178)
-@ENDINIT1178
+(INIT888)
+@ENDINIT888
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1178
+@INIT888
 0; JMP
-(ENDINIT1178)
+(ENDINIT888)
 // push argument 0
 @0
 D=A
@@ -14578,30 +11074,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ1181
+@EQ891
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ1181
+@ENDEQ891
 0; JMP
-(EQ1181)
+(EQ891)
 @SP
 A=M-1
 M=1
-(ENDEQ1181)
+(ENDEQ891)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1182
+@FALSE892
 D; JEQ
 D=0
-@ENDNOT1182
+@ENDNOT892
 0; JMP
-(FALSE1182)
+(FALSE892)
 D=1
-(ENDNOT1182)
+(ENDNOT892)
 @SP
 A=M-1
 M=D
@@ -14711,7 +11207,7 @@ D=M
 A=A-1
 M=M-D
 // call Math.factorial 1
-@RETURN1194
+@RETURN904
 D=A
 @SP
 AM=M+1
@@ -14755,9 +11251,9 @@ D=M
 M=D
 @Math.factorial
 0; JMP
-(RETURN1194)
+(RETURN904)
 // call Math.multiply 2
-@RETURN1195
+@RETURN905
 D=A
 @SP
 AM=M+1
@@ -14801,7 +11297,7 @@ D=M
 M=D
 @Math.multiply
 0; JMP
-(RETURN1195)
+(RETURN905)
 // return
 @5
 D=A
@@ -14853,23 +11349,68 @@ A=M
 (Main.main)
 @0
 D=A
-(INIT1197)
-@ENDINIT1197
+(INIT907)
+@ENDINIT907
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1197
+@INIT907
 0; JMP
-(ENDINIT1197)
-// push constant 15
-@15
+(ENDINIT907)
+// push constant 8
+@8
 D=A
 @SP
 AM=M+1
 A=A-1
+M=D
+// pop static 3
+@SP
+AM=M-1
+D=M
+@Main.3
+M=D
+// push constant 4
+@4
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 0
+@SP
+AM=M-1
+D=M
+@Main.0
+M=D
+// push constant 31
+@31
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 2
+@SP
+AM=M-1
+D=M
+@Main.2
+M=D
+// push constant 31
+@31
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 1
+@SP
+AM=M-1
+D=M
+@Main.1
 M=D
 // push constant 15
 @15
@@ -14878,12 +11419,24 @@ D=A
 AM=M+1
 A=A-1
 M=D
-// push constant 3
-@3
+// pop static 6
+@SP
+AM=M-1
+D=M
+@Main.6
+M=D
+// push constant 15
+@15
 D=A
 @SP
 AM=M+1
 A=A-1
+M=D
+// pop static 7
+@SP
+AM=M-1
+D=M
+@Main.7
 M=D
 // push constant 1
 @1
@@ -14892,8 +11445,94 @@ D=A
 AM=M+1
 A=A-1
 M=D
-// call Screen.drawCircle 4
-@RETURN1202
+// pop static 8
+@SP
+AM=M-1
+D=M
+@Main.8
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 9
+@SP
+AM=M-1
+D=M
+@Main.9
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 4
+@SP
+AM=M-1
+D=M
+@Main.4
+M=D
+// push constant 12
+@12
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 5
+@SP
+AM=M-1
+D=M
+@Main.5
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 3
+@Main.3
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// call Screen.drawLine 4
+@RETURN934
 D=A
 @SP
 AM=M+1
@@ -14935,9 +11574,186 @@ M=D
 D=M
 @LCL
 M=D
-@Screen.drawCircle
+@Screen.drawLine
 0; JMP
-(RETURN1202)
+(RETURN934)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.drawPixel 2
+@RETURN938
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN938)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push constant 500
+@500
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Sys.wait 1
+@RETURN941
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Sys.wait
+0; JMP
+(RETURN941)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// call Main.getDirection 0
+@RETURN943
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Main.getDirection
+0; JMP
+(RETURN943)
 // pop temp 0
 @SP
 AM=M-1
@@ -14997,24 +11813,59 @@ M=D
 @R13
 A=M
 0; JMP
-
-// function Sys.init 0
-(Sys.init)
-@0
+// function Main.getDirection 1
+(Main.getDirection)
+@1
 D=A
-(INIT1206)
-@ENDINIT1206
+(INIT947)
+@ENDINIT947
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1206
+@INIT947
 0; JMP
-(ENDINIT1206)
-// call String.init 0
-@RETURN1207
+(ENDINIT947)
+// label WHILE.Main.getDirection.3
+(WHILE.Main.getDirection.3)
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// not
+@SP
+A=M-1
+D=M
+@FALSE950
+D; JEQ
+D=0
+@ENDNOT950
+0; JMP
+(FALSE950)
+D=1
+(ENDNOT950)
+@SP
+A=M-1
+M=D
+// if-goto ENDWHILE.Main.getDirection.3
+@SP
+A=M-1
+D=M
+@ENDWHILE.Main.getDirection.3
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// call Main.moveBall 0
+@RETURN953
 D=A
 @SP
 AM=M+1
@@ -15056,17 +11907,24 @@ M=D
 D=M
 @LCL
 M=D
-@String.init
+@Main.moveBall
 0; JMP
-(RETURN1207)
+(RETURN953)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// call Memory.init 0
-@RETURN1209
+// push constant 50
+@50
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Sys.wait 1
+@RETURN956
 D=A
 @SP
 AM=M+1
@@ -15098,7 +11956,7 @@ A=A-1
 M=D
 @5
 D=A
-@0
+@1
 D=D+A
 @SP
 D=M-D
@@ -15108,17 +11966,17 @@ M=D
 D=M
 @LCL
 M=D
-@Memory.init
+@Sys.wait
 0; JMP
-(RETURN1209)
+(RETURN956)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// call Screen.init 0
-@RETURN1211
+// call Keyboard.keyPressed 0
+@RETURN958
 D=A
 @SP
 AM=M+1
@@ -15160,17 +12018,205 @@ M=D
 D=M
 @LCL
 M=D
-@Screen.init
+@Keyboard.keyPressed
 0; JMP
-(RETURN1211)
+(RETURN958)
+// pop local 0
+@0
+D=A
+@LCL
+D=M+D
+@R13
+M=D
+@SP
+AM=M-1
+D=M
+@R13
+A=M
+M=D
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 106
+@106
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ962
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ962
+0; JMP
+(EQ962)
+@SP
+A=M-1
+M=1
+(ENDEQ962)
+// not
+@SP
+A=M-1
+D=M
+@FALSE963
+D; JEQ
+D=0
+@ENDNOT963
+0; JMP
+(FALSE963)
+D=1
+(ENDNOT963)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.getDirection.2
+@SP
+A=M-1
+D=M
+@ELSE.Main.getDirection.2
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// call Main.moveDown 0
+@RETURN966
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Main.moveDown
+0; JMP
+(RETURN966)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// call Keyboard.init 0
-@RETURN1213
+// goto ENDIF.Main.getDirection.2
+@ENDIF.Main.getDirection.2
+0; JMP
+// label ELSE.Main.getDirection.2
+(ELSE.Main.getDirection.2)
+// push local 0
+@0
+D=A
+@LCL
+A=M+D
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 107
+@107
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ972
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ972
+0; JMP
+(EQ972)
+@SP
+A=M-1
+M=1
+(ENDEQ972)
+// not
+@SP
+A=M-1
+D=M
+@FALSE973
+D; JEQ
+D=0
+@ENDNOT973
+0; JMP
+(FALSE973)
+D=1
+(ENDNOT973)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.getDirection.3
+@SP
+A=M-1
+D=M
+@ELSE.Main.getDirection.3
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// call Main.moveUp 0
+@RETURN976
 D=A
 @SP
 AM=M+1
@@ -15212,17 +12258,217 @@ M=D
 D=M
 @LCL
 M=D
-@Keyboard.init
+@Main.moveUp
 0; JMP
-(RETURN1213)
+(RETURN976)
 // pop temp 0
 @SP
 AM=M-1
 D=M
 @TEMP0
 M=D
-// call Math.init 0
-@RETURN1215
+// goto ENDIF.Main.getDirection.3
+@ENDIF.Main.getDirection.3
+0; JMP
+// label ELSE.Main.getDirection.3
+(ELSE.Main.getDirection.3)
+// label ENDIF.Main.getDirection.3
+(ENDIF.Main.getDirection.3)
+// label ENDIF.Main.getDirection.2
+(ENDIF.Main.getDirection.2)
+// goto WHILE.Main.getDirection.3
+@WHILE.Main.getDirection.3
+0; JMP
+// label ENDWHILE.Main.getDirection.3
+(ENDWHILE.Main.getDirection.3)
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// function Main.moveBall 2
+(Main.moveBall)
+@2
+D=A
+(INIT986)
+@ENDINIT986
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT986
+0; JMP
+(ENDINIT986)
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ989
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ989
+0; JMP
+(EQ989)
+@SP
+A=M-1
+M=1
+(ENDEQ989)
+// not
+@SP
+A=M-1
+D=M
+@FALSE990
+D; JEQ
+D=0
+@ENDNOT990
+0; JMP
+(FALSE990)
+D=1
+(ENDNOT990)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.4
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.4
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 500
+@500
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Sys.wait 1
+@RETURN994
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Sys.wait
+0; JMP
+(RETURN994)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// call Screen.clearScreen 0
+@RETURN996
 D=A
 @SP
 AM=M+1
@@ -15264,9 +12510,9 @@ M=D
 D=M
 @LCL
 M=D
-@Math.init
+@Screen.clearScreen
 0; JMP
-(RETURN1215)
+(RETURN996)
 // pop temp 0
 @SP
 AM=M-1
@@ -15274,7 +12520,7 @@ D=M
 @TEMP0
 M=D
 // call Main.main 0
-@RETURN1217
+@RETURN998
 D=A
 @SP
 AM=M+1
@@ -15318,7 +12564,2142 @@ D=M
 M=D
 @Main.main
 0; JMP
-(RETURN1217)
+(RETURN998)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// goto ENDIF.Main.moveBall.4
+@ENDIF.Main.moveBall.4
+0; JMP
+// label ELSE.Main.moveBall.4
+(ELSE.Main.moveBall.4)
+// label ENDIF.Main.moveBall.4
+(ENDIF.Main.moveBall.4)
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 2
+@Main.2
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1005
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1005
+0; JMP
+(EQ1005)
+@SP
+A=M-1
+M=1
+(ENDEQ1005)
+// not
+@SP
+A=M-1
+D=M
+@FALSE1006
+D; JEQ
+D=0
+@ENDNOT1006
+0; JMP
+(FALSE1006)
+D=1
+(ENDNOT1006)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.5
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.5
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push static 8
+@Main.8
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1011
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1011
+0; JMP
+(EQ1011)
+@SP
+A=M-1
+M=1
+(ENDEQ1011)
+// not
+@SP
+A=M-1
+D=M
+@FALSE1012
+D; JEQ
+D=0
+@ENDNOT1012
+0; JMP
+(FALSE1012)
+D=1
+(ENDNOT1012)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.6
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.6
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// neg
+@SP
+A=M-1
+M=-M
+// pop static 8
+@SP
+AM=M-1
+D=M
+@Main.8
+M=D
+// goto ENDIF.Main.moveBall.6
+@ENDIF.Main.moveBall.6
+0; JMP
+// label ELSE.Main.moveBall.6
+(ELSE.Main.moveBall.6)
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 8
+@SP
+AM=M-1
+D=M
+@Main.8
+M=D
+// label ENDIF.Main.moveBall.6
+(ENDIF.Main.moveBall.6)
+// goto ENDIF.Main.moveBall.5
+@ENDIF.Main.moveBall.5
+0; JMP
+// label ELSE.Main.moveBall.5
+(ELSE.Main.moveBall.5)
+// label ENDIF.Main.moveBall.5
+(ENDIF.Main.moveBall.5)
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 1
+@Main.1
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1028
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1028
+0; JMP
+(EQ1028)
+@SP
+A=M-1
+M=1
+(ENDEQ1028)
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1031
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1031
+0; JMP
+(EQ1031)
+@SP
+A=M-1
+M=1
+(ENDEQ1031)
+// or
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D|M
+// not
+@SP
+A=M-1
+D=M
+@FALSE1033
+D; JEQ
+D=0
+@ENDNOT1033
+0; JMP
+(FALSE1033)
+D=1
+(ENDNOT1033)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.7
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.7
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push static 9
+@Main.9
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1038
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1038
+0; JMP
+(EQ1038)
+@SP
+A=M-1
+M=1
+(ENDEQ1038)
+// not
+@SP
+A=M-1
+D=M
+@FALSE1039
+D; JEQ
+D=0
+@ENDNOT1039
+0; JMP
+(FALSE1039)
+D=1
+(ENDNOT1039)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.8
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.8
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// neg
+@SP
+A=M-1
+M=-M
+// pop static 9
+@SP
+AM=M-1
+D=M
+@Main.9
+M=D
+// goto ENDIF.Main.moveBall.8
+@ENDIF.Main.moveBall.8
+0; JMP
+// label ELSE.Main.moveBall.8
+(ELSE.Main.moveBall.8)
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 9
+@SP
+AM=M-1
+D=M
+@Main.9
+M=D
+// label ENDIF.Main.moveBall.8
+(ENDIF.Main.moveBall.8)
+// goto ENDIF.Main.moveBall.7
+@ENDIF.Main.moveBall.7
+0; JMP
+// label ELSE.Main.moveBall.7
+(ELSE.Main.moveBall.7)
+// label ENDIF.Main.moveBall.7
+(ENDIF.Main.moveBall.7)
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// eq
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@EQ1057
+D;JEQ
+@SP
+A=M-1
+M=0
+@ENDEQ1057
+0; JMP
+(EQ1057)
+@SP
+A=M-1
+M=1
+(ENDEQ1057)
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// gt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@GT1060
+D; JGT
+@SP
+A=M-1
+M=0
+@ENDGT1060
+0; JMP
+(GT1060)
+@SP
+A=M-1
+M=1
+(ENDGT1060)
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 3
+@Main.3
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// lt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@LT1065
+D; JLT
+@SP
+A=M-1
+M=0
+@ENDLT1065
+0; JMP
+(LT1065)
+@SP
+A=M-1
+M=1
+(ENDLT1065)
+// and
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D&M
+// and
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D&M
+// not
+@SP
+A=M-1
+D=M
+@FALSE1068
+D; JEQ
+D=0
+@ENDNOT1068
+0; JMP
+(FALSE1068)
+D=1
+(ENDNOT1068)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.9
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.9
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 8
+@SP
+AM=M-1
+D=M
+@Main.8
+M=D
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// gt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@GT1075
+D; JGT
+@SP
+A=M-1
+M=0
+@ENDGT1075
+0; JMP
+(GT1075)
+@SP
+A=M-1
+M=1
+(ENDGT1075)
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 0
+@Main.0
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// lt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@LT1080
+D; JLT
+@SP
+A=M-1
+M=0
+@ENDLT1080
+0; JMP
+(LT1080)
+@SP
+A=M-1
+M=1
+(ENDLT1080)
+// and
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D&M
+// not
+@SP
+A=M-1
+D=M
+@FALSE1082
+D; JEQ
+D=0
+@ENDNOT1082
+0; JMP
+(FALSE1082)
+D=1
+(ENDNOT1082)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveBall.10
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveBall.10
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// neg
+@SP
+A=M-1
+M=-M
+// pop static 9
+@SP
+AM=M-1
+D=M
+@Main.9
+M=D
+// goto ENDIF.Main.moveBall.10
+@ENDIF.Main.moveBall.10
+0; JMP
+// label ELSE.Main.moveBall.10
+(ELSE.Main.moveBall.10)
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// pop static 9
+@SP
+AM=M-1
+D=M
+@Main.9
+M=D
+// label ENDIF.Main.moveBall.10
+(ENDIF.Main.moveBall.10)
+// goto ENDIF.Main.moveBall.9
+@ENDIF.Main.moveBall.9
+0; JMP
+// label ELSE.Main.moveBall.9
+(ELSE.Main.moveBall.9)
+// label ENDIF.Main.moveBall.9
+(ENDIF.Main.moveBall.9)
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1097
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1097)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.drawPixel 2
+@RETURN1101
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1101)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 9
+@Main.9
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// pop static 7
+@SP
+AM=M-1
+D=M
+@Main.7
+M=D
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 8
+@Main.8
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// pop static 6
+@SP
+AM=M-1
+D=M
+@Main.6
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1112
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1112)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 6
+@Main.6
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 7
+@Main.7
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.drawPixel 2
+@RETURN1116
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1116)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// function Main.moveDown 4
+(Main.moveDown)
+@4
+D=A
+(INIT1120)
+@ENDINIT1120
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT1120
+0; JMP
+(ENDINIT1120)
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 3
+@Main.3
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// push static 1
+@Main.1
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// lt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@LT1125
+D; JLT
+@SP
+A=M-1
+M=0
+@ENDLT1125
+0; JMP
+(LT1125)
+@SP
+A=M-1
+M=1
+(ENDLT1125)
+// not
+@SP
+A=M-1
+D=M
+@FALSE1126
+D; JEQ
+D=0
+@ENDNOT1126
+0; JMP
+(FALSE1126)
+D=1
+(ENDNOT1126)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveDown.11
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveDown.11
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1130
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1130)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.drawPixel 2
+@RETURN1134
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1134)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// pop static 5
+@SP
+AM=M-1
+D=M
+@Main.5
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1141
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1141)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 3
+@Main.3
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// call Screen.drawPixel 2
+@RETURN1147
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1147)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// goto ENDIF.Main.moveDown.11
+@ENDIF.Main.moveDown.11
+0; JMP
+// label ELSE.Main.moveDown.11
+(ELSE.Main.moveDown.11)
+// label ENDIF.Main.moveDown.11
+(ENDIF.Main.moveDown.11)
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+// function Main.moveUp 8
+(Main.moveUp)
+@8
+D=A
+(INIT1154)
+@ENDINIT1154
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT1154
+0; JMP
+(ENDINIT1154)
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// gt
+@SP
+AM=M-1
+D=M
+A=A-1
+D=M-D
+@GT1157
+D; JGT
+@SP
+A=M-1
+M=0
+@ENDGT1157
+0; JMP
+(GT1157)
+@SP
+A=M-1
+M=1
+(ENDGT1157)
+// not
+@SP
+A=M-1
+D=M
+@FALSE1158
+D; JEQ
+D=0
+@ENDNOT1158
+0; JMP
+(FALSE1158)
+D=1
+(ENDNOT1158)
+@SP
+A=M-1
+M=D
+// if-goto ELSE.Main.moveUp.12
+@SP
+A=M-1
+D=M
+@ELSE.Main.moveUp.12
+D; JGT
+// pop temp 2
+@SP
+AM=M-1
+D=M
+@TEMP2
+M=D
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1162
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1162)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 3
+@Main.3
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// add
+@SP
+AM=M-1
+D=M
+A=A-1
+M=D+M
+// call Screen.drawPixel 2
+@RETURN1168
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1168)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// sub
+@SP
+AM=M-1
+D=M
+A=A-1
+M=M-D
+// pop static 5
+@SP
+AM=M-1
+D=M
+@Main.5
+M=D
+// push constant 1
+@1
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.setColor 1
+@RETURN1175
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@1
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.setColor
+0; JMP
+(RETURN1175)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// push static 4
+@Main.4
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// push static 5
+@Main.5
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+// call Screen.drawPixel 2
+@RETURN1179
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@2
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.drawPixel
+0; JMP
+(RETURN1179)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// goto ENDIF.Main.moveUp.12
+@ENDIF.Main.moveUp.12
+0; JMP
+// label ELSE.Main.moveUp.12
+(ELSE.Main.moveUp.12)
+// label ENDIF.Main.moveUp.12
+(ENDIF.Main.moveUp.12)
+// push constant 0
+@0
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+// return
+@5
+D=A
+@LCL
+A=M-D
+D=M
+@R13
+M=D
+@SP
+A=M-1
+D=M
+@ARG
+A=M
+M=D
+D=A+1
+@SP
+M=D
+@LCL
+A=M-1
+D=M
+@THAT
+M=D
+@2
+D=A
+@LCL
+A=M-D
+D=M
+@THIS
+M=D
+@3
+D=A
+@LCL
+A=M-D
+D=M
+@ARG
+M=D
+@4
+D=A
+@LCL
+A=M-D
+D=M
+@LCL
+M=D
+@R13
+A=M
+0; JMP
+
+// function Sys.init 0
+(Sys.init)
+@0
+D=A
+(INIT1186)
+@ENDINIT1186
+D; JEQ
+@SP
+AM=M+1
+A=A-1
+M=0
+D=D-1
+@INIT1186
+0; JMP
+(ENDINIT1186)
+// call Memory.init 0
+@RETURN1187
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Memory.init
+0; JMP
+(RETURN1187)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// call Screen.init 0
+@RETURN1189
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Screen.init
+0; JMP
+(RETURN1189)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// call Keyboard.init 0
+@RETURN1191
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Keyboard.init
+0; JMP
+(RETURN1191)
+// pop temp 0
+@SP
+AM=M-1
+D=M
+@TEMP0
+M=D
+// call Main.main 0
+@RETURN1193
+D=A
+@SP
+AM=M+1
+A=A-1
+M=D
+@LCL
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@ARG
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THIS
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@THAT
+D=M
+@SP
+AM=M+1
+A=A-1
+M=D
+@5
+D=A
+@0
+D=D+A
+@SP
+D=M-D
+@ARG
+M=D
+@SP
+D=M
+@LCL
+M=D
+@Main.main
+0; JMP
+(RETURN1193)
 // pop temp 0
 @SP
 AM=M-1
@@ -15326,7 +14707,7 @@ D=M
 @TEMP0
 M=D
 // call Sys.halt 0
-@RETURN1219
+@RETURN1195
 D=A
 @SP
 AM=M+1
@@ -15370,7 +14751,7 @@ D=M
 M=D
 @Sys.halt
 0; JMP
-(RETURN1219)
+(RETURN1195)
 // pop temp 0
 @SP
 AM=M-1
@@ -15434,17 +14815,17 @@ A=M
 (Sys.halt)
 @0
 D=A
-(INIT1223)
-@ENDINIT1223
+(INIT1199)
+@ENDINIT1199
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1223
+@INIT1199
 0; JMP
-(ENDINIT1223)
+(ENDINIT1199)
 // label WHILE.Sys.halt.1
 (WHILE.Sys.halt.1)
 // push constant 1
@@ -15458,14 +14839,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE1226
+@FALSE1202
 D; JEQ
 D=0
-@ENDNOT1226
+@ENDNOT1202
 0; JMP
-(FALSE1226)
+(FALSE1202)
 D=1
-(ENDNOT1226)
+(ENDNOT1202)
 @SP
 A=M-1
 M=D
@@ -15543,17 +14924,17 @@ A=M
 (Sys.wait)
 @3
 D=A
-(INIT1233)
-@ENDINIT1233
+(INIT1209)
+@ENDINIT1209
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1233
+@INIT1209
 0; JMP
-(ENDINIT1233)
+(ENDINIT1209)
 // push constant 0
 @0
 D=A
@@ -15622,30 +15003,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1241
+@LT1217
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1241
+@ENDLT1217
 0; JMP
-(LT1241)
+(LT1217)
 @SP
 A=M-1
 M=1
-(ENDLT1241)
+(ENDLT1217)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1242
+@FALSE1218
 D; JEQ
 D=0
-@ENDNOT1242
+@ENDNOT1218
 0; JMP
-(FALSE1242)
+(FALSE1218)
 D=1
-(ENDNOT1242)
+(ENDNOT1218)
 @SP
 A=M-1
 M=D
@@ -15730,30 +15111,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1254
+@LT1230
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1254
+@ENDLT1230
 0; JMP
-(LT1254)
+(LT1230)
 @SP
 A=M-1
 M=1
-(ENDLT1254)
+(ENDLT1230)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1255
+@FALSE1231
 D; JEQ
 D=0
-@ENDNOT1255
+@ENDNOT1231
 0; JMP
-(FALSE1255)
+(FALSE1231)
 D=1
-(ENDNOT1255)
+(ENDNOT1231)
 @SP
 A=M-1
 M=D
@@ -15867,17 +15248,17 @@ A=M
 (Sys.error)
 @6
 D=A
-(INIT1266)
-@ENDINIT1266
+(INIT1242)
+@ENDINIT1242
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1266
+@INIT1242
 0; JMP
-(ENDINIT1266)
+(ENDINIT1242)
 // push argument 0
 @0
 D=A
@@ -15889,7 +15270,7 @@ AM=M+1
 A=A-1
 M=D
 // call Output.printInt 1
-@RETURN1268
+@RETURN1244
 D=A
 @SP
 AM=M+1
@@ -15933,786 +15314,7 @@ D=M
 M=D
 @Output.printInt
 0; JMP
-(RETURN1268)
-// pop temp 0
-@SP
-AM=M-1
-D=M
-@TEMP0
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-
-// function Array.new 0
-(Array.new)
-@0
-D=A
-(INIT1272)
-@ENDINIT1272
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT1272
-0; JMP
-(ENDINIT1272)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Memory.alloc 1
-@RETURN1274
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Memory.alloc
-0; JMP
-(RETURN1274)
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function Array.find 4
-(Array.find)
-@4
-D=A
-(INIT1276)
-@ENDINIT1276
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT1276
-0; JMP
-(ENDINIT1276)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// sub
-@SP
-AM=M-1
-D=M
-A=A-1
-M=M-D
-// call Memory.peek 1
-@RETURN1282
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Memory.peek
-0; JMP
-(RETURN1282)
-// pop local 0
-@0
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push constant 0
-@0
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 2
-@2
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 3
-@3
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// label WHILE.Array.find.2
-(WHILE.Array.find.2)
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 0
-@0
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// lt
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@LT1293
-D; JLT
-@SP
-A=M-1
-M=0
-@ENDLT1293
-0; JMP
-(LT1293)
-@SP
-A=M-1
-M=1
-(ENDLT1293)
-// not
-@SP
-A=M-1
-D=M
-@FALSE1294
-D; JEQ
-D=0
-@ENDNOT1294
-0; JMP
-(FALSE1294)
-D=1
-(ENDNOT1294)
-@SP
-A=M-1
-M=D
-// if-goto ENDWHILE.Array.find.2
-@SP
-A=M-1
-D=M
-@ENDWHILE.Array.find.2
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// push local 3
-@3
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop pointer 1
-@SP
-AM=M-1
-D=M
-@THAT
-M=D
-// push that 0
-@0
-D=A
-@THAT
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop local 2
-@2
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// push local 2
-@2
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push argument 1
-@1
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// eq
-@SP
-AM=M-1
-D=M
-A=A-1
-D=M-D
-@EQ1305
-D;JEQ
-@SP
-A=M-1
-M=0
-@ENDEQ1305
-0; JMP
-(EQ1305)
-@SP
-A=M-1
-M=1
-(ENDEQ1305)
-// not
-@SP
-A=M-1
-D=M
-@FALSE1306
-D; JEQ
-D=0
-@ENDNOT1306
-0; JMP
-(FALSE1306)
-D=1
-(ENDNOT1306)
-@SP
-A=M-1
-M=D
-// if-goto ELSE.Array.find.2
-@SP
-A=M-1
-D=M
-@ELSE.Array.find.2
-D; JGT
-// pop temp 2
-@SP
-AM=M-1
-D=M
-@TEMP2
-M=D
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// goto ENDIF.Array.find.2
-@ENDIF.Array.find.2
-0; JMP
-// label ELSE.Array.find.2
-(ELSE.Array.find.2)
-// label ENDIF.Array.find.2
-(ENDIF.Array.find.2)
-// push local 1
-@1
-D=A
-@LCL
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// add
-@SP
-AM=M-1
-D=M
-A=A-1
-M=D+M
-// pop local 1
-@1
-D=A
-@LCL
-D=M+D
-@R13
-M=D
-@SP
-AM=M-1
-D=M
-@R13
-A=M
-M=D
-// goto WHILE.Array.find.2
-@WHILE.Array.find.2
-0; JMP
-// label ENDWHILE.Array.find.2
-(ENDWHILE.Array.find.2)
-// push constant 1
-@1
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-// neg
-@SP
-A=M-1
-M=-M
-// return
-@5
-D=A
-@LCL
-A=M-D
-D=M
-@R13
-M=D
-@SP
-A=M-1
-D=M
-@ARG
-A=M
-M=D
-D=A+1
-@SP
-M=D
-@LCL
-A=M-1
-D=M
-@THAT
-M=D
-@2
-D=A
-@LCL
-A=M-D
-D=M
-@THIS
-M=D
-@3
-D=A
-@LCL
-A=M-D
-D=M
-@ARG
-M=D
-@4
-D=A
-@LCL
-A=M-D
-D=M
-@LCL
-M=D
-@R13
-A=M
-0; JMP
-// function Array.dispose 8
-(Array.dispose)
-@8
-D=A
-(INIT1323)
-@ENDINIT1323
-D; JEQ
-@SP
-AM=M+1
-A=A-1
-M=0
-D=D-1
-@INIT1323
-0; JMP
-(ENDINIT1323)
-// push argument 0
-@0
-D=A
-@ARG
-A=M+D
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// pop pointer 0
-@SP
-AM=M-1
-D=M
-@THIS
-M=D
-// push pointer 0
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-// call Memory.deAlloc 1
-@RETURN1327
-D=A
-@SP
-AM=M+1
-A=A-1
-M=D
-@LCL
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@ARG
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THIS
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@THAT
-D=M
-@SP
-AM=M+1
-A=A-1
-M=D
-@5
-D=A
-@1
-D=D+A
-@SP
-D=M-D
-@ARG
-M=D
-@SP
-D=M
-@LCL
-M=D
-@Memory.deAlloc
-0; JMP
-(RETURN1327)
+(RETURN1244)
 // pop temp 0
 @SP
 AM=M-1
@@ -16777,17 +15379,17 @@ A=M
 (Memory.init)
 @0
 D=A
-(INIT1331)
-@ENDINIT1331
+(INIT1248)
+@ENDINIT1248
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1331
+@INIT1248
 0; JMP
-(ENDINIT1331)
+(ENDINIT1248)
 // push constant 0
 @0
 D=A
@@ -16829,7 +15431,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN1338
+@RETURN1255
 D=A
 @SP
 AM=M+1
@@ -16873,7 +15475,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1338)
+(RETURN1255)
 // pop temp 0
 @SP
 AM=M-1
@@ -16908,7 +15510,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN1344
+@RETURN1261
 D=A
 @SP
 AM=M+1
@@ -16952,7 +15554,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1344)
+(RETURN1261)
 // pop temp 0
 @SP
 AM=M-1
@@ -17016,17 +15618,17 @@ A=M
 (Memory.peek)
 @0
 D=A
-(INIT1348)
-@ENDINIT1348
+(INIT1265)
+@ENDINIT1265
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1348
+@INIT1265
 0; JMP
-(ENDINIT1348)
+(ENDINIT1265)
 // push static 0
 @Memory.0
 D=M
@@ -17116,17 +15718,17 @@ A=M
 (Memory.poke)
 @0
 D=A
-(INIT1355)
-@ENDINIT1355
+(INIT1272)
+@ENDINIT1272
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1355
+@INIT1272
 0; JMP
-(ENDINIT1355)
+(ENDINIT1272)
 // push static 0
 @Memory.0
 D=M
@@ -17249,17 +15851,17 @@ A=M
 (Memory.alloc)
 @4
 D=A
-(INIT1366)
-@ENDINIT1366
+(INIT1283)
+@ENDINIT1283
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1366
+@INIT1283
 0; JMP
-(ENDINIT1366)
+(ENDINIT1283)
 // push static 1
 @Memory.1
 D=M
@@ -17304,7 +15906,7 @@ D=M
 A=A-1
 M=D+M
 // call Memory.peek 1
-@RETURN1372
+@RETURN1289
 D=A
 @SP
 AM=M+1
@@ -17348,7 +15950,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN1372)
+(RETURN1289)
 // pop local 1
 @1
 D=A
@@ -17439,30 +16041,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@LT1383
+@LT1300
 D; JLT
 @SP
 A=M-1
 M=0
-@ENDLT1383
+@ENDLT1300
 0; JMP
-(LT1383)
+(LT1300)
 @SP
 A=M-1
 M=1
-(ENDLT1383)
+(ENDLT1300)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1384
+@FALSE1301
 D; JEQ
 D=0
-@ENDNOT1384
+@ENDNOT1301
 0; JMP
-(FALSE1384)
+(FALSE1301)
 D=1
-(ENDNOT1384)
+(ENDNOT1301)
 @SP
 A=M-1
 M=D
@@ -17489,7 +16091,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.peek 1
-@RETURN1388
+@RETURN1305
 D=A
 @SP
 AM=M+1
@@ -17533,7 +16135,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN1388)
+(RETURN1305)
 // pop local 3
 @3
 D=A
@@ -17571,7 +16173,7 @@ D=M
 A=A-1
 M=D+M
 // call Memory.peek 1
-@RETURN1393
+@RETURN1310
 D=A
 @SP
 AM=M+1
@@ -17615,7 +16217,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN1393)
+(RETURN1310)
 // pop local 1
 @1
 D=A
@@ -17720,7 +16322,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN1407
+@RETURN1324
 D=A
 @SP
 AM=M+1
@@ -17764,7 +16366,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1407)
+(RETURN1324)
 // pop temp 0
 @SP
 AM=M-1
@@ -17870,7 +16472,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN1421
+@RETURN1338
 D=A
 @SP
 AM=M+1
@@ -17914,7 +16516,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1421)
+(RETURN1338)
 // pop temp 0
 @SP
 AM=M-1
@@ -17952,7 +16554,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.poke 2
-@RETURN1427
+@RETURN1344
 D=A
 @SP
 AM=M+1
@@ -17996,7 +16598,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1427)
+(RETURN1344)
 // pop temp 0
 @SP
 AM=M-1
@@ -18063,17 +16665,17 @@ A=M
 (Memory.getTail)
 @10
 D=A
-(INIT1431)
-@ENDINIT1431
+(INIT1348)
+@ENDINIT1348
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1431
+@INIT1348
 0; JMP
-(ENDINIT1431)
+(ENDINIT1348)
 // push static 1
 @Memory.1
 D=M
@@ -18102,7 +16704,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.peek 1
-@RETURN1435
+@RETURN1352
 D=A
 @SP
 AM=M+1
@@ -18146,7 +16748,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN1435)
+(RETURN1352)
 // pop local 1
 @1
 D=A
@@ -18185,30 +16787,30 @@ AM=M-1
 D=M
 A=A-1
 D=M-D
-@EQ1440
+@EQ1357
 D;JEQ
 @SP
 A=M-1
 M=0
-@ENDEQ1440
+@ENDEQ1357
 0; JMP
-(EQ1440)
+(EQ1357)
 @SP
 A=M-1
 M=1
-(ENDEQ1440)
+(ENDEQ1357)
 // not
 @SP
 A=M-1
 D=M
-@FALSE1441
+@FALSE1358
 D; JEQ
 D=0
-@ENDNOT1441
+@ENDNOT1358
 0; JMP
-(FALSE1441)
+(FALSE1358)
 D=1
-(ENDNOT1441)
+(ENDNOT1358)
 @SP
 A=M-1
 M=D
@@ -18216,14 +16818,14 @@ M=D
 @SP
 A=M-1
 D=M
-@FALSE1442
+@FALSE1359
 D; JEQ
 D=0
-@ENDNOT1442
+@ENDNOT1359
 0; JMP
-(FALSE1442)
+(FALSE1359)
 D=1
-(ENDNOT1442)
+(ENDNOT1359)
 @SP
 A=M-1
 M=D
@@ -18273,7 +16875,7 @@ AM=M+1
 A=A-1
 M=D
 // call Memory.peek 1
-@RETURN1448
+@RETURN1365
 D=A
 @SP
 AM=M+1
@@ -18317,7 +16919,7 @@ D=M
 M=D
 @Memory.peek
 0; JMP
-(RETURN1448)
+(RETURN1365)
 // pop local 1
 @1
 D=A
@@ -18396,19 +16998,19 @@ A=M
 (Memory.deAlloc)
 @21
 D=A
-(INIT1454)
-@ENDINIT1454
+(INIT1371)
+@ENDINIT1371
 D; JEQ
 @SP
 AM=M+1
 A=A-1
 M=0
 D=D-1
-@INIT1454
+@INIT1371
 0; JMP
-(ENDINIT1454)
+(ENDINIT1371)
 // call Memory.getTail 0
-@RETURN1455
+@RETURN1372
 D=A
 @SP
 AM=M+1
@@ -18452,7 +17054,7 @@ D=M
 M=D
 @Memory.getTail
 0; JMP
-(RETURN1455)
+(RETURN1372)
 // pop local 0
 @0
 D=A
@@ -18500,7 +17102,7 @@ D=M
 A=A-1
 M=M-D
 // call Memory.poke 2
-@RETURN1461
+@RETURN1378
 D=A
 @SP
 AM=M+1
@@ -18544,7 +17146,7 @@ D=M
 M=D
 @Memory.poke
 0; JMP
-(RETURN1461)
+(RETURN1378)
 // pop temp 0
 @SP
 AM=M-1

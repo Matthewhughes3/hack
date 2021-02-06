@@ -1,0 +1,104 @@
+class Main {
+    static int halfBarHeight, screenHeight, screenWidth, barHeight, barX, barY, ballX, ballY, ballXDir, ballYDir;
+
+    function void main() {
+        let barHeight = 8;
+        let halfBarHeight = 4;
+        let screenWidth = 31;
+        let screenHeight = 31;
+
+        let ballX = 15;
+        let ballY = 15;
+
+        let ballXDir = 1;
+        let ballYDir = 0;
+
+        let barX = 1;
+        let barY = 12;
+        do Screen.drawLine(barX, barY, barX, barY + barHeight);
+        do Screen.drawPixel(ballX, ballY);
+        do Sys.wait(500);
+        do getDirection();
+        return;
+    }
+
+    function char getDirection() {
+        var char dir;
+        while(true) {
+            do moveBall();
+            do Sys.wait(50);
+            let dir = Keyboard.keyPressed();
+            if(dir = 'j') {
+                do moveDown();
+            } else {
+                if(dir = 'k') {
+                    do moveUp();
+                }
+            }
+        }
+        return;
+    }
+
+    function void moveBall() {
+        if(ballX = 0) {
+            do Sys.wait(500);
+            do Screen.clearScreen();
+            do main();
+        }
+
+        if(ballX = screenWidth) {
+            if(ballXDir = 1) {
+                let ballXDir = -1;
+            } else {
+                let ballXDir = 1;
+            }
+        }
+
+        if((ballY = screenHeight) | (ballY = 0)) {
+            if(ballYDir = 1) {
+                let ballYDir = -1;
+            } else {
+                let ballYDir = 1;
+            }
+        }
+
+        if((ballX = (barX + 1)) & ((ballY > barY) & (ballY < (barY + barHeight)))) {
+            let ballXDir = 1;
+            if((ballY > barY) & (ballY < (halfBarHeight + barY))) {
+                let ballYDir = -1;
+            } else {
+                let ballYDir = 1;
+            }
+        }
+
+        do Screen.setColor(false);
+        do Screen.drawPixel(ballX, ballY);
+        let ballY = ballY + ballYDir;
+        let ballX = ballX + ballXDir;
+        do Screen.setColor(true);
+        do Screen.drawPixel(ballX, ballY);
+        return;
+    }
+
+    function void moveDown() {
+        if((barY + barHeight) < screenHeight) {
+            do Screen.setColor(false);
+            do Screen.drawPixel(barX, barY);
+            let barY = barY + 1;
+            do Screen.setColor(true);
+            do Screen.drawPixel(barX, barY + barHeight);
+        }
+        return;
+    }
+
+    function void moveUp() {
+        if(barY > 0) {
+            do Screen.setColor(false);
+            do Screen.drawPixel(barX, barY + barHeight);
+            let barY = barY - 1;
+            do Screen.setColor(true);
+            do Screen.drawPixel(barX, barY);
+        }
+        return;
+    }
+}

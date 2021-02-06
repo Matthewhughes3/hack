@@ -1,9 +1,279 @@
 function Main.main 0
+push constant 8
+pop static 3
+push constant 4
+pop static 0
+push constant 31
+pop static 2
+push constant 31
+pop static 1
 push constant 15
+pop static 6
 push constant 15
-push constant 3
+pop static 7
 push constant 1
-call Screen.drawCircle 4
+pop static 8
+push constant 0
+pop static 9
+push constant 1
+pop static 4
+push constant 12
+pop static 5
+push static 4
+push static 5
+push static 4
+push static 5
+push static 3
+add
+call Screen.drawLine 4
 pop temp 0
+push static 6
+push static 7
+call Screen.drawPixel 2
+pop temp 0
+push constant 500
+call Sys.wait 1
+pop temp 0
+call Main.getDirection 0
+pop temp 0
+push constant 0
+return
+function Main.getDirection 1
+label WHILE.Main.getDirection.3
+push constant 1
+not
+if-goto ENDWHILE.Main.getDirection.3
+pop temp 2
+call Main.moveBall 0
+pop temp 0
+push constant 50
+call Sys.wait 1
+pop temp 0
+call Keyboard.keyPressed 0
+pop local 0
+push local 0
+push constant 106
+eq
+not
+if-goto ELSE.Main.getDirection.2
+pop temp 2
+call Main.moveDown 0
+pop temp 0
+goto ENDIF.Main.getDirection.2
+label ELSE.Main.getDirection.2
+push local 0
+push constant 107
+eq
+not
+if-goto ELSE.Main.getDirection.3
+pop temp 2
+call Main.moveUp 0
+pop temp 0
+goto ENDIF.Main.getDirection.3
+label ELSE.Main.getDirection.3
+label ENDIF.Main.getDirection.3
+label ENDIF.Main.getDirection.2
+goto WHILE.Main.getDirection.3
+label ENDWHILE.Main.getDirection.3
+push constant 0
+return
+function Main.moveBall 2
+push static 6
+push constant 0
+eq
+not
+if-goto ELSE.Main.moveBall.4
+pop temp 2
+push constant 500
+call Sys.wait 1
+pop temp 0
+call Screen.clearScreen 0
+pop temp 0
+call Main.main 0
+pop temp 0
+goto ENDIF.Main.moveBall.4
+label ELSE.Main.moveBall.4
+label ENDIF.Main.moveBall.4
+push static 6
+push static 2
+eq
+not
+if-goto ELSE.Main.moveBall.5
+pop temp 2
+push static 8
+push constant 1
+eq
+not
+if-goto ELSE.Main.moveBall.6
+pop temp 2
+push constant 1
+neg
+pop static 8
+goto ENDIF.Main.moveBall.6
+label ELSE.Main.moveBall.6
+push constant 1
+pop static 8
+label ENDIF.Main.moveBall.6
+goto ENDIF.Main.moveBall.5
+label ELSE.Main.moveBall.5
+label ENDIF.Main.moveBall.5
+push static 7
+push static 1
+eq
+push static 7
+push constant 0
+eq
+or
+not
+if-goto ELSE.Main.moveBall.7
+pop temp 2
+push static 9
+push constant 1
+eq
+not
+if-goto ELSE.Main.moveBall.8
+pop temp 2
+push constant 1
+neg
+pop static 9
+goto ENDIF.Main.moveBall.8
+label ELSE.Main.moveBall.8
+push constant 1
+pop static 9
+label ENDIF.Main.moveBall.8
+goto ENDIF.Main.moveBall.7
+label ELSE.Main.moveBall.7
+label ENDIF.Main.moveBall.7
+push static 6
+push static 4
+push constant 1
+add
+eq
+push static 7
+push static 5
+gt
+push static 7
+push static 5
+push static 3
+add
+lt
+and
+and
+not
+if-goto ELSE.Main.moveBall.9
+pop temp 2
+push constant 1
+pop static 8
+push static 7
+push static 5
+gt
+push static 7
+push static 0
+push static 5
+add
+lt
+and
+not
+if-goto ELSE.Main.moveBall.10
+pop temp 2
+push constant 1
+neg
+pop static 9
+goto ENDIF.Main.moveBall.10
+label ELSE.Main.moveBall.10
+push constant 1
+pop static 9
+label ENDIF.Main.moveBall.10
+goto ENDIF.Main.moveBall.9
+label ELSE.Main.moveBall.9
+label ENDIF.Main.moveBall.9
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 6
+push static 7
+call Screen.drawPixel 2
+pop temp 0
+push static 7
+push static 9
+add
+pop static 7
+push static 6
+push static 8
+add
+pop static 6
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push static 6
+push static 7
+call Screen.drawPixel 2
+pop temp 0
+push constant 0
+return
+function Main.moveDown 4
+push static 5
+push static 3
+add
+push static 1
+lt
+not
+if-goto ELSE.Main.moveDown.11
+pop temp 2
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 4
+push static 5
+call Screen.drawPixel 2
+pop temp 0
+push static 5
+push constant 1
+add
+pop static 5
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push static 4
+push static 5
+push static 3
+add
+call Screen.drawPixel 2
+pop temp 0
+goto ENDIF.Main.moveDown.11
+label ELSE.Main.moveDown.11
+label ENDIF.Main.moveDown.11
+push constant 0
+return
+function Main.moveUp 8
+push static 5
+push constant 0
+gt
+not
+if-goto ELSE.Main.moveUp.12
+pop temp 2
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push static 4
+push static 5
+push static 3
+add
+call Screen.drawPixel 2
+pop temp 0
+push static 5
+push constant 1
+sub
+pop static 5
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push static 4
+push static 5
+call Screen.drawPixel 2
+pop temp 0
+goto ENDIF.Main.moveUp.12
+label ELSE.Main.moveUp.12
+label ENDIF.Main.moveUp.12
 push constant 0
 return

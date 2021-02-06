@@ -1,51 +1,16 @@
-function Math.init 2
-push constant 16
-call Array.new 1
-pop static 0
-push constant 0
-pop local 1
-push constant 1
-pop local 0
-label WHILE.Math.init.1
-push local 1
-push constant 16
-lt
-not
-if-goto ENDWHILE.Math.init.1
-pop temp 2
-push static 0
-push local 1
-add
-push local 0
-pop temp 0
-pop pointer 1
-push temp 0
-pop that 0
-push local 0
-push local 0
-add
-pop local 0
-push local 1
-push constant 1
-add
-pop local 1
-goto WHILE.Math.init.1
-label ENDWHILE.Math.init.1
-push constant 0
-return
-function Math.multiply 9
+function Math.multiply 5
 push constant 0
 pop local 0
 push argument 0
 pop local 2
 push constant 0
 pop local 1
-label WHILE.Math.multiply.3
+label WHILE.Math.multiply.2
 push local 1
 push constant 16
 lt
 not
-if-goto ENDWHILE.Math.multiply.3
+if-goto ENDWHILE.Math.multiply.2
 pop temp 2
 push local 1
 call Math.bit 1
@@ -56,15 +21,15 @@ and
 push local 3
 eq
 not
-if-goto ELSE.Math.multiply.3
+if-goto ELSE.Math.multiply.2
 pop temp 2
 push local 0
 push local 2
 add
 pop local 0
-goto ENDIF.Math.multiply.3
-label ELSE.Math.multiply.3
-label ENDIF.Math.multiply.3
+goto ENDIF.Math.multiply.2
+label ELSE.Math.multiply.2
+label ENDIF.Math.multiply.2
 push local 2
 push local 2
 add
@@ -73,18 +38,35 @@ push local 1
 push constant 1
 add
 pop local 1
-goto WHILE.Math.multiply.3
-label ENDWHILE.Math.multiply.3
+goto WHILE.Math.multiply.2
+label ENDWHILE.Math.multiply.2
 push local 0
 return
-function Math.bit 18
-push static 0
+function Math.bit 12
+push constant 0
+pop local 0
+push constant 1
+pop local 1
+label WHILE.Math.bit.3
+push local 0
 push argument 0
+lt
+not
+if-goto ENDWHILE.Math.bit.3
+pop temp 2
+push local 1
+push local 1
 add
-pop pointer 1
-push that 0
+pop local 1
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE.Math.bit.3
+label ENDWHILE.Math.bit.3
+push local 1
 return
-function Math.divide 41
+function Math.divide 29
 push argument 1
 push constant 0
 eq
@@ -197,7 +179,7 @@ label ELSE.Math.divide.8
 label ENDIF.Math.divide.8
 push local 3
 return
-function Math.mod 83
+function Math.mod 59
 push argument 0
 push argument 1
 call Math.divide 2
@@ -208,7 +190,7 @@ push argument 1
 call Math.multiply 2
 sub
 return
-function Math.abs 166
+function Math.abs 118
 push argument 0
 push constant 0
 lt
@@ -223,7 +205,7 @@ label ELSE.Math.abs.9
 push argument 0
 return
 label ENDIF.Math.abs.9
-function Math.pow 333
+function Math.pow 237
 push argument 1
 push constant 0
 eq
@@ -256,7 +238,7 @@ goto WHILE.Math.pow.11
 label ENDWHILE.Math.pow.11
 push local 0
 return
-function Math.sqrt 668
+function Math.sqrt 476
 push constant 1
 pop local 0
 push constant 1
@@ -290,7 +272,7 @@ push local 0
 push constant 1
 sub
 return
-function Math.min 1336
+function Math.min 952
 push argument 0
 push argument 1
 lt
@@ -304,7 +286,7 @@ label ELSE.Math.min.13
 push argument 1
 return
 label ENDIF.Math.min.13
-function Math.max 2672
+function Math.max 1904
 push argument 0
 push argument 1
 gt
@@ -318,7 +300,7 @@ label ELSE.Math.max.14
 push argument 1
 return
 label ENDIF.Math.max.14
-function Math.factorial 5344
+function Math.factorial 3808
 push argument 0
 push constant 1
 eq

@@ -25,47 +25,52 @@ push local 0
 return
 label ENDIF.Keyboard.keyPressed.1
 function Keyboard.readChar 3
-call Keyboard.keyPressed 0
+call Keyboard.silentReadChar 0
 pop local 0
-label WHILE.Keyboard.readChar.2
-push local 0
-push constant 0
-eq
-not
-if-goto ENDWHILE.Keyboard.readChar.2
-pop temp 2
-call Keyboard.keyPressed 0
-pop local 0
-goto WHILE.Keyboard.readChar.2
-label ENDWHILE.Keyboard.readChar.2
 push local 0
 call String.backSpace 0
 eq
 not
-if-goto ELSE.Keyboard.readChar.3
+if-goto ELSE.Keyboard.readChar.2
 pop temp 2
 call Output.backSpace 0
 pop temp 0
-goto ENDIF.Keyboard.readChar.3
-label ELSE.Keyboard.readChar.3
+goto ENDIF.Keyboard.readChar.2
+label ELSE.Keyboard.readChar.2
 push local 0
 call String.newLine 0
 eq
 not
-if-goto ELSE.Keyboard.readChar.4
+if-goto ELSE.Keyboard.readChar.3
 pop temp 2
 call Output.println 0
 pop temp 0
-goto ENDIF.Keyboard.readChar.4
-label ELSE.Keyboard.readChar.4
+goto ENDIF.Keyboard.readChar.3
+label ELSE.Keyboard.readChar.3
 push local 0
 call Output.printChar 1
 pop temp 0
-label ENDIF.Keyboard.readChar.4
 label ENDIF.Keyboard.readChar.3
+label ENDIF.Keyboard.readChar.2
 push local 0
 return
-function Keyboard.readLine 8
+function Keyboard.silentReadChar 7
+call Keyboard.keyPressed 0
+pop local 0
+label WHILE.Keyboard.silentReadChar.4
+push local 0
+push constant 0
+eq
+not
+if-goto ENDWHILE.Keyboard.silentReadChar.4
+pop temp 2
+call Keyboard.keyPressed 0
+pop local 0
+goto WHILE.Keyboard.silentReadChar.4
+label ENDWHILE.Keyboard.silentReadChar.4
+push local 0
+return
+function Keyboard.readLine 16
 push argument 0
 call Output.printString 1
 pop temp 0
@@ -106,7 +111,7 @@ call Output.println 0
 pop temp 0
 push local 1
 return
-function Keyboard.readInt 19
+function Keyboard.readInt 35
 push argument 0
 call Keyboard.readLine 1
 pop local 2
