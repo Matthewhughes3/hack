@@ -6,7 +6,7 @@ class Output {
         let columnPixels = 11;
         let rowPixels = 8;
         let rowWidth = 3;
-        let columnWidth = 3;
+        let columnWidth = 2;
         let cursorX = 0;
         let cursorY = 0;
         do initMap();
@@ -81,10 +81,13 @@ class Output {
     }
 
     function void backSpace() {
-        var char nc;
         if(cursorX = 0) {
             let cursorX = rowWidth - 1;
-            let cursorY = cursorY - 1;
+            if(cursorY = 0) {
+                let cursorY = columnWidth - 1;
+            } else {
+                let cursorY = cursorY - 1;
+            }
         } else {
             let cursorX = cursorX - 1;
         }

@@ -24,6 +24,7 @@ push constant 15
 gt
 not
 if-goto ELSE.Screen.drawPixel.1
+pop temp 2
 push local 1
 push constant 1
 sub
@@ -44,6 +45,7 @@ pop local 2
 push static 2
 not
 if-goto ELSE.Screen.drawPixel.2
+pop temp 2
 push local 2
 push local 0
 or
@@ -84,6 +86,7 @@ push argument 3
 eq
 not
 if-goto ELSE.Screen.drawLine.3
+pop temp 2
 label WHILE.Screen.drawLine.5
 push local 2
 push local 0
@@ -94,11 +97,13 @@ eq
 or
 not
 if-goto ENDWHILE.Screen.drawLine.5
+pop temp 2
 push argument 0
 push argument 2
 lt
 not
 if-goto ELSE.Screen.drawLine.5
+pop temp 2
 push argument 0
 push local 2
 add
@@ -130,6 +135,7 @@ push argument 2
 eq
 not
 if-goto ELSE.Screen.drawLine.6
+pop temp 2
 label WHILE.Screen.drawLine.8
 push local 3
 push local 1
@@ -140,11 +146,13 @@ eq
 or
 not
 if-goto ENDWHILE.Screen.drawLine.8
+pop temp 2
 push argument 1
 push argument 3
 lt
 not
 if-goto ELSE.Screen.drawLine.8
+pop temp 2
 push argument 0
 push argument 1
 push local 3
@@ -191,6 +199,7 @@ or
 and
 not
 if-goto ENDWHILE.Screen.drawLine.14
+pop temp 2
 push argument 1
 push argument 3
 lt
@@ -200,6 +209,7 @@ lt
 and
 not
 if-goto ELSE.Screen.drawLine.10
+pop temp 2
 push argument 0
 push local 2
 add
@@ -220,6 +230,7 @@ gt
 and
 not
 if-goto ELSE.Screen.drawLine.11
+pop temp 2
 push argument 0
 push local 2
 sub
@@ -240,6 +251,7 @@ lt
 and
 not
 if-goto ELSE.Screen.drawLine.12
+pop temp 2
 push argument 0
 push local 2
 add
@@ -260,6 +272,7 @@ gt
 and
 not
 if-goto ELSE.Screen.drawLine.13
+pop temp 2
 push argument 0
 push local 2
 sub
@@ -276,6 +289,7 @@ push constant 0
 lt
 not
 if-goto ELSE.Screen.drawLine.14
+pop temp 2
 push local 2
 push constant 1
 add
@@ -323,6 +337,7 @@ eq
 or
 not
 if-goto ENDWHILE.Screen.drawCircle.16
+pop temp 2
 push local 0
 push local 0
 call Math.multiply 2
@@ -347,6 +362,7 @@ pop local 4
 push argument 3
 not
 if-goto ELSE.Screen.drawCircle.16
+pop temp 2
 push local 5
 push local 4
 push local 6
@@ -390,11 +406,13 @@ eq
 or
 not
 if-goto ENDWHILE.Screen.drawRectangle.18
+pop temp 2
 push argument 1
 push argument 3
 lt
 not
 if-goto ELSE.Screen.drawRectangle.18
+pop temp 2
 push argument 1
 push local 1
 add
@@ -429,6 +447,7 @@ push static 1
 lt
 not
 if-goto ENDWHILE.Screen.clearScreen.19
+pop temp 2
 push static 0
 push local 0
 add

@@ -189,6 +189,7 @@ gt
 or
 not
 if-goto ENDWHILE.String.intValue.1
+pop temp 2
 push static 0
 push this 0
 push local 0
@@ -239,6 +240,7 @@ push constant 0
 gt
 not
 if-goto ELSE.String.setInt.2
+pop temp 2
 push local 4
 push local 2
 call String.setInt 2
@@ -257,10 +259,10 @@ label ENDIF.String.setInt.2
 push constant 0
 return
 function String.newLine 30
-push constant 128
+push constant 10
 return
 function String.backSpace 60
-push constant 129
+push constant 8
 return
 function String.doubleQuote 120
 push constant 34

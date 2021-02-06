@@ -12,6 +12,7 @@ push constant 16
 lt
 not
 if-goto ENDWHILE.Math.init.1
+pop temp 2
 push static 0
 push local 1
 add
@@ -45,6 +46,7 @@ push constant 16
 lt
 not
 if-goto ENDWHILE.Math.multiply.3
+pop temp 2
 push local 1
 call Math.bit 1
 pop local 3
@@ -55,6 +57,7 @@ push local 3
 eq
 not
 if-goto ELSE.Math.multiply.3
+pop temp 2
 push local 0
 push local 2
 add
@@ -91,6 +94,7 @@ eq
 or
 not
 if-goto ELSE.Math.divide.4
+pop temp 2
 push constant 0
 return
 goto ENDIF.Math.divide.4
@@ -121,6 +125,7 @@ and
 or
 not
 if-goto ELSE.Math.divide.5
+pop temp 2
 push constant 0
 pop local 4
 goto ENDIF.Math.divide.5
@@ -143,6 +148,7 @@ lt
 or
 not
 if-goto ELSE.Math.divide.6
+pop temp 2
 push constant 0
 return
 goto ENDIF.Math.divide.6
@@ -165,6 +171,7 @@ push local 2
 lt
 not
 if-goto ELSE.Math.divide.7
+pop temp 2
 push local 0
 push local 0
 add
@@ -181,6 +188,7 @@ label ENDIF.Math.divide.7
 push local 4
 not
 if-goto ELSE.Math.divide.8
+pop temp 2
 push local 3
 neg
 pop local 3
@@ -206,6 +214,7 @@ push constant 0
 lt
 not
 if-goto ELSE.Math.abs.9
+pop temp 2
 push argument 0
 neg
 return
@@ -220,6 +229,7 @@ push constant 0
 eq
 not
 if-goto ELSE.Math.pow.10
+pop temp 2
 push constant 1
 return
 goto ENDIF.Math.pow.10
@@ -233,6 +243,7 @@ push constant 1
 gt
 not
 if-goto ENDWHILE.Math.pow.11
+pop temp 2
 push local 0
 push argument 0
 call Math.multiply 2
@@ -264,6 +275,7 @@ gt
 and
 not
 if-goto ENDWHILE.Math.sqrt.12
+pop temp 2
 push local 0
 push constant 1
 add
@@ -284,6 +296,7 @@ push argument 1
 lt
 not
 if-goto ELSE.Math.min.13
+pop temp 2
 push argument 0
 return
 goto ENDIF.Math.min.13
@@ -297,6 +310,7 @@ push argument 1
 gt
 not
 if-goto ELSE.Math.max.14
+pop temp 2
 push argument 0
 return
 goto ENDIF.Math.max.14
@@ -310,6 +324,7 @@ push constant 1
 eq
 not
 if-goto ELSE.Math.factorial.15
+pop temp 2
 push constant 1
 return
 goto ENDIF.Math.factorial.15

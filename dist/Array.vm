@@ -22,6 +22,7 @@ push local 0
 lt
 not
 if-goto ENDWHILE.Array.find.2
+pop temp 2
 push local 3
 push local 1
 add
@@ -33,6 +34,7 @@ push argument 1
 eq
 not
 if-goto ELSE.Array.find.2
+pop temp 2
 push local 1
 return
 goto ENDIF.Array.find.2

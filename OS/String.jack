@@ -90,11 +90,11 @@ class String {
     }
 
     function char newLine() {
-        return 128;
+        return 10;
     }
 
     function char backSpace() {
-        return 129;
+        return 8;
     }
 
     function char doubleQuote() {

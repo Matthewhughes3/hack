@@ -5,7 +5,7 @@ push constant 8
 pop static 1
 push constant 3
 pop static 3
-push constant 3
+push constant 2
 pop static 4
 push constant 0
 pop static 5
@@ -36,6 +36,7 @@ push constant 0
 gt
 not
 if-goto ELSE.Output.printInt.1
+pop temp 2
 push local 2
 call Output.printInt 1
 pop temp 0
@@ -62,6 +63,7 @@ push local 1
 lt
 not
 if-goto ENDWHILE.Output.printString.2
+pop temp 2
 push argument 0
 push local 0
 call String.charAt 2
@@ -92,6 +94,7 @@ push static 2
 lt
 not
 if-goto ENDWHILE.Output.printChar.3
+pop temp 2
 push local 2
 push local 0
 add
@@ -124,6 +127,7 @@ sub
 eq
 not
 if-goto ELSE.Output.printChar.4
+pop temp 2
 push constant 0
 pop static 5
 push static 6
@@ -133,6 +137,7 @@ sub
 eq
 not
 if-goto ELSE.Output.printChar.5
+pop temp 2
 push constant 0
 pop static 6
 goto ENDIF.Output.printChar.5
@@ -160,20 +165,34 @@ add
 pop static 6
 push constant 0
 return
-function Output.backSpace 85
+function Output.backSpace 84
 push static 5
 push constant 0
 eq
 not
 if-goto ELSE.Output.backSpace.6
+pop temp 2
 push static 3
 push constant 1
 sub
 pop static 5
 push static 6
+push constant 0
+eq
+not
+if-goto ELSE.Output.backSpace.7
+pop temp 2
+push static 4
 push constant 1
 sub
 pop static 6
+goto ENDIF.Output.backSpace.7
+label ELSE.Output.backSpace.7
+push static 6
+push constant 1
+sub
+pop static 6
+label ENDIF.Output.backSpace.7
 goto ENDIF.Output.backSpace.6
 label ELSE.Output.backSpace.6
 push static 5
@@ -183,15 +202,16 @@ pop static 5
 label ENDIF.Output.backSpace.6
 push constant 0
 return
-function Output.drawColumn 172
+function Output.drawColumn 170
 push constant 0
 pop local 1
-label WHILE.Output.drawColumn.8
+label WHILE.Output.drawColumn.9
 push local 1
 push static 1
 lt
 not
-if-goto ENDWHILE.Output.drawColumn.8
+if-goto ENDWHILE.Output.drawColumn.9
+pop temp 2
 push local 1
 call Math.bit 1
 pop local 0
@@ -201,16 +221,17 @@ and
 push local 0
 eq
 not
-if-goto ELSE.Output.drawColumn.8
+if-goto ELSE.Output.drawColumn.9
+pop temp 2
 push constant 1
 call Screen.setColor 1
 pop temp 0
-goto ENDIF.Output.drawColumn.8
-label ELSE.Output.drawColumn.8
+goto ENDIF.Output.drawColumn.9
+label ELSE.Output.drawColumn.9
 push constant 0
 call Screen.setColor 1
 pop temp 0
-label ENDIF.Output.drawColumn.8
+label ENDIF.Output.drawColumn.9
 push argument 0
 push local 1
 add
@@ -221,11 +242,11 @@ push local 1
 push constant 1
 add
 pop local 1
-goto WHILE.Output.drawColumn.8
-label ENDWHILE.Output.drawColumn.8
+goto WHILE.Output.drawColumn.9
+label ENDWHILE.Output.drawColumn.9
 push constant 0
 return
-function Output.initMap 344
+function Output.initMap 340
 push constant 127
 call Array.new 1
 pop static 0
@@ -1575,7 +1596,7 @@ call Output.create 12
 pop temp 0
 push constant 0
 return
-function Output.create 689
+function Output.create 681
 push constant 11
 call Array.new 1
 pop local 0
