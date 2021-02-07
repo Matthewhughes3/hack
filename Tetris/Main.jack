@@ -1,0 +1,83 @@
+class Main {
+    static int left, right, up, down;
+
+    function void main() {
+        let up = 0;
+        let down = 1;
+        let left = 2;
+        let right = 3;
+
+        var Array b1;
+        let b1 = createL(15, 15);
+        do Point.drawPoints(b1);
+        do gameLoop(b1);
+        return;
+    }
+
+    function void gameLoop(Array shape) {
+        var char dir;
+        let dir = Keyboard.keyPressed();
+        if(dir = 'j') {
+            do moveShape(shape, down);
+        }
+
+        if(dir = 'h') {
+            do moveShape(shape, left);
+        }
+
+        if(dir = 'l') {
+            do moveShape(shape, right);
+        }
+        do Sys.wait(200);
+        do moveShape(shape, down);
+        do gameLoop(shape);
+        return;
+    }
+
+    function void moveShape(Array points, int dir) {
+        var int length, i;
+        do Screen.setColor(false);
+        do Point.drawPoints(points);
+        do Point.translatePoints(points, dir);
+        do Screen.setColor(true);
+        do Point.drawPoints(points);
+        return;
+    }
+
+    function Array createBar(int x, int y) {
+        var Array bar;
+
+        let bar = Array.new(4);
+
+        let bar[0] = Point.new(x, y - 2);
+        let bar[1] = Point.new(x, y - 1);
+        let bar[2] = Point.new(x, y);
+        let bar[3] = Point.new(x, y + 1);
+        return bar;
+    }
+
+    function Array createBox(int x, int y) {
+        var Array box;
+
+        let box = Array.new(4);
+
+        let box[0] = Point.new(x, y);
+        let box[1] = Point.new(x + 1, y);
+        let box[2] = Point.new(x, y + 1);
+        let box[3] = Point.new(x + 1, y + 1);
+        return box;
+    }
+
+    function Array createL(int x, int y) {
+        var Array l;
+
+        let l = Array.new(5);
+
+        let l[0] = Point.new(x, y - 2);
+        let l[1] = Point.new(x, y - 1);
+        let l[2] = Point.new(x, y);
+        let l[3] = Point.new(x, y + 1);
+        let l[4] = Point.new(x - 1, y + 1);
+        return l;
+    }
+}

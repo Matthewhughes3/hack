@@ -1,0 +1,76 @@
+class Keyboard {
+    static int keyboardBase;
+
+    function void init() {
+        let keyboardBase = 32703;
+        return;
+    }
+
+    function char keyPressed() {
+        var int scanCode;
+        let scanCode = Memory.peek(keyboardBase);
+        if(scanCode = null) {
+            return null;
+        } else {
+            do Memory.poke(keyboardBase, null);
+            return scanCode;
+        }
+    }
+
+    function char readChar() {
+        var int scanCode;
+        let scanCode = silentReadChar();
+        if(scanCode = String.backSpace()) {
+            do Output.backSpace();
+        } else {
+            if(scanCode = String.newLine()) {
+                do Output.println();
+            } else {
+                do Output.printChar(scanCode);
+            }
+        }
+        return scanCode;
+    }
+
+    function char silentReadChar() {
+        var int scanCode;
+        let scanCode = keyPressed();
+        while(scanCode = null) {
+            let scanCode = keyPressed();
+        }
+        return scanCode;
+    }
+
+    function String readLine(String message) {
+        var int scanCode;
+        var String str;
+
+        do Output.printString(message);
+
+        let str = String.new(10);
+        let scanCode = readChar();
+
+        while(!(scanCode = String.newLine())) {
+            if(scanCode = String.backSpace()) {
+                do str.eraseLastChar();
+            } else {
+                do str.appendChar(scanCode);
+            }
+            let scanCode = readChar();
+        }
+
+        do Output.println();
+        return str;
+    }
+
+    function int readInt(String message) {
+        var int scanCode;
+        var int result;
+        var String str;
+
+        let str = readLine(message);
+        let result = str.intValue();
+
+        return result;
+    }
+}

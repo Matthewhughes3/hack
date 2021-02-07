@@ -1,0 +1,60 @@
+class Memory {
+    static Array ram;
+    static int heap;
+
+    function void init() {
+        let ram = 0;
+        let heap = 2048;
+        do poke(heap, 0);
+        do poke(heap + 1, 14432);
+        return;
+    }
+
+    function int peek(int addr) {
+        return ram[addr];
+    }
+
+    function void poke(int addr, int value) {
+        let ram[addr] = value;
+        return;
+    }
+
+    function int alloc(int size) {
+        var int baseAddr, free, newSize, tracker;
+
+        let tracker = heap;
+        let free = peek(tracker + 1);
+        let newSize = (free - size) - 2;
+
+        while(newSize < 0) {
+            let tracker = peek(tracker);
+            let free = peek(tracker + 1);
+            let newSize = (free - size) - 2;
+        }
+
+        do poke((tracker + 1), newSize);
+        let baseAddr = (tracker + 2) + newSize + 2;
+        do poke(baseAddr - 1, size);
+        do poke(baseAddr - 2, null);
+
+        return baseAddr;
+    }
+
+    function int getTail() {
+        var int tracker, next;
+        let tracker = heap;
+        let next = peek(heap);
+        while(!(next = null)) {
+            let tracker = next;
+            let next = peek(tracker);
+        }
+        return tracker;
+    }
+
+    function void deAlloc(int addr) {
+        var int tail;
+        let tail = getTail();
+        do poke(tail, addr - 2);
+        return;
+    }
+}

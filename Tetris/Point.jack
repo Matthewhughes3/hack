@@ -1,0 +1,86 @@
+class Point {
+    field int x;
+    field int y;
+
+    constructor Point new(int newX, int newY) {
+        let x = newX;
+        let y = newY;
+        return this;
+    }
+
+    function int getX() {
+        return x;
+    }
+
+    function int getY() {
+        return y;
+    }
+
+    function void drawPoints(Array points) {
+        var int length, i;
+        var Point p;
+
+        let length = points.length();
+        let i = 0;
+        while(i < length) {
+            let p = points[i];
+            do p.drawPoint();
+            let i = i + 1;
+        }
+        return;
+    }
+
+    function void translatePoints(Array points, int boolDir) {
+        var int length, i;
+        var Point p;
+
+        let length = points.length();
+        let i = 0;
+        while(i < length) {
+            let p = points[i];
+            if(boolDir = 0) {
+                do p.translateUp();
+            } 
+
+            if(boolDir = 1) {
+                do p.translateDown();
+            }
+
+            if(boolDir = 2) {
+                do p.translateLeft();
+            }
+
+            if(boolDir = 3) {
+                do p.translateRight();
+            } 
+
+            let i = i + 1;
+        }
+        return;
+    }
+
+    method void translateRight() {
+        let x = x + 1;
+        return;
+    }
+
+    method void translateLeft() {
+        let x = x - 1;
+        return;
+    }
+
+    method void translateUp() {
+        let y = y - 1;
+        return;
+    }
+
+    method void translateDown() {
+        let y = y + 1;
+        return;
+    }
+
+    method void drawPoint() {
+        do Screen.drawPixel(x, y);
+        return;
+    }
+}

@@ -3,7 +3,7 @@ class Main {
 
     function void main() {
         let barHeight = 8;
-        let halfBarHeight = 4;
+        let halfBarHeight = barHeight / 2;
         let screenWidth = 31;
         let screenHeight = 31;
 
@@ -14,15 +14,15 @@ class Main {
         let ballYDir = 0;
 
         let barX = 1;
-        let barY = 12;
+        let barY = 11;
         do Screen.drawLine(barX, barY, barX, barY + barHeight);
         do Screen.drawPixel(ballX, ballY);
         do Sys.wait(500);
-        do getDirection();
+        do gameLoop();
         return;
     }
 
-    function char getDirection() {
+    function char gameLoop() {
         var char dir;
         while(true) {
             do moveBall();
@@ -40,6 +40,11 @@ class Main {
     }
 
     function void moveBall() {
+        var int barYBottom, barYHalf;
+
+        let barYBottom = barY + barHeight;
+        let barYHalf = barY + halfBarHeight;
+
         if(ballX = 0) {
             do Sys.wait(500);
             do Screen.clearScreen();
@@ -62,12 +67,16 @@ class Main {
             }
         }
 
-        if((ballX = (barX + 1)) & ((ballY > barY) & (ballY < (barY + barHeight)))) {
+        if((ballX = (barX + 1)) & (((ballY > barY) | (ballY = barY)) & ((ballY < barYBottom) | (ballY = barYBottom)))) {
             let ballXDir = 1;
-            if((ballY > barY) & (ballY < (halfBarHeight + barY))) {
+            if(((ballY > barY) | (ballY = barY)) & (ballY < barYHalf)) {
                 let ballYDir = -1;
             } else {
-                let ballYDir = 1;
+                if(ballY = barYHalf) {
+                    let ballYDir = 0;
+                } else {
+                    let ballYDir = 1;
+                }
             }
         }
 

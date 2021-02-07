@@ -1,0 +1,41 @@
+class Sys {
+    static int waitFactor;
+
+    function void init() {
+        do Memory.init();
+        do Screen.init();
+        // do String.init();
+        // do Output.init();
+        do Keyboard.init();
+
+        do Main.main();
+        do halt();
+        return;
+    }
+
+    function void halt() {
+        while(true) {}
+        return;
+    }
+
+    function void wait(int duration) {
+        var int start, start2, w;
+        
+        let start = 0;
+        let start2 = 0;
+        while(start < duration) {
+            let start = start + 1;
+        }
+
+        while(start2 < duration) {
+            let start2 = start2 + 1;
+        }
+
+        return;
+    }
+
+    function void error(int errorCode) {
+        do Output.printInt(errorCode);
+        return;
+    }
+}

@@ -1,0 +1,128 @@
+class Math {
+    function int multiply(int x, int y) {
+        var int sum, i, shiftedX, bitMask, sign;
+
+        let sum = 0;
+        let shiftedX = x;
+        let i = 0;
+
+        while(i < 16) {
+            let bitMask = bit(i);
+            if((y & bitMask) = bitMask) {
+                let sum = sum + shiftedX;
+            }
+            let shiftedX = shiftedX + shiftedX;
+            let i = i + 1;
+        }
+        return sum;
+    }
+
+    function int bit(int x) {
+        var int i, bitMask;
+
+        let i = 0;
+        let bitMask = 1;
+        while(i < x) {
+            let bitMask = bitMask + bitMask;
+            let i = i + 1;
+        }
+        return bitMask;
+    }
+
+    function int divide(int x, int y) {
+        var int q, absX, absY, result;
+        var bool sign;
+
+        if((y = 0) | (x = 0)) {
+            return 0;
+        }
+
+        if((((x > 0) | (x = 0)) & ((y > 0) | (y = 0))) | ((x < 0) & (y < 0))) {
+            let sign = false;
+        } else {
+            let sign = true;
+        }
+
+        let absX = Math.abs(x);
+        let absY = Math.abs(y);
+
+        if ((absY > absX) | (absY < 0)) {
+            return 0;
+        }
+
+        let q = divide(absX, absY + absY);
+
+        if((absX - (2 * q * absY)) < absY) {
+            let result = q + q;
+        } else {
+            let result = q + q + 1;
+        }
+
+        if(sign) {
+            let result = (-result);
+        }
+        return result;
+    }
+
+    function int mod(int x, int y) {
+        var int value;
+        let value = x / y;
+        return (x - (value * y));
+    }
+
+    function int abs(int x) {
+        if(x < 0) {
+            return (-x);
+        } else {
+            return x;
+        }
+    }
+
+    function int pow(int x, int y) {
+        if(y = 0) {
+            return 1;
+        }
+        var int result;
+        let result = x;
+        while(y > 1) {
+            let result = result * x;
+            let y = y - 1;
+        }
+        return result;
+    }
+
+    function int sqrt(int x) {
+        var int i, iTimes;
+        let i = 1;
+        let iTimes = 1;
+        while(((iTimes < x) | (iTimes = x)) & (iTimes > 0)) {
+            let i = i + 1;
+            let iTimes = i * i;
+        }
+        return (i - 1);
+
+    }
+
+    function int min(int x, int y) {
+        if(x < y) {
+            return x;
+        } else {
+            return y;
+        }
+    }
+
+    function int max(int x, int y) {
+        if (x > y) {
+            return x;
+        } else {
+            return y;
+        }
+    }
+
+    function int factorial(int x) {
+        if(x = 1) {
+            return 1;
+        }
+        return (x * factorial(x - 1));
+    }
+}

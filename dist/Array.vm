@@ -2,6 +2,14 @@ function Array.new 0
 push argument 0
 call Memory.alloc 1
 return
+function Array.length 0
+push argument 0
+pop pointer 0
+push pointer 0
+push constant 1
+sub
+call Memory.peek 1
+return
 function Array.find 4
 push argument 0
 pop pointer 0

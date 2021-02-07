@@ -1,0 +1,166 @@
+function Point.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop this 0
+push argument 1
+pop this 1
+push pointer 0
+return
+function Point.getX 0
+push this 0
+return
+function Point.getY 0
+push this 1
+return
+function Point.drawPoints 3
+push argument 0
+call Array.length 1
+pop local 0
+push constant 0
+pop local 1
+label WHILE.Point.drawPoints.1
+push local 1
+push local 0
+lt
+not
+if-goto ENDWHILE.Point.drawPoints.1
+pop temp 2
+push argument 0
+push local 1
+add
+pop pointer 1
+push that 0
+pop local 2
+push local 2
+call Point.drawPoint 1
+pop temp 0
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE.Point.drawPoints.1
+label ENDWHILE.Point.drawPoints.1
+push constant 0
+return
+function Point.translatePoints 9
+push argument 0
+call Array.length 1
+pop local 0
+push constant 0
+pop local 1
+label WHILE.Point.translatePoints.6
+push local 1
+push local 0
+lt
+not
+if-goto ENDWHILE.Point.translatePoints.6
+pop temp 2
+push argument 0
+push local 1
+add
+pop pointer 1
+push that 0
+pop local 2
+push argument 1
+push constant 0
+eq
+not
+if-goto ELSE.Point.translatePoints.3
+pop temp 2
+push local 2
+call Point.translateUp 1
+pop temp 0
+goto ENDIF.Point.translatePoints.3
+label ELSE.Point.translatePoints.3
+label ENDIF.Point.translatePoints.3
+push argument 1
+push constant 1
+eq
+not
+if-goto ELSE.Point.translatePoints.4
+pop temp 2
+push local 2
+call Point.translateDown 1
+pop temp 0
+goto ENDIF.Point.translatePoints.4
+label ELSE.Point.translatePoints.4
+label ENDIF.Point.translatePoints.4
+push argument 1
+push constant 2
+eq
+not
+if-goto ELSE.Point.translatePoints.5
+pop temp 2
+push local 2
+call Point.translateLeft 1
+pop temp 0
+goto ENDIF.Point.translatePoints.5
+label ELSE.Point.translatePoints.5
+label ENDIF.Point.translatePoints.5
+push argument 1
+push constant 3
+eq
+not
+if-goto ELSE.Point.translatePoints.6
+pop temp 2
+push local 2
+call Point.translateRight 1
+pop temp 0
+goto ENDIF.Point.translatePoints.6
+label ELSE.Point.translatePoints.6
+label ENDIF.Point.translatePoints.6
+push local 1
+push constant 1
+add
+pop local 1
+goto WHILE.Point.translatePoints.6
+label ENDWHILE.Point.translatePoints.6
+push constant 0
+return
+function Point.translateRight 18
+push argument 0
+pop pointer 0
+push this 0
+push constant 1
+add
+pop this 0
+push constant 0
+return
+function Point.translateLeft 36
+push argument 0
+pop pointer 0
+push this 0
+push constant 1
+sub
+pop this 0
+push constant 0
+return
+function Point.translateUp 72
+push argument 0
+pop pointer 0
+push this 1
+push constant 1
+sub
+pop this 1
+push constant 0
+return
+function Point.translateDown 144
+push argument 0
+pop pointer 0
+push this 1
+push constant 1
+add
+pop this 1
+push constant 0
+return
+function Point.drawPoint 288
+push argument 0
+pop pointer 0
+push this 0
+push this 1
+call Screen.drawPixel 2
+pop temp 0
+push constant 0
+return
